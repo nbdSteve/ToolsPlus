@@ -6,7 +6,7 @@ ToolsPlus currently contains the following tools; Harvester Hoes, Trench Tools, 
 
 ---
 
-ToolsPlus can be downloaded from the McMarket resouce page, [here](https://www.mc-market.org/resources/7291/).
+ToolsPlus can be downloaded from the [McMarket](https://www.mc-market.org/resources/7291/) or [Spigot](https://www.spigotmc.org/resources/tools.66897/) resource pages.
 
 For more information about the plugin, permissions, and commands please refer to the [wiki](https://github.com/nbdSteve/ToolsPlus/wiki).
 
