@@ -1,0 +1,28 @@
+sell-wand-config-gui:
+  size: 18
+  name: "&6&lSell Wand Options"
+  1:
+    slot: 3
+    name: "&a&l+Price Modifier"
+    material: stained_glass_pane:5
+    lore:
+      - "&7 "
+      - "&7&oClick to increase your tools"
+      - "&7&oprice modifier by 1 tier."
+      - "&7 "
+    increase-modifier-when-clicked: true
+  2:
+    slot: 13
+    name: "&e&lSell Wand Information"
+    material: book:0
+    lore:
+      - "&7 "
+      - "&7&oSell Wands have special properties,"
+      - "&7&owhich means they can be configured to suit"
+      - "&7&oyour selling needs. Click the buttons"
+      - "&7&oin this gui to configure your tool."
+      - "&7 "
+      - "&6&oYou must be holding your harvester hoe."
+      - "&7 "
+    enchantments:
+      - lure:10
