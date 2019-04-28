@@ -1,0 +1,89 @@
+sand-wand-purchase-gui:
+  size: 9
+  name: "&6&lBuy Sand Wands"
+  1:
+    slot: 0
+    price: 500000
+    name: "&eSand Wand &7(&6Tier I&7)"
+    material: diamond_hoe:0
+    lore:
+      - "&6&l**Stack Remover I**"
+      - "&7 "
+      - "&7Cooldown: &f&l7 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was created by the Choomas,"
+      - "&a&oto remove stacks of sand, use it wisely..."
+      - "&7 "
+      - "&cPrice: &l-$500,000"
+      - "&7 "
+    enchantments:
+      - knockback:3
+      - durability:5
+    purchasable: true
+  2:
+    slot: 1
+    price: 1000000
+    name: "&eSand Wand &7(&6Tier II&7)"
+    material: diamond_hoe:0
+    lore:
+      - "&6&l**Stack Remover II**"
+      - "&7 "
+      - "&7Cooldown: &f&l5 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was created by the Choomas,"
+      - "&a&oto remove stacks of sand, use it wisely..."
+      - "&7 "
+      - "&cPrice: &l-$1,000,000"
+      - "&7 "
+    enchantments:
+      - knockback:4
+      - durability:5
+    purchasable: true
+  3:
+    slot: 2
+    price: 1500000
+    name: "&eSand Wand &7(&6Tier III&7)"
+    material: diamond_hoe:0
+    lore:
+      - "&6&l**Stack Remover III**"
+      - "&7 "
+      - "&7Cooldown: &f&l3 Second"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was created by the Choomas,"
+      - "&a&oto remove stacks of sand, use it wisely..."
+      - "&7 "
+      - "&cPrice: &l-$1,500,000"
+      - "&7 "
+    enchantments:
+      - knockback:5
+      - durability:5
+    purchasable: true
+  4:
+    slot: 7
+    name: "&e&lSand Wand Information"
+    material: book:0
+    lore:
+      - "&7 "
+      - "&7&oSand Wands can be purchased by"
+      - "&7&oleft-clicking the respective tool."
+      - "&7 "
+      - "&6&oSand Wands will help when removing"
+      - "&6&osand stacks from your base..."
+      - "&7 "
+    enchantments:
+      - lure:10
+  5:
+    slot: 8
+    name: "&c&lBack"
+    material: barrier:0
+    lore:
+      - "&7 "
+      - "&7&oReturn to the previous screen."
+      - "&7 "
+    back-button: true
