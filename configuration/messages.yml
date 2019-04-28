@@ -1,0 +1,100 @@
+#
+# ToolsPlus messages.yml v0.0.1
+#
+mode-switch:
+  - "&6&lToolsPlus&e: &7You have changed your tools mode."
+
+incremented-radius:
+  - "&6&lToolsPlus&e: &7You have increased your tools break radius, &c-${price}&7."
+
+decremented-radius:
+  - "&6&lToolsPlus&e: &7You have decreased your tools break radius."
+
+max-radius:
+  - "&6&lToolsPlus&e: &7Your tool is already at its maximum break radius."
+
+min-radius:
+  - "&6&lToolsPlus&e: &7Your tool is already at its minimum break radius."
+
+invalid-tool:
+  - "&6&lToolsPlus&e: &7You are unable to configure the item your are currently holding."
+
+help:
+  - "&6&lToolsPlus&e: &7Please see the GitHub wiki for command & permission help."
+
+reload:
+  - "&6&lToolsPlus&e: &7You have successfully reloaded all files and maps."
+
+no-permission:
+  - "&cError: &7You do not have permission to use that."
+
+invalid-command:
+  - "&cError: &7The command you entered was invalid, check your syntax or visit the GitHub wiki for command help."
+
+inventory-full:
+  - "&cWarning: &7Your inventory is full, mined blocks will be deleted and lost."
+
+purchase:
+  - "&6&lToolsPlus&e: &7Your new tool has been added to your inventory, &c-${price}&7."
+
+insufficient:
+  - "&6&lToolsPlus&e: &7You do not have sufficient funds to purchase that tool / upgrade."
+
+invalid-config:
+  - "&7--= &6&lToolsPlus&e: &fDebug &7=--"
+  - " - &cError: &7There is a problem with the plugins configuration, please contact an admin."
+  - " - &cReason: &f{reason}&7."
+
+sand-wand-cooldown:
+  - "&cCooldown: &7You are on sand wand cooldown, &c{time} &7second(s) remaining..."
+
+lightning-wand-cooldown:
+  - "&cCooldown: &7You are on lightning wand cooldown, &c{time} &7second(s) remaining..."
+
+sell-wand-cooldown:
+  - "&cCooldown: &7You are on sell wand cooldown, &c{time} &7second(s) remaining..."
+
+incremented-radius-no-cost:
+  - "&aSuccess&7, your tools radius has been increased at no cost."
+
+creeper-already-powered:
+  - "&cError&7, that creeper is already powered."
+
+incremented-modifier:
+  - "&6&lToolsPlus&e: &7You have increased your harvester hoes price modifier, &c-${price}&7."
+
+incremented-modifier-no-cost:
+  - "&aSuccess&7, your harvester hoes price modifier has been increased at no cost."
+
+max-modifier:
+  - "&6&lToolsPlus&e: &7Your tool is already at its maximum price modifier."
+
+start-selling-by-harvest:
+  - "&6&lToolsPlus&e: &7You have started auto selling crops for &a+&l${price} &7per crop, respectively."
+
+bulk-deposit-by-harvest:
+  - "&6&lToolsPlus&e: &7You have finished harvesting, a grand total of &a+&l${deposit} &7has been deposited into your account."
+
+chest-contents-sell:
+  - "&6&lToolsPlus&e: &7All items that can be sold in that chest have been sold for: &a+&l${deposit}&7."
+
+can-not-sell-contents:
+  - "&cError: &7No items in that chest can be sold to the server."
+
+chest-tnt-craft-contents:
+  - "&6&lToolsPlus&e: &a+{deposit}&7 TNT has been crafted from the gun powder in that chest."
+
+contents-can-not-be-crafted:
+  - "&cError: &7No TNT can be crafted from the items in that chest."
+
+chest-does-not-contain-tnt:
+  - "&cError: &7That chest does not contain any TNT."
+
+chest-tnt-bank-contents:
+  - "&6&lToolsPlus&e: &7Successfully banked &a+&l{deposit} &7TNT."
+
+cannot-tnt-bank-without-faction:
+  - "&cError: &7You cannot use a TNT bank without a faction, create a faction to use this feature."
+
+wand-uses-break:
+  - "&cError: &7Your {item} wand has run out of uses, it has been destroyed."
