@@ -13,7 +13,7 @@ omni-config:
     - crops
     - long_grass
     - nether_warts
-  pickaxe-blocks:
+  pickaxe-blocks: # Tool will change to a pickaxe when these blocks are broken
     - stone
     - cobblestone
     - cobblestone_wall
@@ -80,7 +80,7 @@ omni-config:
     - step
     - stone_slab2
     - slab
-  axe-blocks:
+  axe-blocks: # Tool will change to an axe when these blocks are broken
     - wood
     - log
     - log_2
