@@ -1,0 +1,37 @@
+harvester-tools:
+  1:
+    mode:
+      unique: "&7Mode:"
+      sell: "&e&lSELL"
+      harvest: "&e&lHARVEST"
+    #
+    modifier:
+      unique: "&7Booster:"
+      starting: 1
+      max: 3
+      lore-ids:
+        - "&b&l1.0-1.0"
+        - "&b&l1.5-1.5"
+        - "&b&l2.0-2.0"
+    #
+    upgrade-cost:
+      1: 250000 #upgrading from 3x3 to 5x5
+      2: 500000
+    #
+    name: "&eHarvester Tool &7(&6Tier I&7)"
+    #
+    lore:
+      - "&6&l**Farmer I**"
+      - "&7 "
+      - "&7Mode: {mode}"
+      - "&7Booster: {modifier}"
+      - "&7 "
+      - "&a&oThis wand was create in the Amazon,"
+      - "&a&ousing jungle magic to increase sales and"
+      - "&a&odecrease labor. Decifer how it works to,"
+      - "&a&oharness this tools untapped potential..."
+      - "&7 "
+    #
+    enchantments:
+      - knockback:5
+      - durability:10
