@@ -1,0 +1,47 @@
+multi-tool-purchase-gui:
+  size: 9
+  name: "&6&lBuy Multi Tools"
+  1:
+    slot: 0
+    price: 3000000
+    name: "&a&lForged Pickaxe"
+    material: diamond_pickaxe:0
+    lore:
+      - "&2&l**Forged**"
+      - "&7 "
+      - "&7Mode: &e&lTRENCH"
+      - "&7Radius: &b&l3x3"
+      - "&7 "
+      - "&a&oThis pickaxe was forged in an unknown place,"
+      - "&a&oits potential is still be realised. Use,"
+      - "&a&oabuse and reap the rewards of this tool."
+      - "&7 "
+      - "&cPrice: &l-$3,000,000"
+    enchantments:
+      - dig_speed:5
+      - durability:10
+    purchasable: true
+  2:
+    slot: 7
+    name: "&e&lMulti Tool Information"
+    material: book:0
+    lore:
+      - "&7 "
+      - "&7&oMulti Tools can be purchased by"
+      - "&7&oleft-clicking the respective tool."
+      - "&7 "
+      - "&6&oMulti tools have special properties,"
+      - "&6&owhich means they can be configured to suit"
+      - "&6&oyour trench / tray needs."
+      - "&7 "
+    enchantments:
+      - lure:10
+  3:
+    slot: 8
+    name: "&c&lBack"
+    material: barrier:0
+    lore:
+      - "&7 "
+      - "&7&oReturn to the previous screen."
+      - "&7 "
+    back-button: true
