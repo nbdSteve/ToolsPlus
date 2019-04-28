@@ -1,0 +1,7 @@
+shop-gui-plus-hook: false
+
+prices: # Use this if you do not wish to use the essentials worth.yml or shopguiplus
+  - stone:1.01
+  - dirt:1.23
+  - tnt:16.07
+  - leather:3.40
