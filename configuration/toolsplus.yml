@@ -1,5 +1,5 @@
 # ToolsPlus - if you find any bugs please contact nbdSteve#0583 on Discord.
-version: 0.3.7
+version: 0.3.8
 
 # Enable this if you want to see debug timings for trench and tray tools
 enable-debug-messages: false
@@ -13,18 +13,6 @@ tnt-wand:
   crafting-recipe: # Currently only 1 item is supported - leave this as is for the moment.
     - sulphur:1
 
-# Configuration for omni tool blocks
-omni-config:
-  shovel-blocks: # Tool will change to a shovel when these blocks are broken
-    - dirt
-    - grass
-  pickaxe-blocks:
-    - stone
-    - cobblestone
-  axe-blocks:
-    - wood
-    - log
-
 # Block blacklist for trench tools
 trench-block-blacklist:
   - bedrock
@@ -32,7 +20,14 @@ trench-block-blacklist:
   - mob_spawner
   - hopper
   - chest
+  - trapped_chest
   - glass
+  - dispenser
+  - dropper
+  - ender_portal_frame
+  - ender_portal
+  - ender_chest
+  - web
 
 # Block whitelist for tray tools
 tray-block-whitelist:
