@@ -1,0 +1,93 @@
+lightning-wand-purchase-gui:
+  size: 9
+  name: "&6&lBuy Lightning Wands"
+  1:
+    slot: 0
+    price: 500000
+    name: "&eLightning Wand &7(&6Tier I&7)"
+    material: blaze_rod:0
+    lore:
+      - "&6&l**Thor I**"
+      - "&7 "
+      - "&7Cooldown: &f&l7 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oto strike lightning and charge creepers,"
+      - "&a&ouse and abuse its electrifying potential..."
+      - "&7 "
+      - "&cPrice: &l-$500,000"
+      - "&7 "
+    enchantments:
+      - knockback:3
+      - durability:5
+    purchasable: true
+  2:
+    slot: 1
+    price: 1000000
+    name: "&eLightning Wand &7(&6Tier II&7)"
+    material: blaze_rod:0
+    lore:
+      - "&6&l**Thor II**"
+      - "&7 "
+      - "&7Cooldown: &f&l5 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oto strike lightning and charge creepers,"
+      - "&a&ouse and abuse its electrifying potential..."
+      - "&7 "
+      - "&cPrice: &l-$1,000,000"
+      - "&7 "
+    enchantments:
+      - knockback:4
+      - durability:5
+    purchasable: true
+  3:
+    slot: 2
+    price: 1500000
+    name: "&eLightning Wand &7(&6Tier III&7)"
+    material: blaze_rod:0
+    lore:
+      - "&6&l**Thor III**"
+      - "&7 "
+      - "&7Cooldown: &f&l3 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oto strike lightning and charge creepers,"
+      - "&a&ouse and abuse its electrifying potential..."
+      - "&7 "
+      - "&cPrice: &l-$1,500,000"
+      - "&7 "
+    enchantments:
+      - knockback:5
+      - durability:5
+    purchasable: true
+  4:
+    slot: 7
+    name: "&e&lLightning Wand Information"
+    material: book:0
+    lore:
+      - "&7 "
+      - "&7&oLightning Wands can be purchased by"
+      - "&7&oleft-clicking the respective tool."
+      - "&7 "
+      - "&6&oLighting Wands will help when raiding,"
+      - "&6&oright clicking a creeper will super charge it."
+      - "&6&oUse the tool on the ground to strike lightning..."
+      - "&7 "
+    enchantments:
+      - lure:10
+  5:
+    slot: 8
+    name: "&c&lBack"
+    material: barrier:0
+    lore:
+      - "&7 "
+      - "&7&oReturn to the previous screen."
+      - "&7 "
+    back-button: true
