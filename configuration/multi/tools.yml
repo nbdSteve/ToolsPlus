@@ -1,0 +1,38 @@
+multi-tools:
+  1:
+    mode:
+      unique: "&7Mode:"
+      trench: "&e&lTRENCH"
+      tray: "&e&lTRAY"
+    #
+    radius:
+      unique: "&7Radius:"
+      starting: 2
+      max: 3 #7x7
+      min: 1 #3x3
+      lore-ids:
+        - "&b&l3x3"
+        - "&b&l5x5"
+        - "&b&l7x7"
+    #
+    omni-tool: true
+    #
+    upgrade-cost:
+      1: 250000 #upgrading from tier 1 to tier 2
+      2: 500000
+    #
+    name: "&a&lForged Pickaxe"
+    #
+    lore:
+      - "&2&l**Forged**"
+      - "&7 "
+      - "&7Mode: {mode}"
+      - "&7Radius: {radius}"
+      - "&7 "
+      - "&a&oThis pickaxe was forged in an unknown place,"
+      - "&a&oits potential is still be realised. Use,"
+      - "&a&oabuse and reap the rewards of this tool."
+    #
+    enchantments:
+      - dig_speed:5
+      - durability:10
