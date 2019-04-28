@@ -1,0 +1,95 @@
+lightning-wands:
+  1:
+    cooldown: 7
+    #
+    uses:
+      unique: "&7Uses Remaining:"
+      starting: 250
+      update: "&f&l{uses}"
+    #
+    name: "&eLightning Wand &7(&6Tier I&7)"
+    #
+    lore:
+      - "&6&l**Thor I**"
+      - "&7 "
+      - "&7Cooldown: &f&l7 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oto strike lightning and charge creepers,"
+      - "&a&ouse and abuse its electrifying potential..."
+      - "&7 "
+    #
+    enchantments:
+      - knockback:3
+      - durability:5
+  2:
+    cooldown: 5
+    #
+    uses:
+      unique: "&7Uses Remaining:"
+      starting: 250
+      update: "&f&l{uses}"
+    #
+    name: "&eLightning Wand &7(&6Tier II&7)"
+    #
+    lore:
+      - "&6&l**Thor II**"
+      - "&7 "
+      - "&7Cooldown: &f&l5 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oto strike lightning and charge creepers,"
+      - "&a&ouse and abuse its electrifying potential..."
+      - "&7 "
+    #
+    enchantments:
+      - knockback:4
+      - durability:5
+  3:
+    cooldown: 3
+    #
+    uses:
+      unique: "&7Uses Remaining:"
+      starting: 250
+      update: "&f&l{uses}"
+    #
+    name: "&eLightning Wand &7(&6Tier III&7)"
+    #
+    lore:
+      - "&6&l**Thor III**"
+      - "&7 "
+      - "&7Cooldown: &f&l3 Second"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oto strike lightning and charge creepers,"
+      - "&a&ouse and abuse its electrifying potential..."
+      - "&7 "
+    #
+    enchantments:
+      - knockback:5
+      - durability:5
+  4:
+    cooldown: -1
+    #
+    uses:
+      starting: -1
+    #
+    name: "&eLightning Wand &7(&6Tier DONOR&7)"
+    #
+    lore:
+      - "&6&l**Thor X**"
+      - "&7 "
+      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oto strike lightning and charge creepers,"
+      - "&a&ouse and abuse its electrifying potential..."
+      - "&7 "
+    #
+    enchantments:
+      - knockback:5
+      - durability:10
