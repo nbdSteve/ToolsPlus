@@ -1,6 +1,4 @@
-#
-# ToolsPlus messages.yml v0.0.1
-#
+# ToolsPlus messages
 mode-switch:
   - "&6&lToolsPlus&e: &7You have changed your tools mode."
 
@@ -21,6 +19,7 @@ invalid-tool:
 
 help:
   - "&6&lToolsPlus&e: &7Please see the GitHub wiki for command & permission help."
+  - "&c&nhttps://github.com/nbdSteve/ToolsPlus/wiki/Command-Usage"
 
 reload:
   - "&6&lToolsPlus&e: &7You have successfully reloaded all files and maps."
@@ -29,7 +28,11 @@ no-permission:
   - "&cError: &7You do not have permission to use that."
 
 invalid-command:
-  - "&cError: &7The command you entered was invalid, check your syntax or visit the GitHub wiki for command help."
+  - "&7--= &6&lToolsPlus&e: &fDebug &7=--"
+  - " - &cError: &7There was a problem with the command you entered, please read the reason."
+  - " - &7Alternatively, check the GitHub wiki: "
+  - "&f&nhttps://github.com/nbdSteve/ToolsPlus/wiki/Command-Usage"
+  - " - &cReason: &e{reason}&7."
 
 inventory-full:
   - "&cWarning: &7Your inventory is full, mined blocks will be deleted and lost."
@@ -43,7 +46,7 @@ insufficient:
 invalid-config:
   - "&7--= &6&lToolsPlus&e: &fDebug &7=--"
   - " - &cError: &7There is a problem with the plugins configuration, please contact an admin."
-  - " - &cReason: &f{reason}&7."
+  - " - &cReason: &e{reason}&7."
 
 sand-wand-cooldown:
   - "&cCooldown: &7You are on sand wand cooldown, &c{time} &7second(s) remaining..."
