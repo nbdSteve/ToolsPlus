@@ -1,0 +1,105 @@
+tnt-wand-purchase-gui:
+  size: 9
+  name: "&6&lBuy TNT Wands"
+  1:
+    slot: 0
+    price: 1000000
+    name: "&eTNT Wand &7(&6Tier I&7)"
+    material: sulphur:0
+    lore:
+      - "&6&l**Detonate I**"
+      - "&7 "
+      - "&7Mode: &e&lCRAFT"
+      - "&7 "
+      - "&7Gunpowder Per TNT: &b&l6"
+      - "&7 "
+      - "&7Cooldown: &f&l7 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was create in Azcabalde,"
+      - "&a&ousing controversial forging methods to"
+      - "&a&odecrease labor and increase crafting..."
+      - "&7 "
+      - "&cPrice: &l-$1,000,000"
+      - "&7 "
+    enchantments:
+      - knockback:3
+      - durability:10
+    purchasable: true
+  2:
+    slot: 1
+    price: 2000000
+    name: "&eTNT Wand &7(&6Tier II&7)"
+    material: sulphur:0
+    lore:
+      - "&6&l**Detonate II**"
+      - "&7 "
+      - "&7Mode: &e&lCRAFT"
+      - "&7 "
+      - "&7Gunpowder Per TNT: &b&l6"
+      - "&7 "
+      - "&7Cooldown: &f&l5 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was create in Azcabalde,"
+      - "&a&ousing controversial forging methods to"
+      - "&a&odecrease labor and increase crafting..."
+      - "&7 "
+      - "&cPrice: &l-$2,000,000"
+      - "&7 "
+    enchantments:
+      - knockback:4
+      - durability:10
+    purchasable: true
+  3:
+    slot: 2
+    price: 3000000
+    name: "&eTNT Wand &7(&6Tier III&7)"
+    material: sulphur:0
+    lore:
+      - "&6&l**Detonate III**"
+      - "&7 "
+      - "&7Mode: &e&lCRAFT"
+      - "&7 "
+      - "&7Gunpowder Per TNT: &b&l6"
+      - "&7 "
+      - "&7Cooldown: &f&l3 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was create in Azcabalde,"
+      - "&a&ousing controversial forging methods to"
+      - "&a&odecrease labor and increase crafting..."
+      - "&7 "
+      - "&cPrice: &l-$3,000,000"
+      - "&7 "
+    enchantments:
+      - knockback:5
+      - durability:10
+    purchasable: true
+  4:
+    slot: 7
+    name: "&e&lTNT Wand Information"
+    material: book:0
+    lore:
+      - "&7 "
+      - "&7&oTNT Wands can be purchased by"
+      - "&7&oleft-clicking the respective tool."
+      - "&7 "
+      - "&6&oTNT Wands will help when crafting,"
+      - "&6&oTNT from gun powder. And when depositing,"
+      - "&6&oTNT into to your factions TNT bank..."
+      - "&7 "
+    enchantments:
+      - lure:10
+  5:
+    slot: 8
+    name: "&c&lBack"
+    material: barrier:0
+    lore:
+      - "&7 "
+      - "&7&oReturn to the previous screen."
+      - "&7 "
+    back-button: true
