@@ -1,8 +1,8 @@
 # ToolsPlus - if you find any bugs please contact nbdSteve#0583 on Discord.
-version: 0.3.8
+version: 0.4.2
 
 # Enable this if you want to see debug timings for trench and tray tools
-enable-debug-messages: false
+enable-debug: false
 
 # How far the lightning will strike if the player right clicks air
 lightning-reach-distance: 3
@@ -90,7 +90,7 @@ wand-break-action-bar:
 # gui opened with the /tools command
 tool-purchase-gui:
   # generic gui to select a type of tool to buy
-  size: 9
+  size: 18
   name: "&6&lBuy Tools"
   1:
     slot: 0
@@ -98,7 +98,7 @@ tool-purchase-gui:
     material: ghast_tear:0
     lore:
       - "&7 "
-      - "&7&oClick this to buy multi tools"
+      - "&7&oClick this to buy multi tools."
       - "&7 "
     enchantments:
       - lure:10
@@ -109,7 +109,7 @@ tool-purchase-gui:
     material: magma_cream:0
     lore:
       - "&7 "
-      - "&7&oClick this to buy trench tools"
+      - "&7&oClick this to buy trench tools."
       - "&7 "
     enchantments:
       - lure:10
@@ -120,7 +120,7 @@ tool-purchase-gui:
     material: emerald:0
     lore:
       - "&7 "
-      - "&7&oClick this to buy tray tools"
+      - "&7&oClick this to buy tray tools."
       - "&7 "
     enchantments:
       - lure:10
@@ -131,7 +131,7 @@ tool-purchase-gui:
     material: clay_ball:0
     lore:
       - "&7 "
-      - "&7&oClick this to buy sand wands"
+      - "&7&oClick this to buy sand wands."
       - "&7 "
     enchantments:
       - lure:10
@@ -142,7 +142,7 @@ tool-purchase-gui:
     material: bowl:0
     lore:
       - "&7 "
-      - "&7&oClick this to buy lightning wands"
+      - "&7&oClick this to buy lightning wands."
       - "&7 "
     enchantments:
       - lure:10
@@ -153,7 +153,7 @@ tool-purchase-gui:
     material: gold_hoe:0
     lore:
       - "&7 "
-      - "&7&oClick this to buy harvester hoes"
+      - "&7&oClick this to buy harvester hoes."
       - "&7 "
     enchantments:
       - lure:10
@@ -164,7 +164,7 @@ tool-purchase-gui:
     material: shears:0
     lore:
       - "&7 "
-      - "&7&oClick this to buy sell wands"
+      - "&7&oClick this to buy sell wands."
       - "&7 "
     enchantments:
       - lure:10
@@ -175,8 +175,13 @@ tool-purchase-gui:
     material: sulphur:0
     lore:
       - "&7 "
-      - "&7&oClick this to buy tnt wands"
+      - "&7&oClick this to buy tnt wands."
       - "&7 "
     enchantments:
       - lure:10
     open-tnt: true
+  9:
+    slot: 13
+    name: "&c&lExit"
+    material: barrier:0
+    exit-gui: true
