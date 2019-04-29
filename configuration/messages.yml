@@ -1,34 +1,39 @@
-# ToolsPlus messages
+# Tools+ messages
+outdated-version:
+  - "&7--= &6&lTools+&e: &fUpdater &7=--"
+  - " - &7You are using version &fTools+ v{currentVersion}&7, which is out of date."
+  - " - &7Please &e&l*UPDATE*&7 to the latest version, &fTools+ v{latestVersion}&7."
+
 mode-switch:
-  - "&6&lToolsPlus&e: &7You have changed your tools mode."
+  - "&6&lTools+&e: &7You have changed your tools mode."
 
 incremented-radius:
-  - "&6&lToolsPlus&e: &7You have increased your tools break radius, &c-${price}&7."
+  - "&6&lTools+&e: &7You have increased your tools break radius, &c-${price}&7."
 
 decremented-radius:
-  - "&6&lToolsPlus&e: &7You have decreased your tools break radius."
+  - "&6&lTools+&e: &7You have decreased your tools break radius."
 
 max-radius:
-  - "&6&lToolsPlus&e: &7Your tool is already at its maximum break radius."
+  - "&6&lTools+&e: &7Your tool is already at its maximum break radius."
 
 min-radius:
-  - "&6&lToolsPlus&e: &7Your tool is already at its minimum break radius."
+  - "&6&lTools+&e: &7Your tool is already at its minimum break radius."
 
 invalid-tool:
-  - "&6&lToolsPlus&e: &7You are unable to configure the item your are currently holding."
+  - "&6&lTools+&e: &7You are unable to configure the item your are currently holding."
 
 help:
-  - "&6&lToolsPlus&e: &7Please see the GitHub wiki for command & permission help."
+  - "&6&lTools+&e: &7Please see the GitHub wiki for command & permission help."
   - "&c&nhttps://github.com/nbdSteve/ToolsPlus/wiki/Command-Usage"
 
 reload:
-  - "&6&lToolsPlus&e: &7You have successfully reloaded all files and maps."
+  - "&6&lTools+&e: &7You have successfully reloaded all files and maps."
 
 no-permission:
   - "&cError: &7You do not have permission to use that."
 
 invalid-command:
-  - "&7--= &6&lToolsPlus&e: &fDebug &7=--"
+  - "&7--= &6&lTools+&e: &fDebug &7=--"
   - " - &cError: &7There was a problem with the command you entered, please read the reason."
   - " - &7Alternatively, check the GitHub wiki: "
   - "&f&nhttps://github.com/nbdSteve/ToolsPlus/wiki/Command-Usage"
@@ -38,13 +43,13 @@ inventory-full:
   - "&cWarning: &7Your inventory is full, mined blocks will be deleted and lost."
 
 purchase:
-  - "&6&lToolsPlus&e: &7Your new tool has been added to your inventory, &c-${price}&7."
+  - "&6&lTools+&e: &7Your new tool has been added to your inventory, &c-${price}&7."
 
 insufficient:
-  - "&6&lToolsPlus&e: &7You do not have sufficient funds to purchase that tool / upgrade."
+  - "&6&lTools+&e: &7You do not have sufficient funds to purchase that tool / upgrade."
 
 invalid-config:
-  - "&7--= &6&lToolsPlus&e: &fDebug &7=--"
+  - "&7--= &6&lTools+&e: &fDebug &7=--"
   - " - &cError: &7There is a problem with the plugins configuration, please contact an admin."
   - " - &cReason: &e{reason}&7."
 
@@ -64,28 +69,28 @@ creeper-already-powered:
   - "&cError&7, that creeper is already powered."
 
 incremented-modifier:
-  - "&6&lToolsPlus&e: &7You have increased your harvester hoes price modifier, &c-${price}&7."
+  - "&6&lTools+&e: &7You have increased your harvester hoes price modifier, &c-${price}&7."
 
 incremented-modifier-no-cost:
   - "&aSuccess&7, your harvester hoes price modifier has been increased at no cost."
 
 max-modifier:
-  - "&6&lToolsPlus&e: &7Your tool is already at its maximum price modifier."
+  - "&6&lTools+&e: &7Your tool is already at its maximum price modifier."
 
 start-selling-by-harvest:
-  - "&6&lToolsPlus&e: &7You have started auto selling crops for &a+&l${price} &7per crop, respectively."
+  - "&6&lTools+&e: &7You have started auto selling crops for &a+&l${price} &7per crop, respectively."
 
 bulk-deposit-by-harvest:
-  - "&6&lToolsPlus&e: &7You have finished harvesting, a grand total of &a+&l${deposit} &7has been deposited into your account."
+  - "&6&lTools+&e: &7You have finished harvesting, a grand total of &a+&l${deposit} &7has been deposited into your account."
 
 chest-contents-sell:
-  - "&6&lToolsPlus&e: &7All items that can be sold in that chest have been sold for: &a+&l${deposit}&7."
+  - "&6&lTools+&e: &7All items that can be sold in that chest have been sold for: &a+&l${deposit}&7."
 
 can-not-sell-contents:
   - "&cError: &7No items in that chest can be sold to the server."
 
 chest-tnt-craft-contents:
-  - "&6&lToolsPlus&e: &a+{deposit}&7 TNT has been crafted from the gun powder in that chest."
+  - "&6&lTools+&e: &a+{deposit}&7 TNT has been crafted from the gun powder in that chest."
 
 contents-can-not-be-crafted:
   - "&cError: &7No TNT can be crafted from the items in that chest."
@@ -94,7 +99,7 @@ chest-does-not-contain-tnt:
   - "&cError: &7That chest does not contain any TNT."
 
 chest-tnt-bank-contents:
-  - "&6&lToolsPlus&e: &7Successfully banked &a+&l{deposit} &7TNT."
+  - "&6&lTools+&e: &7Successfully banked &a+&l{deposit} &7TNT."
 
 cannot-tnt-bank-without-faction:
   - "&cError: &7You cannot use a TNT bank without a faction, create a faction to use this feature."
