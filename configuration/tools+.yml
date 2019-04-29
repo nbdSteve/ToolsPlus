@@ -1,5 +1,5 @@
 # ToolsPlus - if you find any bugs please contact nbdSteve#0583 on Discord.
-version: 0.4.2
+version: 0.4.3
 
 # Enable this if you want to see debug timings for trench and tray tools
 enable-debug: false
@@ -10,8 +10,9 @@ lightning-reach-distance: 3
 # Tnt wand config
 tnt-wand:
   savage-factions-hook: false
-  crafting-recipe: # Currently only 1 item is supported - leave this as is for the moment.
+  crafting-recipe:
     - sulphur:1
+    - sand:1
 
 # Block blacklist for trench tools
 trench-block-blacklist:
