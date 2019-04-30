@@ -1,0 +1,52 @@
+aqua-wand-purchase-gui:
+  size: 9
+  name: "&6&lBuy Aqua Wands"
+  1:
+    slot: 0
+    price: 1000000
+    name: "&eAqua Wand &7(&6Tier I&7)"
+    material: stick:0
+    lore:
+      - "&6&l**Poseidon I**"
+      - "&7 "
+      - "&7Mode: &e&lMELT"
+      - "&7 "
+      - "&7Radius: &b&l3x3"
+      - "&7 "
+      - "&7Cooldown: &f&l5 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l250"
+      - "&7 "
+      - "&a&oThis wand was created in Endrucia,"
+      - "&a&ousing unconventional binding methods to"
+      - "&a&oheat liquids to melting point and evaporate them..."
+      - "&7 "
+      - "&cPrice: &l-$1,000,000"
+      - "&7 "
+    enchantments:
+      - fire_aspect:5
+      - durability:10
+    purchasable: true
+  2:
+    slot: 7
+    name: "&e&lAqua Wand Information"
+    material: book:0
+    lore:
+      - "&7 "
+      - "&7&oAqua Wands can be purchased by"
+      - "&7&oleft-clicking the respective tool."
+      - "&7 "
+      - "&6&oAqua Wands will help when melting,"
+      - "&6&oblocks of ice. And when draining liquids..."
+      - "&7 "
+    enchantments:
+      - lure:10
+  3:
+    slot: 8
+    name: "&c&lBack"
+    material: barrier:0
+    lore:
+      - "&7 "
+      - "&7&oReturn to the previous screen."
+      - "&7 "
+    back-button: true
