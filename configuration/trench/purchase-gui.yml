@@ -3,7 +3,7 @@ trench-tool-purchase-gui:
   name: "&6&lBuy Trench Tools"
   1:
     slot: 0
-    price: 800000
+    price: 690000
     name: "&eTrench Pickaxe &7(&63x3&7)"
     material: diamond_pickaxe:0
     lore:
@@ -13,14 +13,14 @@ trench-tool-purchase-gui:
       - "&a&oits potential is still be realised. Use,"
       - "&a&oabuse and reap the rewards of this tool."
       - "&7 "
-      - "&cPrice: &l-$800,000"
+      - "&7Price: &c&l$690,000"
     enchantments:
       - dig_speed:5
       - durability:10
     purchasable: true
   2:
     slot: 1
-    price: 1250000
+    price: 875000
     name: "&eTrench Pickaxe &7(&65x5&7)"
     material: diamond_pickaxe:0
     lore:
@@ -30,14 +30,14 @@ trench-tool-purchase-gui:
       - "&a&oits potential is still be realised. Use,"
       - "&a&oabuse and reap the rewards of this tool."
       - "&7 "
-      - "&cPrice: &l-$1,250,000"
+      - "&7Price: &c&l$875,000"
     enchantments:
       - dig_speed:5
       - durability:10
     purchasable: true
   3:
     slot: 2
-    price: 1750000
+    price: 1250000
     name: "&eTrench Pickaxe &7(&67x7&7)"
     material: diamond_pickaxe:0
     lore:
@@ -47,7 +47,7 @@ trench-tool-purchase-gui:
       - "&a&oits potential is still be realised. Use,"
       - "&a&oabuse and reap the rewards of this tool."
       - "&7 "
-      - "&cPrice: &l-$1,750,000"
+      - "&7Price: &c&l$1,250,000"
     enchantments:
       - dig_speed:5
       - durability:10
@@ -65,7 +65,7 @@ trench-tool-purchase-gui:
       - "&6&olarge sections of the world..."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
   5:
     slot: 8
     name: "&c&lBack"
