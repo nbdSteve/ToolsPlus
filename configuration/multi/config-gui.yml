@@ -3,7 +3,7 @@ multi-tool-config-gui:
   name: "&6&lMulti Tool Options"
   1:
     slot: 5
-    name: "&b&lMode Switch"
+    name: "&b&lSwitch Tool Mode"
     material: ender_pearl:0
     lore:
       - "&7 "
@@ -13,7 +13,7 @@ multi-tool-config-gui:
     switch-mode-when-clicked: true
   2:
     slot: 3
-    name: "&a&l+Radius"
+    name: "&a&lIncrease Break Radius"
     material: stained_glass_pane:5
     lore:
       - "&7 "
@@ -23,7 +23,7 @@ multi-tool-config-gui:
     increase-radius-when-clicked: true
   3:
     slot: 2
-    name: "&c&l-Radius"
+    name: "&c&lDecrease Break Radius"
     material: stained_glass_pane:14
     lore:
       - "&7 "
@@ -45,4 +45,4 @@ multi-tool-config-gui:
       - "&6&oYou must be holding your multi tool."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
