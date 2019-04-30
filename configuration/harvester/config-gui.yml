@@ -7,7 +7,7 @@ harvester-tool-config-gui:
     material: ender_pearl:0
     lore:
       - "&7 "
-      - "&7&oClick this to change your tools"
+      - "&7&oClick this to change your Harvester Hoes"
       - "&7&omode. There are sell and harvest modes."
       - "&7 "
     switch-mode-when-clicked: true
@@ -17,7 +17,7 @@ harvester-tool-config-gui:
     material: stained_glass_pane:5
     lore:
       - "&7 "
-      - "&7&oClick to increase your tools"
+      - "&7&oClick to increase your Harvester Hoes"
       - "&7&oprice modifier by 1 tier."
       - "&7 "
     increase-modifier-when-clicked: true
@@ -32,7 +32,7 @@ harvester-tool-config-gui:
       - "&7&oyour harvesting needs. Click the buttons"
       - "&7&oin this gui to configure your tool."
       - "&7 "
-      - "&6&oYou must be holding your harvester hoe."
+      - "&6&oYou must be holding your Harvester Hoe."
       - "&7 "
     enchantments:
       - lure:1
