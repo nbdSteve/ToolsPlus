@@ -7,7 +7,7 @@ multi-tool-config-gui:
     material: ender_pearl:0
     lore:
       - "&7 "
-      - "&7&oClick this to change your tools"
+      - "&7&oClick this to change your Multi Tools"
       - "&7&omode. There are tray and trench modes."
       - "&7 "
     switch-mode-when-clicked: true
@@ -17,7 +17,7 @@ multi-tool-config-gui:
     material: stained_glass_pane:5
     lore:
       - "&7 "
-      - "&7&oClick to increase your tools"
+      - "&7&oClick to increase your Multi Tools"
       - "&7&obreak radius by 1 block."
       - "&7 "
     increase-radius-when-clicked: true
@@ -27,7 +27,7 @@ multi-tool-config-gui:
     material: stained_glass_pane:14
     lore:
       - "&7 "
-      - "&7&oClick to decrease your tools"
+      - "&7&oClick to decrease your Multi Tools"
       - "&7&obreak radius by 1 block."
       - "&7 "
     decrease-radius-when-clicked: true
@@ -42,7 +42,7 @@ multi-tool-config-gui:
       - "&7&oyour trench / tray needs. Click the buttons"
       - "&7&oin this gui to configure your tool."
       - "&7 "
-      - "&6&oYou must be holding your multi tool."
+      - "&6&oYou must be holding your Multi Tool."
       - "&7 "
     enchantments:
       - lure:1
