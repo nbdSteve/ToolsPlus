@@ -6,6 +6,9 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
+/**
+ * Custom event for draining liquids by Aqua Wands
+ */
 public class AquaWandDrainLiquidEvent extends Event implements Cancellable {
     private static final HandlerList handlers = new HandlerList();
 
