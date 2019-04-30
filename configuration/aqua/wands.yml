@@ -1,0 +1,49 @@
+aqua-wands:
+  1:
+    mode:
+      unique: "&7Mode:"
+      melt: "&e&lMELT"
+      drain: "&e&lDRAIN"
+    #
+    radius:
+      unique: "&7Radius:"
+      starting: 1
+      max: 4 # will be the minimum required
+      min: 1
+      lore-ids:
+        - "&b&l3x3"
+        - "&b&l5x5"
+        - "&b&l7x7"
+    #
+    upgrade-cost:
+      1: 2500000 # upgrading from tier 1 to tier 2
+      2: 2500000
+    #
+    cooldown: 5
+    #
+    uses:
+      unique: "&7Uses Remaining:"
+      starting: 250
+      update: "&f&l{uses}"
+    #
+    name: "&eAqua Wand &7(&6Tier I&7)"
+    #
+    lore:
+      - "&6&l**Poseidon I**"
+      - "&7 "
+      - "&7Mode: {mode}"
+      - "&7 "
+      - "&7Radius: {radius}"
+      - "&7 "
+      - "&7Cooldown: &f&l5 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l{uses}"
+      - "&7 "
+      - "&a&oThis wand was created in Endrucia,"
+      - "&a&ousing unconventional binding methods to"
+      - "&a&oheat liquids to melting point and evaporate them..."
+      - "&7 "
+    #
+    enchantments:
+      - fire_aspect:5
+      - durability:10
