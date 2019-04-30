@@ -1,5 +1,5 @@
 # ToolsPlus - if you find any bugs please contact nbdSteve#0583 on Discord.
-version: 1.3.2
+version: 1.3.4
 
 # Enable this if you want to see debug timings for trench and tray tools
 enable-debug: false
@@ -7,14 +7,14 @@ enable-debug: false
 # How far the lightning will strike if the player right clicks air
 lightning-reach-distance: 3
 
-# Tnt wand config
+# TNT Wand config
 tnt-wand:
   savage-factions-hook: false
   crafting-recipe:
     - sulphur:1
     - sand:1
 
-# Block blacklist for trench tools
+# Block blacklist for Trench Tools
 trench-block-blacklist:
   - bedrock
   - obsidian
@@ -30,38 +30,38 @@ trench-block-blacklist:
   - ender_chest
   - web
 
-# Block whitelist for tray tools
+# Block whitelist for Tray Tools
 tray-block-whitelist:
   - dirt
   - netherrack
 
-# Block whitelist for sand wands
+# Block whitelist for Sand Wands
 sand-block-whitelist:
   - sand
   - gravel
   - red_sand
 
-# Harvester hoe block price list, use doubles
+# Harvester Hoe block price list, use doubles
 harvester-block-prices:
   - sugar_cane_block:10.78
   - cactus:13.44
   - melon_block:18.93
   - pumpkin:23.48
 
-# If harvester hoes are using delayed messages, they will be sent after this many ticks
+# If Harvester Hoes are using delayed messages, they will be sent after this many ticks
 harvester-selling-message-delay: 60
 
-# Action bar sent to player when they use a harvester hoe
+# Action bar sent to player when they use a Harvester Hoe
 harvester-action-bar: # These should work on all versions, pm if they don't
   enabled: true
   message: "&e✦ &6&lAuto Sell &7⊳ &a+&l${deposit} &e✦"
 
-# Action bar sent to player when they use a sell wand
+# Action bar sent to player when they use a Sell Wand
 sell-wand-action-bar:
   enabled: true
   message: "&e✦ &6&lSell Wand &7⊳ &a+&l${deposit} &e✦"
 
-# Action bar sent to player when they use a tnt wand
+# Action bar sent to player when they use a TNT Wand
 tnt-wand-action-bar:
   enabled: true
   craft-message: "&e✦ &6&lTNT Crafted &7⊳ &a+&l{deposit} &e✦"
@@ -72,21 +72,23 @@ inventory-full-action-bar:
   enabled: true
   message: "&c&l✘ &fYour inventory is &e&l&nFULL&r &c&l✘"
 
-# Action bar sent to player when they are on cooldown
+# Action bar sent to player when they are on a tool cooldown
 cooldown-action-bar:
   enabled: true
   sell-message: "&c&l✘ &6&lSell Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
   sand-message: "&c&l✘ &6&lSand Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
   lightning-message: "&c&l✘ &6&lLightning Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
   tnt-message: "&c&l✘ &6&lTNT Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
+  aqua-message: "&c&l✘ &6&lAqua Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
 
-# Action bar sent to player when their wand breaks
+# Action bar sent to player when their wand breaks after running out of uses
 wand-break-action-bar:
   enabled: true
   sell-message: "&c&l✘ &7Your sell wand ran out of uses, it was destroyed... &c&l✘"
   sand-message: "&c&l✘ &7Your sand wand ran out of uses, it was destroyed... &c&l✘"
   lightning-message: "&c&l✘ &7Your lightning wand ran out of uses, it was destroyed... &c&l✘"
   tnt-message: "&c&l✘ &7Your tnt wand ran out of uses, it was destroyed... &c&l✘"
+  aqua-message: "&c&l✘ &7Your aqua wand ran out of uses, it was destroyed... &c&l✘"
 
 # gui opened with the /tools command
 tool-purchase-gui:
@@ -102,7 +104,7 @@ tool-purchase-gui:
       - "&7&oClick this to buy multi tools."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
     open-multi: true
   2:
     slot: 1
@@ -113,7 +115,7 @@ tool-purchase-gui:
       - "&7&oClick this to buy trench tools."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
     open-trench: true
   3:
     slot: 2
@@ -124,7 +126,7 @@ tool-purchase-gui:
       - "&7&oClick this to buy tray tools."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
     open-tray: true
   4:
     slot: 3
@@ -135,7 +137,7 @@ tool-purchase-gui:
       - "&7&oClick this to buy sand wands."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
     open-sand: true
   5:
     slot: 4
@@ -146,7 +148,7 @@ tool-purchase-gui:
       - "&7&oClick this to buy lightning wands."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
     open-lightning: true
   6:
     slot: 5
@@ -157,7 +159,7 @@ tool-purchase-gui:
       - "&7&oClick this to buy harvester hoes."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
     open-harvester: true
   7:
     slot: 6
@@ -168,7 +170,7 @@ tool-purchase-gui:
       - "&7&oClick this to buy sell wands."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
     open-sell: true
   8:
     slot: 7
@@ -179,9 +181,20 @@ tool-purchase-gui:
       - "&7&oClick this to buy tnt wands."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
     open-tnt: true
   9:
+    slot: 8
+    name: "&b&lAqua Wands"
+    material: stick:0
+    lore:
+      - "&7 "
+      - "&7&oClick this to buy aqua wands."
+      - "&7 "
+    enchantments:
+      - lure:1
+    open-aqua: true
+  10:
     slot: 13
     name: "&c&lExit"
     material: barrier:0
