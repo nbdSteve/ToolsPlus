@@ -45,4 +45,4 @@ aqua-wand-config-gui:
       - "&6&oYou must be holding your aqua wand."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
