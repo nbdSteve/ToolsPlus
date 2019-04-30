@@ -6,6 +6,9 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
+/**
+ * Custom event for ice melting by Aqua Wands
+ */
 public class AquaWandMeltIceEvent extends Event implements Cancellable {
     private static final HandlerList handlers = new HandlerList();
 
