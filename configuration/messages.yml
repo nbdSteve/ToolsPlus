@@ -4,23 +4,17 @@ outdated-version:
   - " - &7You are using version &fTools+ v{currentVersion}&7, which is out of date."
   - " - &7Please &e&l*UPDATE*&7 to the latest version, &fTools+ v{latestVersion}&7."
 
-mode-switch:
-  - "&6&lTools+&e: &7You have changed your tools mode."
+invalid-command:
+  - "&7--= &6&lTools+&e: &fCommand Debug &7=--"
+  - " - &cError: &7There was a problem with the command you entered, please read the reason."
+  - " - &7Alternatively, check the GitHub wiki: "
+  - "&f&nhttps://github.com/nbdSteve/ToolsPlus/wiki/Command-Usage"
+  - " - &cReason: &e{reason}&7."
 
-incremented-radius:
-  - "&6&lTools+&e: &7You have increased your tools break radius, &c-${price}&7."
-
-decremented-radius:
-  - "&6&lTools+&e: &7You have decreased your tools break radius."
-
-max-radius:
-  - "&6&lTools+&e: &7Your tool is already at its maximum break radius."
-
-min-radius:
-  - "&6&lTools+&e: &7Your tool is already at its minimum break radius."
-
-invalid-tool:
-  - "&6&lTools+&e: &7You are unable to configure the item your are currently holding."
+invalid-config:
+  - "&7--= &6&lTools+&e: &fConfig Debug &7=--"
+  - " - &cError: &7There is a problem with the plugins configuration, please contact an admin."
+  - " - &cReason: &e{reason}&7."
 
 help:
   - "&6&lTools+&e: &7Please see the GitHub wiki for command & permission help."
@@ -32,12 +26,8 @@ reload:
 no-permission:
   - "&cError: &7You do not have permission to use that."
 
-invalid-command:
-  - "&7--= &6&lTools+&e: &fDebug &7=--"
-  - " - &cError: &7There was a problem with the command you entered, please read the reason."
-  - " - &7Alternatively, check the GitHub wiki: "
-  - "&f&nhttps://github.com/nbdSteve/ToolsPlus/wiki/Command-Usage"
-  - " - &cReason: &e{reason}&7."
+invalid-tool:
+  - "&6&lTools+&e: &7You are unable to configure the item your are currently holding."
 
 inventory-full:
   - "&cWarning: &7Your inventory is full, mined blocks will be deleted and lost."
@@ -48,31 +38,29 @@ purchase:
 insufficient:
   - "&6&lTools+&e: &7You do not have sufficient funds to purchase that tool / upgrade."
 
-invalid-config:
-  - "&7--= &6&lTools+&e: &fDebug &7=--"
-  - " - &cError: &7There is a problem with the plugins configuration, please contact an admin."
-  - " - &cReason: &e{reason}&7."
+mode-switch:
+  - "&6&lTools+&e: &7You have changed your tools mode."
 
-sand-wand-cooldown:
-  - "&cCooldown: &7You are on sand wand cooldown, &c{time} &7second(s) remaining..."
+decremented-radius:
+  - "&6&lTools+&e: &7You have decreased your tools radius."
 
-lightning-wand-cooldown:
-  - "&cCooldown: &7You are on lightning wand cooldown, &c{time} &7second(s) remaining..."
+incremented-radius:
+  - "&6&lTools+&e: &7You have increased your tools radius, &c-${price}&7."
 
-sell-wand-cooldown:
-  - "&cCooldown: &7You are on sell wand cooldown, &c{time} &7second(s) remaining..."
+min-radius:
+  - "&6&lTools+&e: &7Your tool is already at its minimum break radius."
 
-incremented-radius-no-cost:
-  - "&aSuccess&7, your tools radius has been increased at no cost."
+max-radius:
+  - "&6&lTools+&e: &7Your tool is already at its maximum break radius."
 
-creeper-already-powered:
-  - "&cError&7, that creeper is already powered."
+wand-cooldown:
+  - "&cCooldown: &7You are on {item} wand cooldown, &c{time} &7second(s) remaining..."
+
+wand-uses-break:
+  - "&cError: &7Your {item} wand has run out of uses, it has been destroyed."
 
 incremented-modifier:
   - "&6&lTools+&e: &7You have increased your harvester hoes price modifier, &c-${price}&7."
-
-incremented-modifier-no-cost:
-  - "&aSuccess&7, your harvester hoes price modifier has been increased at no cost."
 
 max-modifier:
   - "&6&lTools+&e: &7Your tool is already at its maximum price modifier."
@@ -83,14 +71,11 @@ start-selling-by-harvest:
 bulk-deposit-by-harvest:
   - "&6&lTools+&e: &7You have finished harvesting, a grand total of &a+&l${deposit} &7has been deposited into your account."
 
-chest-contents-sell:
-  - "&6&lTools+&e: &7All items that can be sold in that chest have been sold for: &a+&l${deposit}&7."
-
 can-not-sell-contents:
   - "&cError: &7No items in that chest can be sold to the server."
 
-chest-tnt-craft-contents:
-  - "&6&lTools+&e: &a+{deposit}&7 TNT has been crafted from the gun powder in that chest."
+chest-contents-sell:
+  - "&6&lTools+&e: &7All items that can be sold in that chest have been sold for: &a+&l${deposit}&7."
 
 contents-can-not-be-crafted:
   - "&cError: &7No TNT can be crafted from the items in that chest."
@@ -98,11 +83,14 @@ contents-can-not-be-crafted:
 chest-does-not-contain-tnt:
   - "&cError: &7That chest does not contain any TNT."
 
+chest-tnt-craft-contents:
+  - "&6&lTools+&e: &a+{deposit}&7 TNT has been crafted from the gun powder in that chest."
+
 chest-tnt-bank-contents:
   - "&6&lTools+&e: &7Successfully banked &a+&l{deposit} &7TNT."
 
 cannot-tnt-bank-without-faction:
   - "&cError: &7You cannot use a TNT bank without a faction, create a faction to use this feature."
 
-wand-uses-break:
-  - "&cError: &7Your {item} wand has run out of uses, it has been destroyed."
+creeper-already-powered:
+  - "&cError&7, that creeper is already powered."
