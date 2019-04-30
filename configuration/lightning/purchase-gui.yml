@@ -3,7 +3,7 @@ lightning-wand-purchase-gui:
   name: "&6&lBuy Lightning Wands"
   1:
     slot: 0
-    price: 500000
+    price: 250000
     name: "&eLightning Wand &7(&6Tier I&7)"
     material: blaze_rod:0
     lore:
@@ -11,21 +11,21 @@ lightning-wand-purchase-gui:
       - "&7 "
       - "&7Cooldown: &f&l7 Seconds"
       - "&7 "
-      - "&7Uses Remaining: &f&l250"
+      - "&7Uses Remaining: &f&l25"
       - "&7 "
-      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oThis wand was created by the Venditos,"
       - "&a&oto strike lightning and charge creepers,"
       - "&a&ouse and abuse its electrifying potential..."
       - "&7 "
-      - "&cPrice: &l-$500,000"
+      - "&7Price: &c&l$250,000"
       - "&7 "
     enchantments:
-      - knockback:3
+      - fire_aspect:1
       - durability:5
     purchasable: true
   2:
     slot: 1
-    price: 1000000
+    price: 400000
     name: "&eLightning Wand &7(&6Tier II&7)"
     material: blaze_rod:0
     lore:
@@ -33,21 +33,21 @@ lightning-wand-purchase-gui:
       - "&7 "
       - "&7Cooldown: &f&l5 Seconds"
       - "&7 "
-      - "&7Uses Remaining: &f&l250"
+      - "&7Uses Remaining: &f&l35"
       - "&7 "
-      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oThis wand was created by the Venditos,"
       - "&a&oto strike lightning and charge creepers,"
       - "&a&ouse and abuse its electrifying potential..."
       - "&7 "
-      - "&cPrice: &l-$1,000,000"
+      - "&7Price: &c&l$400,000"
       - "&7 "
     enchantments:
-      - knockback:4
+      - fire_aspect:2
       - durability:5
     purchasable: true
   3:
     slot: 2
-    price: 1500000
+    price: 800000
     name: "&eLightning Wand &7(&6Tier III&7)"
     material: blaze_rod:0
     lore:
@@ -55,16 +55,16 @@ lightning-wand-purchase-gui:
       - "&7 "
       - "&7Cooldown: &f&l3 Seconds"
       - "&7 "
-      - "&7Uses Remaining: &f&l250"
+      - "&7Uses Remaining: &f&l50"
       - "&7 "
-      - "&a&oThis wand was create by the Venditos,"
+      - "&a&oThis wand was created by the Venditos,"
       - "&a&oto strike lightning and charge creepers,"
       - "&a&ouse and abuse its electrifying potential..."
       - "&7 "
-      - "&cPrice: &l-$1,500,000"
+      - "&7Price: &c&l$800,000"
       - "&7 "
     enchantments:
-      - knockback:5
+      - fire_aspect:3
       - durability:5
     purchasable: true
   4:
@@ -81,7 +81,7 @@ lightning-wand-purchase-gui:
       - "&6&oUse the tool on the ground to strike lightning..."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
   5:
     slot: 8
     name: "&c&lBack"
