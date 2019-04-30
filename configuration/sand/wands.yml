@@ -6,7 +6,7 @@ sand-wands:
     #
     uses:
       unique: "&7Uses Remaining:"
-      starting: 250
+      starting: 25
       update: "&f&l{uses}"
     #
     name: "&eSand Wand &7(&6Tier I&7)"
@@ -23,7 +23,7 @@ sand-wands:
       - "&7 "
     #
     enchantments:
-      - knockback:3
+      - knockback:1
       - durability:5
   2:
     cooldown: 5
@@ -32,7 +32,7 @@ sand-wands:
     #
     uses:
       unique: "&7Uses Remaining:"
-      starting: 250
+      starting: 40
       update: "&f&l{uses}"
     #
     name: "&eSand Wand &7(&6Tier II&7)"
@@ -49,7 +49,7 @@ sand-wands:
       - "&7 "
     #
     enchantments:
-      - knockback:4
+      - knockback:2
       - durability:5
   3:
     cooldown: 3
@@ -58,7 +58,7 @@ sand-wands:
     #
     uses:
       unique: "&7Uses Remaining:"
-      starting: 250
+      starting: 55
       update: "&f&l{uses}"
     #
     name: "&eSand Wand &7(&6Tier III&7)"
@@ -75,7 +75,7 @@ sand-wands:
       - "&7 "
     #
     enchantments:
-      - knockback:5
+      - knockback:3
       - durability:5
   4:
     cooldown: -1
