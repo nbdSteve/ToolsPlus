@@ -3,25 +3,25 @@ harvester-tool-purchase-gui:
   name: "&6&lBuy Harvester Hoes"
   1:
     slot: 0
-    price: 1000000
+    price: 750000
     name: "&eHarvester Tool &7(&6Tier I&7)"
     material: gold_hoe:0
     lore:
       - "&6&l**Farmer I**"
       - "&7 "
-      - "&7Mode: &e&lSELL"
+      - "&7Mode: &e&lAUTO SELL"
+      - "&7 "
       - "&7Booster: &b&l1.0"
       - "&7 "
-      - "&a&oThis wand was create in the Amazon,"
+      - "&a&oThis wand was created in the Amazon,"
       - "&a&ousing jungle magic to increase sales and"
       - "&a&odecrease labor. Decifer how it works to,"
       - "&a&oharness this tools untapped potential..."
       - "&7 "
-      - "&cPrice: &l-$1,000,000"
+      - "&7Price: &c&l$750,000"
       - "&7 "
     enchantments:
-      - knockback:5
-      - durability:10
+      - lure:1
     purchasable: true
   2:
     slot: 7
@@ -36,7 +36,7 @@ harvester-tool-purchase-gui:
       - "&6&oand harvesting large fields of crops..."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
   3:
     slot: 8
     name: "&c&lBack"
