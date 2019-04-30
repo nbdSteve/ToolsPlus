@@ -3,7 +3,7 @@ harvester-tool-config-gui:
   name: "&6&lHarvester Hoe Options"
   1:
     slot: 5
-    name: "&b&lMode Switch"
+    name: "&b&lSwitch Tool Mode"
     material: ender_pearl:0
     lore:
       - "&7 "
@@ -13,7 +13,7 @@ harvester-tool-config-gui:
     switch-mode-when-clicked: true
   2:
     slot: 3
-    name: "&a&l+Price Modifier"
+    name: "&a&lIncrease Price Modifier"
     material: stained_glass_pane:5
     lore:
       - "&7 "
@@ -35,4 +35,4 @@ harvester-tool-config-gui:
       - "&6&oYou must be holding your harvester hoe."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
