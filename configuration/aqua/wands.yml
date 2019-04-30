@@ -8,7 +8,7 @@ aqua-wands:
     radius:
       unique: "&7Radius:"
       starting: 1
-      max: 4 # will be the minimum required
+      max: 3
       min: 1
       lore-ids:
         - "&b&l3x3"
@@ -16,14 +16,14 @@ aqua-wands:
         - "&b&l7x7"
     #
     upgrade-cost:
-      1: 2500000 # upgrading from tier 1 to tier 2
-      2: 2500000
+      1: 545000 # upgrading from tier 1 to tier 2
+      2: 545000
     #
     cooldown: 5
     #
     uses:
       unique: "&7Uses Remaining:"
-      starting: 250
+      starting: 20
       update: "&f&l{uses}"
     #
     name: "&eAqua Wand &7(&6Tier I&7)"
