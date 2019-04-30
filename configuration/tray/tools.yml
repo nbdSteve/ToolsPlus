@@ -15,7 +15,7 @@ tray-tools:
     #
     enchantments:
       - dig_speed:5
-      - durability:5
+      - durability:10
   #
   2:
     omni-tool: false
