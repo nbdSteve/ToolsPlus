@@ -3,7 +3,7 @@ aqua-wand-purchase-gui:
   name: "&6&lBuy Aqua Wands"
   1:
     slot: 0
-    price: 1000000
+    price: 350000
     name: "&eAqua Wand &7(&6Tier I&7)"
     material: stick:0
     lore:
@@ -15,13 +15,13 @@ aqua-wand-purchase-gui:
       - "&7 "
       - "&7Cooldown: &f&l5 Seconds"
       - "&7 "
-      - "&7Uses Remaining: &f&l250"
+      - "&7Uses Remaining: &f&l20"
       - "&7 "
       - "&a&oThis wand was created in Endrucia,"
       - "&a&ousing unconventional binding methods to"
       - "&a&oheat liquids to melting point and evaporate them..."
       - "&7 "
-      - "&cPrice: &l-$1,000,000"
+      - "&7Price: &c&l$350,000"
       - "&7 "
     enchantments:
       - fire_aspect:5
@@ -40,7 +40,7 @@ aqua-wand-purchase-gui:
       - "&6&oblocks of ice. And when draining liquids..."
       - "&7 "
     enchantments:
-      - lure:10
+      - lure:1
   3:
     slot: 8
     name: "&c&lBack"
