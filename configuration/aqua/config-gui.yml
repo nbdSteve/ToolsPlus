@@ -23,7 +23,7 @@ aqua-wand-config-gui:
     increase-radius-when-clicked: true
   3:
     slot: 2
-    name: "&c&l-Decrease Reach"
+    name: "&c&lDecrease Reach"
     material: stained_glass_pane:14
     lore:
       - "&7 "
