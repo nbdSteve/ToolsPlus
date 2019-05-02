@@ -12,5 +12,9 @@ For more information about the plugin, permissions, and commands please refer to
 
 ---
 
+## Soft Dependencies
+*(required for economy features)*.
+* [Vault](https://www.spigotmc.org/resources/vault.34315/)
+
 ## Authors
 * Stephen Goodhill - *[Nuer](https://nuer.dev)*
