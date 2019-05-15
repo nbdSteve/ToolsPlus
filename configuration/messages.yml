@@ -89,6 +89,12 @@ chest-tnt-craft-contents:
 chest-tnt-bank-contents:
   - "&6&lTools+&e: &7Successfully banked &a+&l{deposit} &7TNT."
 
+contents-can-not-be-smelted:
+  - "&cError: &7The contents of that chest cannot be smelted."
+
+chest-smelt-convert-contents:
+  - "&6&lTools+&e: &7Successfully smelted &a&l{deposit} &7items."
+
 cannot-tnt-bank-without-faction:
   - "&cError: &7You cannot use a TNT bank without a faction, create a faction to use this feature."
 
