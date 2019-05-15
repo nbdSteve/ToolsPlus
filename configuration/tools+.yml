@@ -1,6 +1,5 @@
 # ToolsPlus - if you find any bugs please contact nbdSteve#0583 on Discord.
-version: 1.3.4
-
+# <3
 # Enable this if you want to see debug timings for trench and tray tools
 enable-debug: false
 
@@ -9,9 +8,9 @@ lightning-reach-distance: 3
 
 # TNT Wand config
 tnt-wand:
-  savage-factions-hook: false
+  savage-factions-hook: true
   crafting-recipe:
-    - sulphur:1
+    - sulphur:1 # Change this to gunpowder if you are using more recent versions (1.8+)
     - sand:1
 
 # Block blacklist for Trench Tools
@@ -67,6 +66,11 @@ tnt-wand-action-bar:
   craft-message: "&e✦ &6&lTNT Crafted &7⊳ &a+&l{deposit} &e✦"
   bank-message: "&e✦ &6&lTNT Banked &7⊳ &a+&l{deposit} &e✦"
 
+# Action bar sent to player when they use a Smelt Wand
+smelt-wand-action-bar:
+  enabled: true
+  message: "&e✦ &6&lSmelted &a&l{deposit} &6&litems &e✦"
+
 # Action bar sent to player when their inventory is full and they try to use a tool
 inventory-full-action-bar:
   enabled: true
@@ -80,6 +84,7 @@ cooldown-action-bar:
   lightning-message: "&c&l✘ &6&lLightning Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
   tnt-message: "&c&l✘ &6&lTNT Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
   aqua-message: "&c&l✘ &6&lAqua Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
+  smelt-message: "&c&l✘ &6&lSmelt Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
 
 # Action bar sent to player when their wand breaks after running out of uses
 wand-break-action-bar:
@@ -89,6 +94,7 @@ wand-break-action-bar:
   lightning-message: "&c&l✘ &7Your lightning wand ran out of uses, it was destroyed... &c&l✘"
   tnt-message: "&c&l✘ &7Your tnt wand ran out of uses, it was destroyed... &c&l✘"
   aqua-message: "&c&l✘ &7Your aqua wand ran out of uses, it was destroyed... &c&l✘"
+  smelt-message: "&c&l✘ &7Your smelt wand ran out of uses, it was destroyed... &c&l✘"
 
 # gui opened with the /tools command
 tool-purchase-gui:
@@ -153,7 +159,7 @@ tool-purchase-gui:
   6:
     slot: 5
     name: "&b&lHarvester Hoes"
-    material: gold_hoe:0
+    material: iron_hoe:0
     lore:
       - "&7 "
       - "&7&oClick this to buy harvester hoes."
@@ -175,7 +181,7 @@ tool-purchase-gui:
   8:
     slot: 7
     name: "&b&lTNT Wands"
-    material: sulphur:0
+    material: bone:0
     lore:
       - "&7 "
       - "&7&oClick this to buy tnt wands."
@@ -195,7 +201,18 @@ tool-purchase-gui:
       - lure:1
     open-aqua: true
   10:
-    slot: 13
+    slot: 9
+    name: "&b&lSmelt Wands"
+    material: blaze_powder:0
+    lore:
+      - "&7 "
+      - "&7&oClick this to buy smelt wands."
+      - "&7 "
+    enchantments:
+      - lure:1
+    open-smelt: true
+  11:
+    slot: 17
     name: "&c&lExit"
     material: barrier:0
     exit-gui: true
