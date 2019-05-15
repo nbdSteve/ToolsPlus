@@ -1,5 +1,5 @@
 conversions:
-  # <starting item>:<smelted item>
+  # <raw item>:<smelted item>
   - iron_ore:iron_ingot
   - gold_ore:gold_ingot
   - coal_ore:coal
