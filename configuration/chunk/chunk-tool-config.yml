@@ -1,0 +1,20 @@
+
+chunk-removal-delay: 5 # delay in seconds
+removal-grouping-size: 420 # the number of blocks that will be removed at once
+delay-between-grouping-removal: 2 # the delay between the groupings being removed
+
+# Chunk block blacklist
+buster-block-blacklist:
+  - bedrock
+  - obsidian
+  - mob_spawner
+  - hopper
+  - chest
+  - trapped_chest
+  - glass
+  - dispenser
+  - dropper
+  - ender_portal_frame
+  - ender_portal
+  - ender_chest
+  - web
