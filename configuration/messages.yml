@@ -99,4 +99,20 @@ cannot-tnt-bank-without-faction:
   - "&cError: &7You cannot use a TNT bank without a faction, create a faction to use this feature."
 
 creeper-already-powered:
-  - "&cError&7, that creeper is already powered."
+  - "&cError: &7That creeper is already powered."
+
+chunk-added-to-queue:
+  - "&6&lTools+&e: &7The chunk at &f{x}&7, &f{z} &7has been added to the removal queue."
+  - " &f- &7Right click with your tool again to remove it from the queue."
+
+starting-chunk-removal:
+  - "&6&lTools+&e: &7The removal of the chunk at &f{x}&7, &f{z} &7is starting, you can no longer cancel this action."
+
+chunk-already-queued:
+  - "&cError: &7The chunk at &f{x}&7, &f{z} &7is already queued to be removed."
+
+chunk-not-in-queue:
+  - "&cError: &7The chunk at &f{x}&7, &f{z} &7has not be queued."
+
+chunk-removed-from-queue:
+  - "&6&lTools+&e: &7You have removed the chunk at &f{x}&7, &f{z} &7from the queue."
