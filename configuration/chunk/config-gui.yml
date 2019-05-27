@@ -1,0 +1,38 @@
+chunk-tool-config-gui:
+  size: 18
+  name: "&6&lChunk Tool Options"
+  1:
+    slot: 2
+    name: "&c&lDecrease Buster Radius"
+    material: red_mushroom:0
+    lore:
+      - "&7 "
+      - "&7&oClick to decrease your Chunk Tools"
+      - "&7&oreach by 1 chunk on each side."
+      - "&7 "
+    decrease-radius-when-clicked: true
+  2:
+    slot: 3
+    name: "&a&lIncrease Buster Radius"
+    material: brown_mushroom:0
+    lore:
+      - "&7 "
+      - "&7&oClick to increase your Chunk Tools"
+      - "&7&oreach by 1 chunk on each side."
+      - "&7 "
+    increase-radius-when-clicked: true
+  3:
+    slot: 13
+    name: "&e&lChunk Tool Information"
+    material: book:0
+    lore:
+      - "&7 "
+      - "&7&oChunk Tools have special properties,"
+      - "&7&owhich means they can be configured to suit"
+      - "&7&oyour chunk busting needs. Click the buttons"
+      - "&7&oin this gui to configure your tool."
+      - "&7 "
+      - "&6&oYou must be holding your Chunk Tool."
+      - "&7 "
+    enchantments:
+      - lure:1
