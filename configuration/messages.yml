@@ -101,18 +101,19 @@ cannot-tnt-bank-without-faction:
 creeper-already-powered:
   - "&cError: &7That creeper is already powered."
 
-chunk-added-to-queue:
-  - "&6&lTools+&e: &7The chunk at &f{x}&7, &f{z} &7has been added to the removal queue."
-  - " &f- &7Right click with your tool again to remove it from the queue."
+update-chunk-queue:
+  - "&7 "
+  - "&6&lTools+ &e&lChunk Queue&e:"
+  - "&f- &7You have added &c{chunksAdded} &7chunks to the removal queue."
+  - " &f- &c{chunksAlreadyQueued} &7where already queued and have not been affected."
+  - " &f- &7The origin chunk is the chunk at &f{x}&7, &f{z}&7."
+  - " &f- &7Right click with your tool again to remove chunks from the queue."
+  - "&7&o(pending chunks will be removed in 5 seconds)."
+  - "&7 "
 
-starting-chunk-removal:
-  - "&6&lTools+&e: &7The removal of the chunk at &f{x}&7, &f{z} &7is starting, you can no longer cancel this action."
-
-chunk-already-queued:
-  - "&cError: &7The chunk at &f{x}&7, &f{z} &7is already queued to be removed."
-
-chunk-not-in-queue:
-  - "&cError: &7The chunk at &f{x}&7, &f{z} &7has not be queued."
-
-chunk-removed-from-queue:
-  - "&6&lTools+&e: &7You have removed the chunk at &f{x}&7, &f{z} &7from the queue."
+chunks-removed-from-queue:
+  - "&7 "
+  - "&6&lTools+ &e&lChunk Queue&e:"
+  - " &f- &7You have removed &c{chunksRemoved} &7chunks from the queue."
+  - " &f- &7The origin chunk was &f{x}&7, &f{z}&7."
+  - "&7 "
