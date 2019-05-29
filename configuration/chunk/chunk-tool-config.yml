@@ -1,9 +1,18 @@
 
-chunk-removal-delay: 5 # delay in seconds
-removal-grouping-size: 420 # the number of blocks that will be removed at once
-delay-between-grouping-removal: 2 # the delay between the groupings being removed
+# Special configuration section for Chunk Tools
 
-# Chunk block blacklist
+# This is the time the player will wait after they add a chunk to the queue for it to be removed
+chunk-removal-delay: 5
+
+# The number of blocks that will be removed at one time by the plugin
+# Higher number = more lag / faster chunk removal, lower number = less lag / slower chunk removal
+removal-grouping-size: 80
+
+# The delay, in ticks, between the groupings of blocks being removed
+# Smaller number = more lag / faster chunk removal, higher number = less lag / slower chunk removal
+delay-between-grouping-removal: 5
+
+# Blocks that will not be removed by the chunk tools
 buster-block-blacklist:
   - bedrock
   - obsidian
