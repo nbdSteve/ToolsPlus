@@ -3,6 +3,10 @@
 # Enable this if you want to see debug timings for trench and tray tools
 enable-debug: false
 
+# Disable this if you do not want to get notified when a new version is released
+# (Highly recommended that you are always using the latest version!)
+disable-update-version-message: false
+
 # How far the lightning will strike if the player right clicks air
 lightning-reach-distance: 3
 
