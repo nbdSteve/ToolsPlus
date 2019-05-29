@@ -15,7 +15,6 @@ delay-between-grouping-removal: 5
 # Blocks that will not be removed by the chunk tools
 buster-block-blacklist:
   - bedrock
-  - obsidian
   - mob_spawner
   - hopper
   - chest
