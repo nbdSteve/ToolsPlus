@@ -1,5 +1,4 @@
-    
-chunk-tools:
+chunk-wands:
   1:
     radius:
       unique: "&7Chunk radius:"
@@ -16,12 +15,23 @@ chunk-tools:
       2: 515000
       3: 590000
     #
+    cooldown: 15
+    #
+    uses:
+      unique: "&7Uses Remaining:"
+      starting: 5
+      update: "&f&l{uses}"
+    #
     name: "&eChunk Buster Tool &7(&6Tier I&7)"
     #
     lore:
       - "&6&l**Destruction I**"
       - "&7 "
       - "&7Chunk radius: {radius}"
+      - "&7 "
+      - "&7Cooldown: &f&l60 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l{uses}"
       - "&7 "
       - "&a&oThis chunk buster was derived from dark magic,"
       - "&a&oit has the ability to remove chunks of land in 1 go,"
