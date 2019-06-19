@@ -1,5 +1,4 @@
-
-# Special configuration section for Chunk Tools
+# Special configuration section for Chunk Wands
 
 # This is the time the player will wait after they add a chunk to the queue for it to be removed
 chunk-removal-delay: 5
@@ -12,7 +11,7 @@ removal-grouping-size: 80
 # Smaller number = more lag / faster chunk removal, higher number = less lag / slower chunk removal
 delay-between-grouping-removal: 5
 
-# Blocks that will not be removed by the chunk tools
+# Blocks that will not be removed by the chunk wands
 buster-block-blacklist:
   - bedrock
   - mob_spawner
