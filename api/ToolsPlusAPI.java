@@ -34,7 +34,7 @@ public class ToolsPlusAPI {
      * Returns true if the player is on the respective tool cooldown
      *
      * @param player           Player, the player to check
-     * @param cooldownToolType String, tooltype - lightning, sell, tnt and sand are valid
+     * @param cooldownToolType String, tooltype - lightning, sell, tnt, aqua, chunk, smelt and sand are valid
      * @return boolean
      */
     public static boolean isOnToolCooldown(Player player, String cooldownToolType) {
@@ -45,7 +45,7 @@ public class ToolsPlusAPI {
      * Gets the number of seconds remaining for a players cooldown
      *
      * @param player           Player, the player to check
-     * @param cooldownToolType String, tooltype - lightning, sell, tnt and sand are valid
+     * @param cooldownToolType String, tooltype - lightning, sell, tnt, aqua, chunk, smelt and sand are valid
      * @return Integer
      */
     public static int getToolCooldown(Player player, String cooldownToolType) {
