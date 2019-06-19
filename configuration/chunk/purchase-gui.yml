@@ -1,15 +1,19 @@
-chunk-tool-purchase-gui:
+chunk-wand-purchase-gui:
   size: 9
-  name: "&6&lBuy Chunk Tools"
+  name: "&6&lBuy Chunk Wands"
   1:
     slot: 0
     price: 3940000
-    name: "&eChunk Buster Tool &7(&6Tier I&7)"
+    name: "&eChunk Buster Wand &7(&6Tier I&7)"
     material: feather:0
     lore:
       - "&6&l**Destruction I**"
       - "&7 "
       - "&7Chunk radius: &b&l1x1"
+      - "&7 "
+      - "&7Cooldown: &f&l60 Seconds"
+      - "&7 "
+      - "&7Uses Remaining: &f&l5"
       - "&7 "
       - "&a&oThis chunk buster was derived from dark magic,"
       - "&a&oit has the ability to remove chunks of land in 1 go,"
@@ -21,14 +25,14 @@ chunk-tool-purchase-gui:
     purchasable: true
   2:
     slot: 7
-    name: "&e&lChunk Tool Information"
+    name: "&e&lChunk Wand Information"
     material: book:0
     lore:
       - "&7 "
-      - "&7&oChunk Tools can be purchased by"
-      - "&7&oleft-clicking the respective tool."
+      - "&7&oChunk Wands can be purchased by"
+      - "&7&oleft-clicking the respective wand."
       - "&7 "
-      - "&6&oChunk tools have special properties,"
+      - "&6&oChunk wands have special properties,"
       - "&6&owhich means they can be configured to suit"
       - "&6&oyour chunk busting needs."
       - "&7 "
