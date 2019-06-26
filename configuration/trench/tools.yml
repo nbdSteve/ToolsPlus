@@ -4,6 +4,9 @@ trench-tools:
     # 3x3 trench pick
     break-radius: 1
     #
+    uses:
+      starting: -1
+    #
     name: "&eTrench Pickaxe &7(&63x3&7)"
     #
     lore:
@@ -21,6 +24,9 @@ trench-tools:
     omni-tool: false
     # 5x5 trench pick
     break-radius: 2
+    #
+    uses:
+      starting: -1
     #
     name: "&eTrench Pickaxe &7(&65x5&7)"
     #
@@ -40,10 +46,17 @@ trench-tools:
     # 7x7 trench pick
     break-radius: 3
     #
+    uses:
+      unique: "&7Uses Remaining:"
+      starting: 5000
+      update: "&f&l{uses}"
+    #
     name: "&eTrench Pickaxe &7(&67x7&7)"
     #
     lore:
       - "&6&l**Holes III**"
+      - "&7 "
+      - "&7Uses Remaining: &f&l{uses}"
       - "&7 "
       - "&a&oThis pickaxe was forged in an unknown place,"
       - "&a&oits potential is still be realised. Use,"
