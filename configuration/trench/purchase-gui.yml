@@ -43,6 +43,8 @@ trench-tool-purchase-gui:
     lore:
       - "&6&l**Holes III**"
       - "&7 "
+      - "&7Uses Remaining: &f&l5000"
+      - "&7 "
       - "&a&oThis pickaxe was forged in an unknown place,"
       - "&a&oits potential is still be realised. Use,"
       - "&a&oabuse and reap the rewards of this tool."
