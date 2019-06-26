@@ -57,7 +57,11 @@ wand-cooldown:
   - "&cCooldown: &7You are on {item} wand cooldown, &c{time} &7second(s) remaining..."
 
 wand-uses-break:
-  - "&cError: &7Your {item} wand has run out of uses, it has been destroyed."
+  - "&7 "
+  - "&6&lTools+ &e&lRecycler&e:"
+  - "&7Your &a{tool-type} &7has run out of uses!"
+  - "&7It has been destroyed and recycled back to the server..."
+  - "&7 "
 
 incremented-modifier:
   - "&6&lTools+&e: &7You have increased your harvester hoes price modifier, &c-${price}&7."
@@ -70,6 +74,9 @@ start-selling-by-harvest:
 
 bulk-deposit-by-harvest:
   - "&6&lTools+&e: &7You have finished harvesting, a grand total of &a+&l${deposit} &7has been deposited into your account."
+
+crop-not-ripe-to-harvest:
+  - "&cError: &7That crop is not ripe yet, it cannot be harvested / sold."
 
 can-not-sell-contents:
   - "&cError: &7No items in that chest can be sold to the server."
@@ -104,16 +111,16 @@ creeper-already-powered:
 update-chunk-queue:
   - "&7 "
   - "&6&lTools+ &e&lChunk Queue&e:"
-  - "&f- &7You have added &c{chunksAdded} &7chunks to the removal queue."
-  - " &f- &c{chunksAlreadyQueued} &7where already queued and have not been affected."
-  - " &f- &7The origin chunk is the chunk at &f{x}&7, &f{z}&7."
-  - " &f- &7Right click with your tool again to remove chunks from the queue."
-  - "&7&o(pending chunks will be removed in 5 seconds)."
+  - " &f- &7You have added &c{chunksAdded} &7chunk(s) to the removal queue."
+  - " &f- &c{chunksAlreadyQueued} &7chunk(s) where already queued and have not been affected."
+  - " &f- &7The coordinates of the origin chunk are &f{x}&7, &f{z}&7."
+  - " &f- &7Right click with your tool again to remove chunk(s) from the queue."
+  - "&7&o(pending chunk(s) will be removed in 5 seconds)."
   - "&7 "
 
 chunks-removed-from-queue:
   - "&7 "
   - "&6&lTools+ &e&lChunk Queue&e:"
-  - " &f- &7You have removed &c{chunksRemoved} &7chunks from the queue."
-  - " &f- &7The origin chunk was &f{x}&7, &f{z}&7."
+  - " &f- &7You have removed &c{chunksRemoved} &7chunk(s) from the queue."
+  - " &f- &7The coordinates of the origin chunk are &f{x}&7, &f{z}&7."
   - "&7 "
