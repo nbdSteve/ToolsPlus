@@ -33,6 +33,16 @@ trench-block-blacklist:
   - ender_chest
   - web
 
+# This toggles if all of the blocks broken by the tool will be registered by other plugins (like McMMO)
+register-all-block-break:
+  harvester-tools: true
+  # multi tools are encompassed by trench / tray
+  trench-tools: true
+  tray-tools: true
+  chunk-wands: false
+  aqua-wands: false
+  sand-wands: false
+
 # Block whitelist for Tray Tools
 tray-block-whitelist:
   - dirt
@@ -43,13 +53,6 @@ sand-block-whitelist:
   - sand
   - gravel
   - red_sand
-
-# Harvester Hoe block price list, use doubles
-harvester-block-prices:
-  - sugar_cane_block:10.78
-  - cactus:13.44
-  - melon_block:18.93
-  - pumpkin:23.48
 
 # If Harvester Hoes are using delayed messages, they will be sent after this many ticks
 harvester-selling-message-delay: 60
@@ -89,16 +92,12 @@ cooldown-action-bar:
   tnt-message: "&c&l✘ &6&lTNT Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
   aqua-message: "&c&l✘ &6&lAqua Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
   smelt-message: "&c&l✘ &6&lSmelt Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
+  chunk-message: "&c&l✘ &6&lChunk Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
 
 # Action bar sent to player when their wand breaks after running out of uses
 wand-break-action-bar:
-  enabled: true
-  sell-message: "&c&l✘ &7Your sell wand ran out of uses, it was destroyed... &c&l✘"
-  sand-message: "&c&l✘ &7Your sand wand ran out of uses, it was destroyed... &c&l✘"
-  lightning-message: "&c&l✘ &7Your lightning wand ran out of uses, it was destroyed... &c&l✘"
-  tnt-message: "&c&l✘ &7Your tnt wand ran out of uses, it was destroyed... &c&l✘"
-  aqua-message: "&c&l✘ &7Your aqua wand ran out of uses, it was destroyed... &c&l✘"
-  smelt-message: "&c&l✘ &7Your smelt wand ran out of uses, it was destroyed... &c&l✘"
+  enabled: false
+  break-message: "&c&l✘ &7Your {tool-type} wand / tool ran out of uses, it was destroyed... &c&l✘"
 
 # gui opened with the /tools command
 tool-purchase-gui:
@@ -217,11 +216,11 @@ tool-purchase-gui:
     open-smelt: true
   11:
     slot: 10
-    name: "&b&lChunk Buster Tools"
+    name: "&b&lChunk Buster Wands"
     material: feather:0
     lore:
       - "&7 "
-      - "&7&oClick this to buy chunk buster tools."
+      - "&7&oClick this to buy chunk buster wands."
       - "&7 "
     enchantments:
       - lure:1
