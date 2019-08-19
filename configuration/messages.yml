@@ -23,6 +23,9 @@ help:
 reload:
   - "&6&lTools+&e: &7You have successfully reloaded all files and maps."
 
+give:
+  - "&6&lTools+&e: &7You have given &f{player} &71x &f{tool-type} &7tool / wand."
+
 no-permission:
   - "&cError: &7You do not have permission to use that."
 
