@@ -7,6 +7,9 @@ enable-debug: false
 # (Highly recommended that you are always using the latest version!)
 disable-update-version-message: false
 
+# Enable gui permissions
+gui-permissions: false
+
 # How far the lightning will strike if the player right clicks air
 lightning-reach-distance: 3
 
@@ -86,26 +89,20 @@ inventory-full-action-bar:
 # Action bar sent to player when they are on a tool cooldown
 cooldown-action-bar:
   enabled: true
-  sell-message: "&c&l✘ &6&lSell Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
-  sand-message: "&c&l✘ &6&lSand Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
-  lightning-message: "&c&l✘ &6&lLightning Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
-  tnt-message: "&c&l✘ &6&lTNT Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
-  aqua-message: "&c&l✘ &6&lAqua Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
-  smelt-message: "&c&l✘ &6&lSmelt Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
-  chunk-message: "&c&l✘ &6&lChunk Wand Cooldown &7⊳ &e{time} &7second(s) remaining... &c&l✘"
+  message: "&a{tool-type} &ccooldown &7&o(&e{time} seconds&7&o)"
 
 # Action bar sent to player when their wand breaks after running out of uses
 wand-break-action-bar:
   enabled: false
-  break-message: "&c&l✘ &7Your {tool-type} wand / tool ran out of uses, it was destroyed... &c&l✘"
+  break-message: "&c&l✘ &7Your {tool-type} ran out of uses, it was destroyed... &c&l✘"
 
 # gui opened with the /tools command
 tool-purchase-gui:
   # generic gui to select a type of tool to buy
-  size: 18
+  size: 27
   name: "&6&lBuy Tools"
   1:
-    slot: 0
+    slot: 1
     name: "&b&lMulti Tools"
     material: ghast_tear:0
     lore:
@@ -116,7 +113,7 @@ tool-purchase-gui:
       - lure:1
     open-multi: true
   2:
-    slot: 1
+    slot: 2
     name: "&b&lTrench Tools"
     material: magma_cream:0
     lore:
@@ -127,7 +124,7 @@ tool-purchase-gui:
       - lure:1
     open-trench: true
   3:
-    slot: 2
+    slot: 3
     name: "&b&lTray Tools"
     material: emerald:0
     lore:
@@ -138,7 +135,7 @@ tool-purchase-gui:
       - lure:1
     open-tray: true
   4:
-    slot: 3
+    slot: 5
     name: "&b&lSand Wands"
     material: clay_ball:0
     lore:
@@ -149,7 +146,7 @@ tool-purchase-gui:
       - lure:1
     open-sand: true
   5:
-    slot: 4
+    slot: 6
     name: "&b&lLightning Wands"
     material: bowl:0
     lore:
@@ -160,7 +157,7 @@ tool-purchase-gui:
       - lure:1
     open-lightning: true
   6:
-    slot: 5
+    slot: 10
     name: "&b&lHarvester Hoes"
     material: iron_hoe:0
     lore:
@@ -171,7 +168,7 @@ tool-purchase-gui:
       - lure:1
     open-harvester: true
   7:
-    slot: 6
+    slot: 7
     name: "&b&lSell Wands"
     material: shears:0
     lore:
@@ -182,7 +179,7 @@ tool-purchase-gui:
       - lure:1
     open-sell: true
   8:
-    slot: 7
+    slot: 14
     name: "&b&lTNT Wands"
     material: bone:0
     lore:
@@ -193,7 +190,7 @@ tool-purchase-gui:
       - lure:1
     open-tnt: true
   9:
-    slot: 8
+    slot: 15
     name: "&b&lAqua Wands"
     material: bucket:0
     lore:
@@ -204,7 +201,7 @@ tool-purchase-gui:
       - lure:1
     open-aqua: true
   10:
-    slot: 9
+    slot: 16
     name: "&b&lSmelt Wands"
     material: blaze_powder:0
     lore:
@@ -215,7 +212,7 @@ tool-purchase-gui:
       - lure:1
     open-smelt: true
   11:
-    slot: 10
+    slot: 11
     name: "&b&lChunk Buster Wands"
     material: feather:0
     lore:
@@ -226,7 +223,31 @@ tool-purchase-gui:
       - lure:1
     open-chunk: true
   12:
-    slot: 17
+    slot: 22
     name: "&c&lExit"
     material: barrier:0
     exit-gui: true
+  13:
+    slot: 0
+    name: " "
+    material: ladder:0
+  14:
+    slot: 4
+    name: " "
+    material: ladder:0
+  15:
+    slot: 8
+    name: " "
+    material: ladder:0
+  16:
+    slot: 9
+    name: " "
+    material: ladder:0
+  17:
+    slot: 13
+    name: " "
+    material: ladder:0
+  18:
+    slot: 17
+    name: " "
+    material: ladder:0
