@@ -1,0 +1,65 @@
+# Tools+ (v2 Recode)
+# Thanks for your purchase <3
+#
+# When you create a new tool add it here so it can be loaded by the plugin
+loaded-tools:
+  - ex-trench
+  - ex-trench-1
+  - ex-tray
+  - ex-sell
+#
+loaded-guis:
+  - basic-gui
+#
+# cooldowns will be done by module type rather than by per tool
+per-tool-cooldowns: false
+#
+max-upgrade-placeholder: 'MAX'
+#
+no-mode-change-placeholder: 'Not changeable'
+#
+not-upgradeable-placeholder: 'Not upgradeable'
+#
+# This will override currency prefixes & suffixes
+free-placeholder: 'Free'
+#
+not-holding-tool-placeholder: 'N/A'
+#
+# if the price for an item is 0, the next entry will be used. entries: shopgui+, essentials, internal
+price-provider-hierarchy:
+  - 'shopgui+'
+  - 'essentials'
+  - 'internal'
+#
+currency:
+  vault:
+    prefix: '$'
+    suffix: ''
+  xp-raw:
+    prefix: ''
+    suffix: ' EXP'
+  xp-level:
+    prefix: ''
+    suffix: ' XP Levels'
+  blocks-mined:
+    prefix: ''
+    suffix: ' Blocks Mined'
+#
+# these will be run if a player is holding a tool, will open the assigned gui if there is one
+commands:
+  radius-upgrade:
+    - /upgrade
+  modifier-upgrade:
+    - /upgrade
+  sell-mode:
+    - /mode
+  tool-mode:
+    - /mode
+  uses:
+    - /uses
+#
+# Sell prices for items if essentials eco and shopgui+ are not found
+price-map:
+  # syntax: <material name>:<byte id>:<sell price>
+  - 'stone:0:0.5'
+  - 'dirt:0:0.3'

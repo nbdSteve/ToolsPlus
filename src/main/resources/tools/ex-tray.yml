@@ -1,0 +1,75 @@
+type: tray
+#
+upgrades:
+  radius:
+    allow-downgrade: true
+    currency: blocks-mined
+    gui: 'basic-gui'
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '1:0.0:0.0:3x3'
+      - '2:1000.0:0.0:5x5'
+      - '3:1000.0:0.0:7x7'
+    lore-update-string: ' &6- Radius&7| &e&l{radius-upgrade}'
+  modifier:
+    allow-downgrade: false
+    currency: ''
+    gui: 'basic-gui'
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0.0:0.0:0.0:0.0'
+    lore-update-string: ''
+#
+mode:
+#
+modes:
+  tool:
+    sneak-switch: false
+    currency: vault
+    gui: 'basic-gui'
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'ex-tray:0.0:TRAY'
+    lore-update-string: ' &6- Mode&7| &e&l{mode}'
+  sell:
+    sneak-switch: false
+    currency: vault
+    gui: 'basic-gui'
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'mine:0.0:MINE'
+    lore-update-string: ' &6- Mode&7| &e&l{tool-mode}'
+#
+uses:
+  enabled: true
+  starting: 100
+  lore-update-string: ' &6- Uses Remaining&7| &e&l{uses}'
+#
+blocks-mined:
+  enabled: true
+  lore-update-string: ' &6- Blocks Mined&7| &e&l{mined}'
+#
+omni:
+  enabled: true
+#
+cooldown:
+  enbaled: false
+#
+item:
+  material: diamond_pickaxe
+  data: 0
+  name: '&6&lTray Tool &7&o((&e&oUpgradeable&7&o))'
+  lore:
+    - ''
+    - '&7An upgradable tray tool with uses.'
+    - ''
+    - '&f&lTOOL INFO'
+    - ' &6- Mode&7| &e&l{tool-mode}'
+    - ' &6- Radius&7| &e&l{radius-upgrade}'
+    - ' &6- Uses Remaining&7| &e&l{uses}'
+    - ' &6- Blocks Mined&7| &e&l{mined}'
+  enchantments:
+    - dig_speed:5
+    - durability:3
+  item-flags:
+  unbreakable: true

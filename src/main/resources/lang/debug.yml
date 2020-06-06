@@ -1,0 +1,145 @@
+insufficient-permission:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| You do not have the permission required (&b{node}&7) to do that.'
+
+incorrect-args:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The number of arguments you entered is invalid, try &e/t+ help &7for command help.'
+
+invalid-command:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The command you entered does not exist, try &e/t+ help &7for command help.'
+
+reload-all-modules:
+  action-bar: false
+  text:
+    - '&5&lTools&d+&7| You have successfully reloaded &e{module-count} &7tool module(s).'
+
+reload-module:
+  action-bar: false
+  text:
+    - '&5&lTools&d+&7| You have successfully reloaded the module, &e{module}&7.'
+
+list-modules:
+  action-bar: false
+  text:
+    - '&5&lTools&d+&7| Module list >'
+    - '&7Installed Tool Modules (&f{modules-number}&7) >'
+    - ' &e- &6{modules-list}&7.'
+
+module-info:
+  action-bar: false
+  text:
+    - '&7&m<---------------------------->'
+    - '&5&lTools&d+&7| Information for the module, &e{module} &7>'
+    - '&7 - Author| &b{author}'
+    - '&7 - Version| &f{version}'
+    - '&7 - Identifier| &f{identifier}'
+    - '&7 - Tools using this module| &f{tool-amount}'
+    - '&7&m<---------------------------->'
+
+module-installed:
+  action-bar: false
+  text:
+    - '&5&lTools&d+&7| You have successfully installed the module, &e{module}&7.'
+
+module-un-installed:
+  action-bar: false
+  text:
+    - '&5&lTools&d+&7| You have successfully un-installed the module, &e{module}&7.'
+
+module-not-installed:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| That module is not installed on the server.'
+
+module-already-installed:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| That module is already installed on the server.'
+
+invalid-module:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The module you entered is invalid, please enter the module you would like to perform that action on.'
+
+list-tools:
+  action-bar: false
+  text:
+    - '&5&lTools&d+&7| Tool list >'
+    - '&7Loaded Abstract Tools (&f{tools-number}&7) >'
+    - ' &e- &6{tools-list}&7.'
+    - ''
+    - '&7Loaded Player Tools (&f{player-tools-number}&7).'
+
+player-tool-info:
+  action-bar: false
+  text:
+    - '&7&m<---------------------------->'
+    - '&5&lTools&d+&7| Information for the tool &e{target} &7is holding &7>'
+    - '&7 - Radius Upgrade| &b{radius-current}&7/&b{radius-max}'
+    - '&7 - Modifier Upgrade| &b{modifier-current}&7/&b{modifier-max}'
+    - '&7 - Active Abstract| &b{active-abstract}'
+    - '&7 - Dig Mode| &b{dig-mode}'
+    - '&7 - Uses Remaining| &b{uses}'
+    - '&7 - Blocks Mined| &b{blocks-mined}'
+    - '&7 - Tool UUID| &f&o{tool-uuid}'
+    - '&7&m<---------------------------->'
+
+invalid-amount:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The amount you entered is invalid, please enter an integer value greater than 0.'
+
+invalid-tool:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The tool you entered does not exist or is not loaded, try &e/t+ reload &7and check your &etools &7folder.'
+
+player-not-online:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The target player is not online.'
+
+give-giver:
+  action-bar: false
+  text:
+    - '&5&lTools&d+&7| You have given &b{target} &e{amount} x &6{tool-type} Tool&7.'
+
+give-receiver:
+  action-bar: false
+  text:
+    - '&5&lTools&d+&7| You have received &e{amount} x &6{tool-type} Tool&7.'
+
+not-holding-tool:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The target player is not holding a Tools+ tool at the moment.'
+
+radius-upgrade-not-enabled:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The tool you are currently holding does not have radius upgrades enabled.'
+
+modifier-upgrade-not-enabled:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The tool you are currently holding does not have modifier upgrades enabled.'
+
+tool-mode-not-enabled:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The tool you are currently holding does not have tool mode switching enabled.'
+
+sell-mode-not-enabled:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The tool you are currently holding does not have sell mode switching enabled.'
+
+uses-not-enabled:
+  action-bar: false
+  text:
+    - '&5&lTools&d+ &4(&c&lERROR&4)&7| The tool you are currently holding does not have uses enabled.'

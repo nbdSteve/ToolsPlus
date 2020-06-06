@@ -1,0 +1,21 @@
+command:
+  help: tools+.cmd.help
+  reload: tools+.cmd.reload
+  give: tools+.cmd.give
+  module-list: tools+.cmd.module-list
+  tool-list: tools+.cmd.tool-list
+
+module:
+  list: tools+.module.list
+  reload: tools+.module.list
+  info: tools+.module.info
+  un-install: tools+.module.un-install
+  install: tools+.module.install
+
+tool:
+  list: tools+.tool.info
+  info: tools+.tool.info
+
+gui:
+  use: tools+.gui.use
+  trench: tools+.gui.trench
