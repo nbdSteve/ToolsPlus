@@ -1,15 +1,12 @@
 package gg.steve.mc.tp.utils;
 
 import gg.steve.mc.tp.managers.PluginFile;
-import gg.steve.mc.tp.module.ToolsPlusModule;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Class that handles creating or loading a plugin file from the resources folder

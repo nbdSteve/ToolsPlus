@@ -23,8 +23,7 @@ public class GenericGui extends AbstractGui {
         List<Integer> slots = section.getIntegerList("fillers.slots");
         ItemStack filler = GuiItemUtil.createItem(section.getConfigurationSection("fillers"));
         for (Integer slot : slots) {
-            setItemInSlot(slot, filler, player -> {
-            });
+            setItemInSlot(slot, filler, player -> {});
         }
     }
 

@@ -1,5 +1,7 @@
 type: trench
 #
+players-get-drops: true
+#
 upgrades:
   radius:
     allow-downgrade: false
@@ -20,6 +22,7 @@ upgrades:
 #
 modes:
   tool:
+    right-click-switch: false
     sneak-switch: false
     currency: vault
     gui: 'basic-gui'
@@ -28,6 +31,7 @@ modes:
       - 'ex-trench-1:1000.0:TRENCH'
     lore-update-string: ' &6- Tool Mode&7| &e&l{tool-mode}'
   sell:
+    right-click-switch: false
     sneak-switch: false
     currency: vault
     gui: 'basic-gui'
@@ -40,6 +44,7 @@ modes:
 uses:
   enabled: false
   starting: 100
+  gui: ''
   lore-update-string: ' &6- Uses Remaining&7| &e&l{uses}'
 #
 blocks-mined:

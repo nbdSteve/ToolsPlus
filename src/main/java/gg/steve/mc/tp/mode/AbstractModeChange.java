@@ -19,7 +19,7 @@ public abstract class AbstractModeChange {
     private ModeType type;
     private AbstractCurrency currency;
     private HashMap<Integer, List<Object>> track;
-    private boolean sneakSwitch;
+    private boolean sneakSwitch, rightClickSwitch;
     private String updateString;
     private AbstractGui gui;
 
@@ -36,6 +36,7 @@ public abstract class AbstractModeChange {
             pos++;
         }
         this.sneakSwitch = file.get().getBoolean("modes." + type.name().toLowerCase() + ".sneak-switch");
+        this.rightClickSwitch = file.get().getBoolean("modes." + type.name().toLowerCase() + ".right-click-switch");
         this.currency = CurrencyType.getCurrencyFromString(file.get().getString("modes." + type.name().toLowerCase() + ".currency"));
         this.updateString = ColorUtil.colorize(file.get().getString("modes." + type.name().toLowerCase() + ".lore-update-string"));
         this.gui = GuiManager.getGui(file.get().getString("modes." + type.name().toLowerCase() + ".gui"));
@@ -73,6 +74,10 @@ public abstract class AbstractModeChange {
 
     public boolean isSneakSwitch() {
         return sneakSwitch;
+    }
+
+    public boolean isRightClickSwitch() {
+        return rightClickSwitch;
     }
 
     public ModeType getType() {

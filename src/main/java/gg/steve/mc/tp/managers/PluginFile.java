@@ -3,6 +3,8 @@ package gg.steve.mc.tp.managers;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
+
 public abstract class PluginFile {
 
     public abstract PluginFile load(String fileName, JavaPlugin instance);

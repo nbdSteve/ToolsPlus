@@ -26,7 +26,11 @@ public class CubeUtil {
                     boolean breakAllowed = true;
                     // check if the player can break this specific block
                     for (RegionProviderType regionProvider : RegionProviderType.values()) {
-                        if (!regionProvider.isBreakAllowed(player, block)) breakAllowed = false;
+                        try {
+                            if (!regionProvider.isBreakAllowed(player, block)) breakAllowed = false;
+                        } catch (NoClassDefFoundError e) {
+                            continue;
+                        }
                     }
                     if (!breakAllowed) continue;
                     // check if the block is whitelisted / blacklisted based on the module

@@ -126,6 +126,7 @@ public class ItemBuilderUtil {
         nbtItem.setString("tools+.name", name);
         nbtItem.setInteger("tools+.uses", file.get().getInt("uses.starting"));
         nbtItem.setInteger("tools+.blocks", 0);
+        nbtItem.setInteger("tools+.cane", 0);
         nbtItem.setInteger("tools+.radius-upgrade-level", 0);
         nbtItem.setInteger("tools+.peak-radius-upgrade-level", 0);
         nbtItem.setInteger("tools+.modifier-upgrade-level", 0);

@@ -1,7 +1,7 @@
 help:
   action-bar: false
   text:
-  - '&7&m<----------&r &5&lTools&d+ &fv{version} &7&m---------->'
+  - '&7&m<---------&r &5&lTools&d+ &fv{version} &7&m--------->'
   - '&7For command & permission help please visit the wiki >'
   - ' &bhttps://github.com/nbdSteve/ToolsPlus/wiki'
   - ''
@@ -22,7 +22,7 @@ reload:
 out-of-uses:
   action-bar: true
   text:
-    - '&e&l<> &7Your &6&l{tool-type} Tool &7has been destroyed &e&l<>'
+    - '&e&l<> &7Your &6&l{tool-type} &7has been destroyed &e&l<>'
 
 insufficient-funds:
   action-bar: true
@@ -37,12 +37,12 @@ inventory-full:
 upgrade:
   action-bar: true
   text:
-    - '&e&l<> &7You upgraded your &6&l{tool-type} Tool &7for &c-{currency-prefix}&l{cost}&c{currency-suffix} &7(&6{level}&e/&6{max}&7) &e&l<>'
+    - '&e&l<> &7You upgraded your &6&l{tool-type} &7for &c-{currency-prefix}&l{cost}&c{currency-suffix} &7(&6{level}&e/&6{max}&7) &e&l<>'
 
 downgrade:
   action-bar: true
   text:
-    - '&e&l<> &7You downgraded your &6&l{tool-type} Tool &7for &c-{currency-prefix}&l{cost}&c{currency-suffix} &7(&6{level}&e/&6{max}&7) &e&l<>'
+    - '&e&l<> &7You downgraded your &6&l{tool-type} &7for &c-{currency-prefix}&l{cost}&c{currency-suffix} &7(&6{level}&e/&6{max}&7) &e&l<>'
 
 mode-change:
   action-bar: true
@@ -62,19 +62,19 @@ tool-min-level:
 uses-purchase:
   action-bar: true
   text:
-    - '&e&l<> &7You purchased &6&l{amount} &7tool uses for &c-{currency-prefix}&l{cost}&c{currency-suffix} &e&l<>'
+    - '&e&l<> &7You purchased &6&l{amount} &7uses for &c-{currency-prefix}&l{cost}&c{currency-suffix} &e&l<>'
 
 sale:
   action-bar: true
   text:
-    - '&e&l<> &7Your &6&l{tool-type} Tool &7automatically sold &ex{amount} &7items for &a+$&l{deposit} &e&l<>'
+    - '&e&l<> &7Your &6&l{tool-type} &7automatically sold &ex{amount} &7items for &a+$&l{deposit} &e&l<>'
 
 cooldown-query:
   action-bar: true
   text:
-    - '&e&l<> &7Your &6&l{tool-type} Tool &7is on cooldown, &e{seconds} &7seconds remaining &e&l<>'
+    - '&e&l<> &7Your &6&l{tool-type} &7is on cooldown, &e{seconds} &7seconds remaining &e&l<>'
 
 no-sale:
   action-bar: true
   text:
-    - '&e&l<> &7Your &6&l{tool-type} Tool &7could not sell any items from those container(s) &e&l<>'
+    - '&e&l<> &7Your &6&l{tool-type} &7could not sell any items from those container(s) &e&l<>'

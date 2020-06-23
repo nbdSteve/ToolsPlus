@@ -18,7 +18,6 @@ import org.bukkit.inventory.ItemStack;
 import java.util.UUID;
 
 public abstract class AbstractTool {
-//    private ToolType type;
     private String moduleId;
     private ToolData data;
     private NBTItem item;
@@ -27,15 +26,7 @@ public abstract class AbstractTool {
     private ToolUpgradeManager upgradeManager;
     private ToolModeChangeManager modeChangeManager;
     private AbstractGui usesGui;
-
-//    public AbstractTool(ToolType type, NBTItem item, PluginFile config) {
-//        this.type = type;
-//        this.item = item;
-//        this.config = config;
-//        this.attributeManager = new ToolAttributeManager();
-//        this.upgradeManager = new ToolUpgradeManager();
-//        this.modeChangeManager = new ToolModeChangeManager();
-//    }
+    private boolean playersGetDrops;
 
     public AbstractTool(String moduleId, NBTItem item, PluginFile config) {
         this.moduleId = moduleId;
@@ -44,6 +35,7 @@ public abstract class AbstractTool {
         this.attributeManager = new ToolAttributeManager();
         this.upgradeManager = new ToolUpgradeManager();
         this.modeChangeManager = new ToolModeChangeManager();
+        this.playersGetDrops = config.get().getBoolean("players-get-drops");
     }
 
     public String getModuleId() {
@@ -103,6 +95,10 @@ public abstract class AbstractTool {
 
     public ToolModeChangeManager getModeChangeManager() {
         return modeChangeManager;
+    }
+
+    public boolean isPlayersGetDrops() {
+        return playersGetDrops;
     }
 
     public abstract YamlConfiguration getModuleConfig();

@@ -5,4 +5,6 @@ public enum ToolAttributeType {
     BLOCKS_MINED,
     OMNI,
     COOLDOWN,
+    AUTO_REPLANT,
+    CANE_TRACKING,
 }

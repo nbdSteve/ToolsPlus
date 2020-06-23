@@ -1,4 +1,4 @@
-package gg.steve.mc.tp.integration;
+package gg.steve.mc.tp.integration.sell;
 
 import com.earth2me.essentials.Essentials;
 import gg.steve.mc.tp.ToolsPlus;
@@ -35,7 +35,7 @@ public class SellIntegrationManager {
         if (providerHierarchy != null && !providerHierarchy.isEmpty()) providerHierarchy.clear();
     }
 
-    public static void doBlockSale(Player player, List<Block> blocks, PlayerTool tool, boolean silk) {
+    public static void doBlockSale(Player player, List<Block> blocks, PlayerTool tool, boolean silk, boolean clear) {
         double deposit = 0, amount = 0;
         Map<Material, Map<Byte, Integer>> saleCache = new HashMap<>();
         for (Block block : blocks) {
@@ -64,8 +64,10 @@ public class SellIntegrationManager {
                     }
                 }
             }
-            block.getDrops().clear();
-            block.setType(Material.AIR);
+            if (clear) {
+                block.getDrops().clear();
+                block.setType(Material.AIR);
+            }
         }
         for (Material material : saleCache.keySet()) {
             for (Byte data : saleCache.get(material).keySet()) {

@@ -32,6 +32,6 @@ public class ModuleInstallSubCmd extends SubCommand {
             return;
         }
         module = ModuleManager.getInstalledModule(args[2].toUpperCase());
-        DebugMessage.MODULE_INSTALLED.message(sender, module.getNiceName());
+        DebugMessage.MODULE_INSTALLED.message(sender, module.getModuleName());
     }
 }

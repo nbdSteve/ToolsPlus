@@ -22,6 +22,7 @@ public class TrenchModule extends ToolsPlusModule {
 
     public TrenchModule() {
         super(moduleId);
+        setNiceName("Trench Tool");
     }
 
     @Override
@@ -59,5 +60,10 @@ public class TrenchModule extends ToolsPlusModule {
     @Override
     public void onLoad() {
         ToolConfigDataManager.addMaterialList(moduleId, FileManager.get(moduleConfigId).getStringList("blacklist"));
+    }
+
+    @Override
+    public void onShutdown() {
+
     }
 }

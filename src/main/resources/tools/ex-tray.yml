@@ -1,5 +1,7 @@
 type: tray
 #
+players-get-drops: true
+#
 upgrades:
   radius:
     allow-downgrade: true
@@ -24,6 +26,7 @@ mode:
 #
 modes:
   tool:
+    right-click-switch: false
     sneak-switch: false
     currency: vault
     gui: 'basic-gui'
@@ -32,6 +35,7 @@ modes:
       - 'ex-tray:0.0:TRAY'
     lore-update-string: ' &6- Mode&7| &e&l{mode}'
   sell:
+    right-click-switch: false
     sneak-switch: false
     currency: vault
     gui: 'basic-gui'
@@ -43,6 +47,7 @@ modes:
 uses:
   enabled: true
   starting: 100
+  gui: 'basic-gui'
   lore-update-string: ' &6- Uses Remaining&7| &e&l{uses}'
 #
 blocks-mined:

@@ -1,6 +1,6 @@
 package gg.steve.mc.tp.modules.trench.tool;
 
-import gg.steve.mc.tp.integration.SellIntegrationManager;
+import gg.steve.mc.tp.integration.sell.SellIntegrationManager;
 import gg.steve.mc.tp.message.GeneralMessage;
 import gg.steve.mc.tp.mode.ModeType;
 import gg.steve.mc.tp.modules.trench.TrenchModule;
@@ -30,20 +30,23 @@ public class TrenchData implements ToolData {
         if (!tool.decrementUses(event.getPlayer())) return;
         boolean full = event.getPlayer().getInventory().firstEmpty() == -1,
                 autoSell = tool.getModeChange(ModeType.SELL).getCurrentModeString(tool.getCurrentMode(ModeType.SELL)).equalsIgnoreCase("sell"),
-                silk = event.getPlayer().getItemInHand().getEnchantments().containsKey(Enchantment.SILK_TOUCH);
+                silk = event.getPlayer().getItemInHand().getEnchantments().containsKey(Enchantment.SILK_TOUCH),
+                playersGetDrops = tool.getAbstractTool().isPlayersGetDrops();
         if (full) {
             GeneralMessage.INVENTORY_FULL.message(event.getPlayer());
         }
         if (autoSell) {
-            SellIntegrationManager.doBlockSale(event.getPlayer(), blocks, tool, silk);
+            SellIntegrationManager.doBlockSale(event.getPlayer(), blocks, tool, silk, true);
         } else {
             for (Block block : blocks) {
                 // if the player is using silk touch give them items accordingly, adds items straight to inventory
-                if (silk) {
-                    event.getPlayer().getInventory().addItem(new ItemStack(block.getType(), 1, block.getData()));
-                } else {
-                    for (ItemStack item : block.getDrops(event.getPlayer().getItemInHand())) {
-                        event.getPlayer().getInventory().addItem(item);
+                if (playersGetDrops) {
+                    if (silk) {
+                        event.getPlayer().getInventory().addItem(new ItemStack(block.getType(), 1, block.getData()));
+                    } else {
+                        for (ItemStack item : block.getDrops(event.getPlayer().getItemInHand())) {
+                            event.getPlayer().getInventory().addItem(item);
+                        }
                     }
                 }
                 // clear drops and remove the block

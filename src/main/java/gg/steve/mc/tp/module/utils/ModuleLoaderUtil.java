@@ -4,6 +4,7 @@ import gg.steve.mc.tp.ToolsPlus;
 import gg.steve.mc.tp.managers.SetupManager;
 import gg.steve.mc.tp.module.ModuleManager;
 import gg.steve.mc.tp.module.ToolsPlusModule;
+import gg.steve.mc.tp.utils.FileClassUtil;
 import gg.steve.mc.tp.utils.LogUtil;
 import org.bukkit.event.Listener;
 
@@ -27,7 +28,7 @@ public class ModuleLoaderUtil {
         if (instance == null) {
             return;
         }
-        List<Class<?>> subs = ModuleClassUtil.getClasses("modules", ToolsPlusModule.class);
+        List<Class<?>> subs = FileClassUtil.getClasses("modules", ToolsPlusModule.class);
         if (subs == null || subs.isEmpty()) {
             return;
         }
@@ -42,7 +43,7 @@ public class ModuleLoaderUtil {
         builder.append(moduleName.toUpperCase(), 0, 1);
         builder.append(moduleName.substring(1).toLowerCase());
         builder.append("Module");
-        List<Class<?>> subs = ModuleClassUtil.getClasses("modules", builder.toString(), ToolsPlusModule.class);
+        List<Class<?>> subs = FileClassUtil.getClasses("modules", builder.toString(), ToolsPlusModule.class);
         if (subs == null || subs.isEmpty()) {
             return false;
         }

@@ -1,0 +1,24 @@
+containers:
+  - chest
+  - trapped-chest
+
+messages:
+  deposit:
+    action-bar: true
+    text:
+      - '&e&l<> &7You have deposited &6x{amount} TNT &e&l<>'
+
+  no-tnt:
+    action-bar: true
+    text:
+      - '&e&l<> &7The container(s) selected do not contain any TNT, aborting deposit &e&l<>'
+
+  no-faction:
+    action-bar: true
+    text:
+      - '&e&l<> You are not allowed to use TNT wands if you do no have a faction &e&l<>'
+
+  factions-plugin-not-supported:
+    action-bar: true
+    text:
+      - '&e&l<> The factions plugin does not support TNT Banking, contact an admin if this is an error &e&l<>'

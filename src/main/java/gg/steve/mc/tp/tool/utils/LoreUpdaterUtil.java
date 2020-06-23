@@ -12,6 +12,9 @@ public class LoreUpdaterUtil {
         item.setInteger("tools+." + tag, update);
         item.setInteger("tools+.peak-" + tag, peak);
         ItemBuilderUtil builder = new ItemBuilderUtil(item.getItem());
+        if (builder.getItemMeta().getDisplayName().contains(current)) {
+            builder.addName(builder.getItemMeta().getDisplayName().replace(current, replacement));
+        }
         List<String> lore = builder.getLore();
         for (int i = 0; i < lore.size(); i++) {
             if (lore.get(i).contains(current)) {
@@ -28,6 +31,9 @@ public class LoreUpdaterUtil {
     public static ItemStack updateLore(NBTItem item, String tag, int update, String current, String replacement) {
         item.setInteger("tools+." + tag, update);
         ItemBuilderUtil builder = new ItemBuilderUtil(item.getItem());
+        if (builder.getItemMeta().getDisplayName().contains(current)) {
+            builder.addName(builder.getItemMeta().getDisplayName().replace(current, replacement));
+        }
         List<String> lore = builder.getLore();
         for (int i = 0; i < lore.size(); i++) {
             if (lore.get(i).contains(current)) {

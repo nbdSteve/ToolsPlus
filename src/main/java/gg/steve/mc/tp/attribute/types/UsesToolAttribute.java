@@ -6,6 +6,7 @@ import gg.steve.mc.tp.attribute.ToolAttributeType;
 import gg.steve.mc.tp.currency.AbstractCurrency;
 import gg.steve.mc.tp.message.GeneralMessage;
 import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.player.PlayerToolManager;
 import gg.steve.mc.tp.tool.PlayerTool;
 import gg.steve.mc.tp.tool.ToolsManager;
 import gg.steve.mc.tp.tool.utils.GetToolHoldingUtil;
@@ -60,6 +61,7 @@ public class UsesToolAttribute extends AbstractToolAttribute {
             player.setItemInHand(new ItemStack(Material.AIR));
             GeneralMessage.OUT_OF_USES.message(player, ToolsManager.getPlayerTool(toolId).getAbstractTool().getModule().getNiceName());
             ToolsManager.removePlayerTool(toolId);
+            PlayerToolManager.removeToolPlayer(player.getUniqueId());
             return true;
         }
         ItemStack updated = LoreUpdaterUtil.updateLore(item, "uses", current + change,

@@ -18,7 +18,7 @@ public class HelpSubCmd extends SubCommand {
     @Override
     public void onCommand(CommandSender sender, String[] args) {
         GeneralMessage.HELP.message(sender,
-                ToolsPlus.getVersion(),
+                ToolsPlus.get().getDescription().getVersion(),
                 ModuleManager.getModuleCount(),
                 ModuleManager.getModulesAsList(),
                 ToolsManager.getAbstractToolCount(),

@@ -2,7 +2,7 @@ package gg.steve.mc.tp.modules.sell.utils;
 
 import gg.steve.mc.tp.ToolsPlus;
 import gg.steve.mc.tp.attribute.types.CooldownToolAttribute;
-import gg.steve.mc.tp.integration.SellIntegrationManager;
+import gg.steve.mc.tp.integration.sell.SellIntegrationManager;
 import gg.steve.mc.tp.message.GeneralMessage;
 import gg.steve.mc.tp.tool.PlayerTool;
 import org.bukkit.Material;
@@ -40,7 +40,8 @@ public class ContainerSaleUtil {
                     ToolsPlus.formatNumber(amount),
                     ToolsPlus.formatNumber(deposit));
         } else {
-            if (!CooldownToolAttribute.isCooldownActive(player, tool)) GeneralMessage.NO_SALE.message(player, tool.getAbstractTool().getModule().getNiceName());
+            if (!CooldownToolAttribute.isCooldownActive(player, tool))
+                GeneralMessage.NO_SALE.message(player, tool.getAbstractTool().getModule().getNiceName());
         }
         return amount;
     }

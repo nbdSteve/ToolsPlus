@@ -31,7 +31,7 @@ public class ModuleInfoSubCmd extends SubCommand {
             return;
         }
         DebugMessage.MODULE_INFO.message(sender,
-                module.getNiceName(),
+                module.getModuleName(),
                 module.getAuthor(),
                 module.getVersion(),
                 module.getIdentifier(),

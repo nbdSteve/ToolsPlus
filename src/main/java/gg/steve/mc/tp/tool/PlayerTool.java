@@ -5,7 +5,9 @@ import gg.steve.mc.tp.gui.AbstractGui;
 import gg.steve.mc.tp.mode.AbstractModeChange;
 import gg.steve.mc.tp.mode.ModeType;
 import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.player.PlayerToolManager;
 import gg.steve.mc.tp.upgrade.UpgradeType;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 
 import java.util.UUID;
@@ -13,7 +15,7 @@ import java.util.UUID;
 public class PlayerTool {
     private AbstractTool tool;
     private UUID toolId;
-    private int uses, blocksMined, radiusUpgradeLevel, modifierUpgradeLevel, peakRadiusUpgradeLevel, peakModifierUpgradeLevel, toolModeLevel, sellModeLevel;
+    private int uses, blocksMined, caneMined, radiusUpgradeLevel, modifierUpgradeLevel, peakRadiusUpgradeLevel, peakModifierUpgradeLevel, toolModeLevel, sellModeLevel;
     private String name;
     private AbstractGui usesGui;
 
@@ -21,6 +23,7 @@ public class PlayerTool {
         this.toolId = toolId;
         this.uses = item.getInteger("tools+.uses");
         this.blocksMined = item.getInteger("tools+.blocks");
+        this.caneMined = item.getInteger("tools+.cane");
         this.radiusUpgradeLevel = item.getInteger("tools+.radius-upgrade-level");
         this.peakRadiusUpgradeLevel = item.getInteger("tools+.peak-radius-upgrade-level");
         this.modifierUpgradeLevel = item.getInteger("tools+.modifier-upgrade-level");
@@ -43,10 +46,20 @@ public class PlayerTool {
 
     public boolean incrementBlocksMined(Player player, int amount) {
         if (!tool.getAttributeManager().isAttributeEnabled(ToolAttributeType.BLOCKS_MINED)) return true;
+        if (!PlayerToolManager.isHoldingTool(player.getUniqueId())) return true;
         NBTItem nbtItem = new NBTItem(player.getItemInHand());
         int current = this.blocksMined;
         this.blocksMined += amount;
         return tool.getAttributeManager().getAttribute(ToolAttributeType.BLOCKS_MINED).doUpdate(player, nbtItem, this.toolId, current, amount);
+    }
+
+    public boolean incrementCaneMined(Player player, int amount) {
+        if (!tool.getAttributeManager().isAttributeEnabled(ToolAttributeType.CANE_TRACKING)) return true;
+        if (!PlayerToolManager.isHoldingTool(player.getUniqueId())) return true;
+        NBTItem nbtItem = new NBTItem(player.getItemInHand());
+        int current = this.caneMined;
+        this.caneMined += amount;
+        return tool.getAttributeManager().getAttribute(ToolAttributeType.CANE_TRACKING).doUpdate(player, nbtItem, this.toolId, current, amount);
     }
 
     public boolean isOnCooldown(Player player) {

@@ -7,6 +7,12 @@ loaded-tools:
   - ex-trench-1
   - ex-tray
   - ex-sell
+  - ex-sand
+  - ex-harvester
+  - ex-lightning
+  - ex-tnt
+  - ex-craft
+  - ex-aqua
 #
 loaded-guis:
   - basic-gui

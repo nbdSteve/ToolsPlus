@@ -22,6 +22,7 @@ public class TrayModule extends ToolsPlusModule {
 
     public TrayModule() {
         super(moduleId);
+        setNiceName("Tray Tool");
     }
 
     @Override
@@ -31,7 +32,7 @@ public class TrayModule extends ToolsPlusModule {
 
     @Override
     public String getAuthor() {
-        return "nbdSteve";
+        return "stevegoodhill";
     }
 
     @Override
@@ -58,5 +59,10 @@ public class TrayModule extends ToolsPlusModule {
     @Override
     public void onLoad() {
         ToolConfigDataManager.addMaterialList(moduleId, FileManager.get(moduleConfigId).getStringList("whitelist"));
+    }
+
+    @Override
+    public void onShutdown() {
+
     }
 }

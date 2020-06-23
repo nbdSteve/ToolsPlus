@@ -1,0 +1,75 @@
+type: craft
+#
+players-get-drops: true
+#
+upgrades:
+  radius:
+    allow-downgrade: false
+    currency: vault
+    gui: ''
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0:0.0:0.0:0'
+    lore-update-string: ''
+  modifier:
+    allow-downgrade: false
+    currency: vault
+    gui: ''
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0.0:0.0:0.0:0.0'
+    lore-update-string: ''
+#
+modes:
+  tool:
+    right-click-switch: false
+    sneak-switch: false
+    currency: vault
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'ex-craft:0.0:CRAFT'
+    lore-update-string: ''
+  sell:
+    right-click-switch: false
+    sneak-switch: false
+    currency: vault
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'mine:0.0:Craft'
+    lore-update-string: ''
+#
+uses:
+  enabled: true
+  starting: 10
+  gui: 'basic-gui'
+  lore-update-string: '&7Uses: &e&n{uses}'
+#
+blocks-mined:
+  enabled: false
+  lore-update-string: ''
+#
+omni:
+  enabled: false
+#
+cooldown:
+  enabled: true
+  duration: 10
+#
+item:
+  material: double_plant
+  data: 0
+  name: '&6&lCraft Flower'
+  lore:
+    - '&eUse this wand to craft items'
+    - '&efrom any container'
+    - ''
+    - '&7Uses: &e&n{uses}'
+    - ''
+    - '&7Cooldown: &e&n10&e Seconds'
+    - ''
+  enchantments:
+    - durability:10
+  item-flags:
+  unbreakable: true

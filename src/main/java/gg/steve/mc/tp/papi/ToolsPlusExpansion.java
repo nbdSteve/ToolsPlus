@@ -53,7 +53,7 @@ public class ToolsPlusExpansion extends PlaceholderExpansion {
             }
             ToolPlayer toolPlayer = PlayerToolManager.getToolPlayer(player.getUniqueId());
             if (identifier.equalsIgnoreCase("player_module")) {
-                return toolPlayer.getPlayerTool().getAbstractTool().getModule().getNiceName();
+                return toolPlayer.getPlayerTool().getAbstractTool().getModule().getModuleName();
             }
             if (identifier.equalsIgnoreCase("player_radius_lore")) {
                 return toolPlayer.getPlayerTool().getAbstractTool().getUpgrade(UpgradeType.RADIUS).getLoreStringForLevel(toolPlayer.getPlayerTool().getUpgradeLevel(UpgradeType.RADIUS));

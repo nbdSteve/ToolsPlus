@@ -22,6 +22,7 @@ public class SellModule extends ToolsPlusModule {
 
     public SellModule() {
         super(moduleId);
+        setNiceName("Sell Wand");
     }
 
     public String getVersion() {
@@ -29,7 +30,7 @@ public class SellModule extends ToolsPlusModule {
     }
 
     public String getAuthor() {
-        return "nbdSteve";
+        return "stevegoodhill";
     }
 
     public List<Listener> getListeners() {
@@ -54,5 +55,10 @@ public class SellModule extends ToolsPlusModule {
     @Override
     public void onLoad() {
         ToolConfigDataManager.addMaterialList(moduleId, FileManager.get(moduleConfigId).getStringList("sellable-containers"));
+    }
+
+    @Override
+    public void onShutdown() {
+
     }
 }

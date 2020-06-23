@@ -107,12 +107,12 @@ player-not-online:
 give-giver:
   action-bar: false
   text:
-    - '&5&lTools&d+&7| You have given &b{target} &e{amount} x &6{tool-type} Tool&7.'
+    - '&5&lTools&d+&7| You have given &b{target} &e{amount} x &6{tool-type}&7.'
 
 give-receiver:
   action-bar: false
   text:
-    - '&5&lTools&d+&7| You have received &e{amount} x &6{tool-type} Tool&7.'
+    - '&5&lTools&d+&7| You have received &e{amount} x &6{tool-type}&7.'
 
 not-holding-tool:
   action-bar: false

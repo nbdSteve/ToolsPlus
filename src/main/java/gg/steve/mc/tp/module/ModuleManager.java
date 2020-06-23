@@ -26,7 +26,7 @@ public class ModuleManager {
             message.append(": (");
             int i = 0;
             for (String identifier : modules.keySet()) {
-                message.append(modules.get(identifier).getNiceName());
+                message.append(modules.get(identifier).getModuleName());
                 if (i != modules.size() - 1) {
                     message.append(", ");
                 } else {
@@ -72,11 +72,15 @@ public class ModuleManager {
 
     public static boolean uninstallModule(ToolsPlusModule module) {
         if (modules == null || modules.isEmpty()) return false;
+        module.onShutdown();
         return modules.remove(module.getIdentifier()) != null;
     }
 
     public static void uninstalledAllModules() {
         if (modules == null || modules.isEmpty()) return;
+        for (ToolsPlusModule module : modules.values()) {
+            module.onShutdown();
+        }
         modules.clear();
     }
 
@@ -85,7 +89,7 @@ public class ModuleManager {
         if (modules.size() > 0) {
             int i = 0;
             for (String identifier : modules.keySet()) {
-                message.append(modules.get(identifier).getNiceName());
+                message.append(modules.get(identifier).getModuleName());
                 if (i != modules.size() - 1) {
                     message.append(", ");
                 }

@@ -1,6 +1,5 @@
 package gg.steve.mc.tp.modules.sell.tool;
 
-import gg.steve.mc.tp.integration.SellIntegrationManager;
 import gg.steve.mc.tp.modules.sell.SellModule;
 import gg.steve.mc.tp.modules.sell.utils.ContainerSaleUtil;
 import gg.steve.mc.tp.tool.PlayerTool;

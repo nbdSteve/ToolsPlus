@@ -1,6 +1,8 @@
-package gg.steve.mc.tp.module.utils;
+package gg.steve.mc.tp.utils;
 
 import gg.steve.mc.tp.ToolsPlus;
+import gg.steve.mc.tp.managers.FileManager;
+import gg.steve.mc.tp.managers.SetupManager;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -11,7 +13,7 @@ import java.util.List;
 import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 
-public class ModuleClassUtil {
+public class FileClassUtil {
 
     public static List<Class<?>> getClasses(String folder, Class<?> type) {
         return getClasses(folder, null, type);

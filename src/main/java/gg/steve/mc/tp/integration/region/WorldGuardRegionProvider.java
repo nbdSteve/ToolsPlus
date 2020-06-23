@@ -1,30 +1,39 @@
 package gg.steve.mc.tp.integration.region;
 
-import com.sk89q.worldguard.bukkit.WGBukkit;
-import com.sk89q.worldguard.protection.ApplicableRegionSet;
-import com.sk89q.worldguard.protection.flags.DefaultFlag;
-import com.sk89q.worldguard.protection.flags.StateFlag;
+import gg.steve.mc.tp.integration.libs.ToolsPlusLibManager;
+import gg.steve.mc.tp.integration.libs.ToolsPlusLibType;
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 
 public class WorldGuardRegionProvider extends AbstractRegionProvider {
+    private String version;
 
     public WorldGuardRegionProvider() {
         super(RegionProviderType.WORLDGUARD, "WorldGuard");
+        if (Bukkit.getPluginManager().getPlugin("WorldGuard") != null) {
+            this.version = Bukkit.getPluginManager().getPlugin("WorldGuard").getDescription().getVersion();
+        }
     }
 
     @Override
     public boolean isBreakAllowed(Player player, Block block) {
         if (!isEnabled()) return true;
-        ApplicableRegionSet set = WGBukkit.getPlugin().getRegionManager(block.getLocation().getWorld()).getApplicableRegions(block.getLocation());
-        return set.queryState(null, DefaultFlag.BLOCK_BREAK) != StateFlag.State.DENY;
+        if (version.contains("7.")) {
+            return ToolsPlusLibManager.getLibByType(ToolsPlusLibType.WORLDGUARD_v7).isBreakAllowed(player, block.getLocation());
+        } else {
+            return ToolsPlusLibManager.getLibByType(ToolsPlusLibType.WORLDGUARD_LEGACY).isBreakAllowed(player, block.getLocation());
+        }
     }
 
     @Override
     public boolean isBreakAllowed(Player player, Location location) {
         if (!isEnabled()) return true;
-        ApplicableRegionSet set = WGBukkit.getPlugin().getRegionManager(location.getWorld()).getApplicableRegions(location);
-        return set.queryState(null, DefaultFlag.BLOCK_BREAK) != StateFlag.State.DENY;
+        if (version.contains("7.")) {
+            return ToolsPlusLibManager.getLibByType(ToolsPlusLibType.WORLDGUARD_v7).isBreakAllowed(player, location);
+        } else {
+            return ToolsPlusLibManager.getLibByType(ToolsPlusLibType.WORLDGUARD_LEGACY).isBreakAllowed(player, location);
+        }
     }
 }
