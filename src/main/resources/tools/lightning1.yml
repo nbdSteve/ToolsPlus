@@ -1,0 +1,83 @@
+type: 'lightning'
+#
+players-get-drops: true
+#
+upgrades:
+  radius:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0:0.0:0.0:1x1'
+    lore-update-string: ' &7▏ &4Radius &8» &c{radius-upgrade}'
+  modifier:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '1.0:0.0:0.0:1'
+    lore-update-string: ' &7▏ &4Modifier &8» &7{modifier-upgrade}'
+#
+modes:
+  tool:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'lightning1:0.0:Lightning'
+    lore-update-string: ' &7▏ &4Tool &8» &7{tool-mode}'
+  sell:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'mine:0.0:Striking'
+    lore-update-string: ' &7▏ &4Mode &8» &7&n{sell-mode}'
+#
+uses:
+  enabled: true
+  starting: 15
+  gui: 'uses-gui'
+  lore-update-string: ' &7▏ &4Uses &8» &c&n{uses}'
+#
+blocks-mined:
+  enabled: true
+  lore-update-string: ' &7▏ &4Strikes &8» &c&n{mined}'
+#
+omni:
+  enabled: false
+#
+cooldown:
+  enabled: true
+  duration: 10
+#
+item:
+  material: 'blaze_rod'
+  data: 0
+  name: '&c&l⋉ &4&nLightning Wand&r &7(&f1x1&7) &c&l⋊'
+  lore:
+    - ''
+    - '&4&m---&7&m(->&r &fInformation &7&m<-)&4&m---'
+    - ' &7▏ &4Tool &8» &7{tool-mode}'
+    - ' &7▏ &4Modifier &8» &7{modifier-upgrade}'
+    - ' &7▏ &4Radius &8» &c{radius-upgrade}'
+    - ' &7▏ &4Omni &8» &7False'
+    - ' &7▏ &4Mode &8» &7&n{sell-mode}'
+    - ''
+    - ' &7▏ &4Strikes &8» &c&n{mined}'
+    - ' &7▏ &4Uses &8» &c&n{uses}'
+    - ' &7▏ &4Cooldown &8» &c&n10 Seconds'
+    - ''
+    - ' &7▏ &4Rarity &8» &4✪✪✪&7✪✪'
+    - '&4&m---&7&m(->&r &f&m+--------+&r &7&m<-)&4&m---'
+  enchantments:
+    - 'knockback:5'
+  item-flags:
+    - 'hide_attributes'
+  unbreakable: true

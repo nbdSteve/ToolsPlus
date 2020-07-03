@@ -1,0 +1,101 @@
+minimum-tps-for-initiation: 18.50
+
+max-tasks-per-player: 2
+
+chunk-removal:
+  delay: 200 # delay in ticks before blocks will start getting removed. If you have this too low it will throw errors!
+  period: 2 # increase this if you are experiencing major lag
+  blocks-removed-per-period: 128 # decrease this if you are experiencing major lag
+
+block-blacklist:
+  - 'chest'
+  - 'trapped_chest'
+  - 'bedrock'
+  - 'beacon'
+  - 'mob_spawner'
+
+messages:
+  tps-too-low:
+    action-bar: false
+    text:
+      - '&5&lTools&d+&7| The servers tps is too low to use chunk wands at the moment, try again in a few moments.'
+
+  no-chunks-to-bust:
+    action-bar: false
+    text:
+      - '&5&lTools&d+&7| None of the selected chunk(s) can be busted.'
+
+  confirm:
+    action-bar: true
+    text:
+      - '&5&lTools&d+&7| The selected chunk(s) will be busted in &e10 &7seconds.'
+
+  decline:
+    action-bar: true
+    text:
+      - '&5&lTools&d+&7| Chunk busting action aborted.'
+
+  not-holding-same-tool:
+    action-bar: false
+    text:
+      - '&5&lTools&d+&7| You must be holding the same chunk wand to confirm that action.'
+
+  max-tasks-active:
+    action-bar: false
+    text:
+      - '&5&lTools&d+&7| You already have the maximum amount of tasks active.'
+
+  busting-paused:
+    action-bar: true
+    text:
+      - '&5&lTools&d+&7| Chunk busting has been paused while the server TPS recovers.'
+
+  busting-started:
+    action-bar: false
+    text:
+      - '&5&lTools&d+&7| Chunk busting has started with the origin chunk at &eX&7: &e{chunk-x}&7, &eZ&7: &e{chunk-z}&7.'
+
+confirmation-gui:
+  name: '&5&lTools&d+ &7&o(Confirm Chunk Busting)'
+  type: 'hopper'
+  size: 5
+  fillers:
+    slots:
+      - 2
+    material: 'stained_glass_pane'
+    data: 7
+    name: ' '
+    lore:
+    enchantments:
+    item-flags:
+      - 'hide_attributes'
+  1:
+    slots:
+      - 0
+      - 1
+    action: 'confirm'
+    material: 'stained_glass_pane'
+    data: 5
+    name: '&a&nConfirm'
+    lore:
+      - ''
+      - '&7(Left-click to confirm this action)'
+      - ''
+    enchantments:
+    item-flags:
+      - 'hide_attributes'
+  2:
+    slots:
+      - 3
+      - 4
+    action: 'decline'
+    material: 'stained_glass_pane'
+    data: 14
+    name: '&c&nDecline'
+    lore:
+      - ''
+      - '&7(Left-click to decline this action)'
+      - ''
+    enchantments:
+    item-flags:
+      - 'hide_attributes'

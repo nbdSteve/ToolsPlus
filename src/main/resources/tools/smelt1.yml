@@ -1,0 +1,83 @@
+type: 'smelt'
+#
+players-get-drops: true
+#
+upgrades:
+  radius:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0:0.0:0.0:1x1'
+    lore-update-string: ' &7▏ &6Radius &8» &e{radius-upgrade}'
+  modifier:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '1.0:0.0:0.0:1'
+    lore-update-string: ' &7▏ &6Modifier &8» &7{modifier-upgrade}'
+#
+modes:
+  tool:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'smelt1:0.0:Smelt'
+    lore-update-string: ' &7▏ &6Tool &8» &7{tool-mode}'
+  sell:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'mine:0.0:Smelting'
+    lore-update-string: ' &7▏ &6Mode &8» &7&n{sell-mode}'
+#
+uses:
+  enabled: true
+  starting: 250
+  gui: 'uses-gui'
+  lore-update-string: ' &7▏ &6Uses &8» &e&n{uses}'
+#
+blocks-mined:
+  enabled: true
+  lore-update-string: ' &7▏ &6Items Smelted &8» &e&n{mined}'
+#
+omni:
+  enabled: false
+#
+cooldown:
+  enabled: true
+  duration: 10
+#
+item:
+  material: 'furnace'
+  data: 0
+  name: '&e&l⋉ &6&nSmelt Wand&r &7(&f1x1&7) &e&l⋊'
+  lore:
+    - ''
+    - '&6&m---&7&m(->&r &fInformation &7&m<-)&6&m---'
+    - ' &7▏ &6Tool &8» &7{tool-mode}'
+    - ' &7▏ &6Modifier &8» &7{modifier-upgrade}'
+    - ' &7▏ &6Radius &8» &e{radius-upgrade}'
+    - ' &7▏ &6Omni &8» &7False'
+    - ' &7▏ &6Mode &8» &7&n{sell-mode}'
+    - ''
+    - ' &7▏ &6Items Smelted &8» &e&n{mined}'
+    - ' &7▏ &6Uses &8» &e&n{uses}'
+    - ' &7▏ &6Cooldown &8» &e&n10 Seconds'
+    - ''
+    - ' &7▏ &6Rarity &8» &6✪&7✪✪✪✪'
+    - '&6&m---&7&m(->&r &f&m+--------+&r &7&m<-)&6&m---'
+  enchantments:
+    - 'fire_aspect:10'
+  item-flags:
+    - 'hide_attributes'
+  unbreakable: true

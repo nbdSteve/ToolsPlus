@@ -1,0 +1,84 @@
+type: 'tray'
+#
+players-get-drops: true
+#
+upgrades:
+  radius:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '4:0.0:0.0:9x9'
+    lore-update-string: ' &7▏ &bRadius &8» &3{radius-upgrade}'
+  modifier:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '1.0:0.0:0.0:1'
+    lore-update-string: ' &7▏ &bModifier &8» &7{modifier-upgrade}'
+#
+modes:
+  tool:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'tray9:0.0:Tray'
+    lore-update-string: ' &7▏ &bTool &8» &7{tool-mode}'
+  sell:
+    right-click-switch: false
+    sneak-switch: false
+    currency: 'vault'
+    gui: 'mode-switch-gui'
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'mine:0.0:Mining'
+      - 'sell:0.0:Selling'
+    lore-update-string: ' &7▏ &bMode &8» &7&n{sell-mode}'
+#
+uses:
+  enabled: false
+  starting: 0
+  gui: ''
+  lore-update-string: ''
+#
+blocks-mined:
+  enabled: true
+  lore-update-string: ' &7▏ &bBlocks Mined &8» &3&n{mined}'
+#
+omni:
+  enabled: false
+#
+cooldown:
+  enabled: false
+  duration: 0
+#
+item:
+  material: 'diamond_pickaxe'
+  data: 0
+  name: '&3&l⋉ &b&nTray Tool&r &7(&f9x9&7) &3&l⋊'
+  lore:
+    - ''
+    - '&b&m---&7&m(->&r &fInformation &7&m<-)&b&m---'
+    - ' &7▏ &bTool &8» &7{tool-mode}'
+    - ' &7▏ &bModifier &8» &7{modifier-upgrade}'
+    - ' &7▏ &bRadius &8» &3{radius-upgrade}'
+    - ' &7▏ &bOmni &8» &7False'
+    - ' &7▏ &bMode &8» &7&n{sell-mode}'
+    - ''
+    - ' &7▏ &bBlocks Mined &8» &3&n{mined}'
+    - ' &7▏ &bUses &8» &3&nInfinite'
+    - ''
+    - ' &7▏ &bRarity &8» &b✪✪&7✪✪✪'
+    - '&b&m---&7&m(->&r &f&m+--------+&r &7&m<-)&b&m---'
+  enchantments:
+    - 'dig_speed:5'
+    - 'durability:3'
+  item-flags:
+    - 'hide_attributes'
+  unbreakable: true

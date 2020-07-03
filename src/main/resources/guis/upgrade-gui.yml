@@ -1,0 +1,491 @@
+name: '&5&lTools&d+ &7&o(Upgrade Center)'
+type: none
+size: 36
+fillers:
+  slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 15
+    - 17
+    - 18
+    - 19
+    - 24
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+  material: 'stained_glass_pane'
+  data: 7
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+    - 'hide_attributes'
+1:
+  slots:
+    - 10
+  action: 'condition:upgrade:radius:0'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&e&nRadius Upgrade&r &7(&fTier 1&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool radius to tier 1'
+    material: 'ink_sack'
+    data: 8
+    name: '&e&nRadius Upgrade&r &7(&fTier 1&7)'
+    lore:
+      - ''
+      - '&e&m---&7&m(->&r &fInformation &7&m<-)&e&m---'
+      - ' &7▏ &eUpgrade Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eCompounded Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost-compounded}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eLevel &8» &6&n{condition-radius-upgrade-level}'
+      - ''
+      - ' &7▏ &eNext Cost &8» &c{radius-upgrade-cost-relative}'
+      - ' &7▏ &eProgress &8» &6{radius-upgrade-level}&7/&6{radius-upgrade-max}'
+      - ' &7▏ &eCurrent Upgrade &8» &6{radius-current-upgrade}'
+      - ' &7▏ &eNext Upgrade &8» &6&n{radius-next-upgrade}'
+      - '&e&m---&7&m(->&r &f&m+--------+&r &7&m<-)&e&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+2:
+  slots:
+    - 11
+  action: 'condition:upgrade:radius:1'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&e&nRadius Upgrade&r &7(&fTier 2&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool radius to tier 2'
+    material: 'ink_sack'
+    data: 8
+    name: '&e&nRadius Upgrade&r &7(&fTier 2&7)'
+    lore:
+      - ''
+      - '&e&m---&7&m(->&r &fInformation &7&m<-)&e&m---'
+      - ' &7▏ &eUpgrade Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eCompounded Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost-compounded}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eLevel &8» &6&n{condition-radius-upgrade-level}'
+      - ''
+      - ' &7▏ &eNext Cost &8» &c{radius-upgrade-cost-relative}'
+      - ' &7▏ &eProgress &8» &6{radius-upgrade-level}&7/&6{radius-upgrade-max}'
+      - ' &7▏ &eCurrent Upgrade &8» &6{radius-current-upgrade}'
+      - ' &7▏ &eNext Upgrade &8» &6&n{radius-next-upgrade}'
+      - '&e&m---&7&m(->&r &f&m+--------+&r &7&m<-)&e&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+3:
+  slots:
+    - 12
+  action: 'condition:upgrade:radius:2'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&e&nRadius Upgrade&r &7(&fTier 3&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool radius to tier 3'
+    material: 'ink_sack'
+    data: 8
+    name: '&e&nRadius Upgrade&r &7(&fTier 3&7)'
+    lore:
+      - ''
+      - '&e&m---&7&m(->&r &fInformation &7&m<-)&e&m---'
+      - ' &7▏ &eUpgrade Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eCompounded Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost-compounded}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eLevel &8» &6&n{condition-radius-upgrade-level}'
+      - ''
+      - ' &7▏ &eNext Cost &8» &c{radius-upgrade-cost-relative}'
+      - ' &7▏ &eProgress &8» &6{radius-upgrade-level}&7/&6{radius-upgrade-max}'
+      - ' &7▏ &eCurrent Upgrade &8» &6{radius-current-upgrade}'
+      - ' &7▏ &eNext Upgrade &8» &6&n{radius-next-upgrade}'
+      - '&e&m---&7&m(->&r &f&m+--------+&r &7&m<-)&e&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+4:
+  slots:
+    - 13
+  action: 'condition:upgrade:radius:3'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&e&nRadius Upgrade&r &7(&fTier 4&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool radius to tier 4'
+    material: 'ink_sack'
+    data: 8
+    name: '&e&nRadius Upgrade&r &7(&fTier 4&7)'
+    lore:
+      - ''
+      - '&e&m---&7&m(->&r &fInformation &7&m<-)&e&m---'
+      - ' &7▏ &eUpgrade Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eCompounded Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost-compounded}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eLevel &8» &6&n{condition-radius-upgrade-level}'
+      - ''
+      - ' &7▏ &eNext Cost &8» &c{radius-upgrade-cost-relative}'
+      - ' &7▏ &eProgress &8» &6{radius-upgrade-level}&7/&6{radius-upgrade-max}'
+      - ' &7▏ &eCurrent Upgrade &8» &6{radius-current-upgrade}'
+      - ' &7▏ &eNext Upgrade &8» &6&n{radius-next-upgrade}'
+      - '&e&m---&7&m(->&r &f&m+--------+&r &7&m<-)&e&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+5:
+  slots:
+    - 14
+  action: 'condition:upgrade:radius:4'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&e&nRadius Upgrade&r &7(&fTier 5&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool radius to tier 5'
+    material: 'ink_sack'
+    data: 8
+    name: '&e&nRadius Upgrade&r &7(&fTier 5&7)'
+    lore:
+      - ''
+      - '&e&m---&7&m(->&r &fInformation &7&m<-)&e&m---'
+      - ' &7▏ &eUpgrade Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eCompounded Cost &8» &c{radius-upgrade-currency-prefix}{condition-radius-upgrade-cost-compounded}{radius-upgrade-currency-suffix}'
+      - ' &7▏ &eLevel &8» &6&n{condition-radius-upgrade-level}'
+      - ''
+      - ' &7▏ &eNext Cost &8» &c{radius-upgrade-cost-relative}'
+      - ' &7▏ &eProgress &8» &6{radius-upgrade-level}&7/&6{radius-upgrade-max}'
+      - ' &7▏ &eCurrent Upgrade &8» &6{radius-current-upgrade}'
+      - ' &7▏ &eNext Upgrade &8» &6&n{radius-next-upgrade}'
+      - '&e&m---&7&m(->&r &f&m+--------+&r &7&m<-)&e&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+6:
+  slots:
+    - 16
+  action: 'downgrade:radius'
+  material: hdb-2303
+  data: 0
+  name: '&e&nDowngrade Radius'
+  lore:
+    - ''
+    - '&7(Left-click to downgrade the radius of your tool)'
+    - ''
+    - ' &7* Your current upgrade level will be saved - you'
+    - " &7* won't have to pay for the same upgrade twice!"
+    - ''
+    - '&e&m---&7&m(->&r &fInformation &7&m<-)&e&m---'
+    - ' &7▏ &eProgress &8» &6{radius-upgrade-level}&7/&6{radius-upgrade-max}'
+    - ' &7▏ &eCurrent Upgrade &8» &6{radius-current-upgrade}'
+    - '&e&m---&7&m(->&r &f&m+--------+&r &7&m<-)&e&m---'
+  enchantments:
+  item-flags:
+    - hide_attributes
+  unbreakable: false
+7:
+  slots:
+    - 19
+  action: 'condition:upgrade:modifier:0'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&c&nModifier Upgrade&r &7(&fTier 1&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool modifier to tier 1'
+    material: 'ink_sack'
+    data: 8
+    name: '&c&nModifier Upgrade&r &7(&fTier 1&7)'
+    lore:
+      - ''
+      - '&c&m---&7&m(->&r &fInformation &7&m<-)&c&m---'
+      - ' &7▏ &cUpgrade Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cCompounded Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost-compounded}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cLevel &8» &4&n{condition-modifier-upgrade-level}'
+      - ''
+      - ' &7▏ &cNext Cost &8» &c{modifier-upgrade-cost-relative}'
+      - ' &7▏ &cProgress &8» &4{modifier-upgrade-level}&7/&4{modifier-upgrade-max}'
+      - ' &7▏ &cCurrent Upgrade &8» &4{modifier-current-upgrade}'
+      - ' &7▏ &cNext Upgrade &8» &4&n{modifier-next-upgrade}'
+      - '&c&m---&7&m(->&r &f&m+--------+&r &7&m<-)&c&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+8:
+  slots:
+    - 20
+  action: 'condition:upgrade:modifier:1'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&c&nModifier Upgrade&r &7(&fTier 2&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool modifier to tier 2'
+    material: 'ink_sack'
+    data: 8
+    name: '&c&nModifier Upgrade&r &7(&fTier 2&7)'
+    lore:
+      - ''
+      - '&c&m---&7&m(->&r &fInformation &7&m<-)&c&m---'
+      - ' &7▏ &cUpgrade Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cCompounded Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost-compounded}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cLevel &8» &4&n{condition-modifier-upgrade-level}'
+      - ''
+      - ' &7▏ &cNext Cost &8» &c{modifier-upgrade-cost-relative}'
+      - ' &7▏ &cProgress &8» &4{modifier-upgrade-level}&7/&4{modifier-upgrade-max}'
+      - ' &7▏ &cCurrent Upgrade &8» &4{modifier-current-upgrade}'
+      - ' &7▏ &cNext Upgrade &8» &4&n{modifier-next-upgrade}'
+      - '&c&m---&7&m(->&r &f&m+--------+&r &7&m<-)&c&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+9:
+  slots:
+    - 21
+  action: 'condition:upgrade:modifier:2'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&c&nModifier Upgrade&r &7(&fTier 3&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool modifier to tier 3'
+    material: 'ink_sack'
+    data: 8
+    name: '&c&nModifier Upgrade&r &7(&fTier 3&7)'
+    lore:
+      - ''
+      - '&c&m---&7&m(->&r &fInformation &7&m<-)&c&m---'
+      - ' &7▏ &cUpgrade Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cCompounded Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost-compounded}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cLevel &8» &4&n{condition-modifier-upgrade-level}'
+      - ''
+      - ' &7▏ &cNext Cost &8» &c{modifier-upgrade-cost-relative}'
+      - ' &7▏ &cProgress &8» &4{modifier-upgrade-level}&7/&4{modifier-upgrade-max}'
+      - ' &7▏ &cCurrent Upgrade &8» &4{modifier-current-upgrade}'
+      - ' &7▏ &cNext Upgrade &8» &4&n{modifier-next-upgrade}'
+      - '&c&m---&7&m(->&r &f&m+--------+&r &7&m<-)&c&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+10:
+  slots:
+    - 22
+  action: 'condition:upgrade:modifier:3'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&c&nModifier Upgrade&r &7(&fTier 4&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool modifier to tier 4'
+    material: 'ink_sack'
+    data: 8
+    name: '&c&nModifier Upgrade&r &7(&fTier 4&7)'
+    lore:
+      - ''
+      - '&c&m---&7&m(->&r &fInformation &7&m<-)&c&m---'
+      - ' &7▏ &cUpgrade Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cCompounded Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost-compounded}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cLevel &8» &4&n{condition-modifier-upgrade-level}'
+      - ''
+      - ' &7▏ &cNext Cost &8» &c{modifier-upgrade-cost-relative}'
+      - ' &7▏ &cProgress &8» &4{modifier-upgrade-level}&7/&4{modifier-upgrade-max}'
+      - ' &7▏ &cCurrent Upgrade &8» &4{modifier-current-upgrade}'
+      - ' &7▏ &cNext Upgrade &8» &4&n{modifier-next-upgrade}'
+      - '&c&m---&7&m(->&r &f&m+--------+&r &7&m<-)&c&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+11:
+  slots:
+    - 23
+  action: 'condition:upgrade:modifier:4'
+  true:
+    action: 'none'
+    commands:
+    material: 'ink_sack'
+    data: 5
+    name: '&c&nModifier Upgrade&r &7(&fTier 5&7)'
+    lore:
+      - ''
+      - '&7(You have already purchased this upgrade)'
+      - ''
+    enchantments:
+      - 'lure:1'
+    item-flags:
+      - 'hide_enchants'
+    unbreakable: false
+  false:
+    action: 'upgrade'
+    commands:
+      - 'say {player} has upgraded their tool modifier to tier 5'
+    material: 'ink_sack'
+    data: 8
+    name: '&c&nModifier Upgrade&r &7(&fTier 5&7)'
+    lore:
+      - ''
+      - '&c&m---&7&m(->&r &fInformation &7&m<-)&c&m---'
+      - ' &7▏ &cUpgrade Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cCompounded Cost &8» &c{modifier-upgrade-currency-prefix}{condition-modifier-upgrade-cost-compounded}{modifier-upgrade-currency-suffix}'
+      - ' &7▏ &cLevel &8» &4&n{condition-modifier-upgrade-level}'
+      - ''
+      - ' &7▏ &cNext Cost &8» &c{modifier-upgrade-cost-relative}'
+      - ' &7▏ &cProgress &8» &4{modifier-upgrade-level}&7/&4{modifier-upgrade-max}'
+      - ' &7▏ &cCurrent Upgrade &8» &4{modifier-current-upgrade}'
+      - ' &7▏ &cNext Upgrade &8» &4&n{modifier-next-upgrade}'
+      - '&c&m---&7&m(->&r &f&m+--------+&r &7&m<-)&c&m---'
+    enchantments:
+    item-flags:
+    unbreakable: false
+12:
+  slots:
+    - 25
+  action: 'downgrade:modifier'
+  material: hdb-2303
+  data: 0
+  name: '&c&nDowngrade Modifier'
+  lore:
+    - ''
+    - '&7(Left-click to downgrade the modifier of your tool)'
+    - ''
+    - ' &7* Your current upgrade level will be saved - you'
+    - " &7* won't have to pay for the same upgrade twice!"
+    - ''
+    - '&c&m---&7&m(->&r &fInformation &7&m<-)&c&m---'
+    - ' &7▏ &cProgress &8» &4{modifier-upgrade-level}&7/&4{modifier-upgrade-max}'
+    - ' &7▏ &cCurrent Upgrade &8» &4{modifier-current-upgrade}'
+    - '&c&m---&7&m(->&r &f&m+--------+&r &7&m<-)&c&m---'
+  enchantments:
+  item-flags:
+    - hide_attributes
+  unbreakable: false

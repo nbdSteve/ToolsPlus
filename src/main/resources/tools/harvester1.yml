@@ -1,0 +1,95 @@
+type: 'harvester'
+#
+players-get-drops: true
+#
+upgrades:
+  radius:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0:0.0:0.0:1x1'
+    lore-update-string: ' &7▏ &3Radius &8» &b{radius-upgrade}'
+  modifier:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '1.0:0.0:0.0:1'
+    lore-update-string: ' &7▏ &3Modifier &8» &7{modifier-upgrade}'
+#
+modes:
+  tool:
+    right-click-switch: false
+    sneak-switch: false
+    currency: 'vault'
+    gui: 'mode-switch-gui'
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'harvester1:0.0:Harvester'
+    lore-update-string: ' &7▏ &3Tool &8» &7{tool-mode}'
+  sell:
+    right-click-switch: true
+    sneak-switch: false
+    currency: 'vault'
+    gui: 'mode-switch-gui'
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'mine:0.0:Harvesting'
+      - 'sell:0.0:Selling'
+    lore-update-string: '{sell-mode}'
+#
+uses:
+  enabled: true
+  starting: 2500
+  gui: 'uses-gui'
+  lore-update-string: ' &7▏ &3Uses &8» &b&n{uses}'
+#
+blocks-mined:
+  enabled: true
+  lore-update-string: ' &7▏ &3Blocks Harvested &8» &b&n{mined}'
+#
+#
+cane-mined:
+  enabled: true
+  lore-update-string: ' &7▏ &3Cane Mined &8» &b&n{cane-mined}'
+#
+auto-replant:
+  enabled: false
+#
+omni:
+  enabled: false
+#
+cooldown:
+  enabled: false
+  duration: 0
+#
+item:
+  material: 'iron_hoe'
+  data: 0
+  name: '&b&l⋉ &3&nHarvester Hoe&r &7[&f{sell-mode}&7] (&f1x1&7) &b&l⋊'
+  lore:
+    - ''
+    - '&7(Right-click to switch your tools mode)'
+    - ''
+    - '&3&m---&7&m(->&r &fInformation &7&m<-)&3&m---'
+    - ' &7▏ &3Tool &8» &7{tool-mode}'
+    - ' &7▏ &3Modifier &8» &7{modifier-upgrade}'
+    - ' &7▏ &3Radius &8» &b{radius-upgrade}'
+    - ' &7▏ &3Omni &8» &7False'
+    - ' &7▏ &3Auto Replant &8» &7False'
+    - ' &7▏ &3Mode &8» &7&n{sell-mode}'
+    - ''
+    - ' &7▏ &3Blocks Harvested &8» &b&n{mined}'
+    - ' &7▏ &3Cane Mined &8» &b&n{mined}'
+    - ' &7▏ &3Uses &8» &b&n{uses}'
+    - ''
+    - ' &7▏ &3Rarity &8» &3✪&7✪✪✪✪'
+    - '&3&m---&7&m(->&r &f&m+--------+&r &7&m<-)&3&m---'
+  enchantments:
+    - 'oxygen:10'
+  item-flags:
+    - 'hide_attributes'
+  unbreakable: true

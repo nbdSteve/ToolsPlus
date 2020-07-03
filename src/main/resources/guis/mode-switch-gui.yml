@@ -1,0 +1,49 @@
+name: '&5&lTools&d+ &7&o(Mode Switch)'
+type: 'hopper'
+size: 54
+fillers:
+  slots:
+    - 0
+    - 2
+    - 4
+  material: 'stained_glass_pane'
+  data: 7
+  name: ' '
+  lore:
+  enchantments:
+  item-flags:
+    - hide_attributes
+1:
+  slots:
+    - 1
+  action: 'mode-switch:tool'
+  material: hdb-6844
+  data: 0
+  name: '&d&nTool Mode Change'
+  lore:
+    - ''
+    - '&7(Left-click to change your tools tool mode)'
+    - ''
+    - ' &7* &dCost: &c{tool-mode-change-cost-relative}'
+    - ' &7* &dCurrent Mode: &5{tool-current-mode}'
+    - ' &7* &dNext Mode: &5{tool-next-mode}'
+  enchantments:
+  item-flags:
+  unbreakable: false
+2:
+  slots:
+    - 3
+  action: 'mode-switch:sell'
+  material: hdb-8210
+  data: 0
+  name: '&d&nSell Mode Change'
+  lore:
+    - ''
+    - '&7(Left-click to change your tools sell mode)'
+    - ''
+    - ' &7* &dCost: &c{sell-mode-change-cost-relative}'
+    - ' &7* &dCurrent Mode: &5{sell-current-mode}'
+    - ' &7* &dNext Mode: &5{sell-next-mode}'
+  enchantments:
+  item-flags:
+  unbreakable: false

@@ -1,0 +1,83 @@
+type: 'sell'
+#
+players-get-drops: true
+#
+upgrades:
+  radius:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0:0.0:0.0:1x1'
+    lore-update-string: ' &7▏ &3Radius &8» &9{radius-upgrade}'
+  modifier:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '1.0:0.0:0.0:1'
+    lore-update-string: ' &7▏ &3Modifier &8» &7{modifier-upgrade}'
+#
+modes:
+  tool:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'sell1:0.0:Sell'
+    lore-update-string: ' &7▏ &3Tool &8» &7{tool-mode}'
+  sell:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'sell:0.0:Selling'
+    lore-update-string: ' &7▏ &3Mode &8» &7&n{sell-mode}'
+#
+uses:
+  enabled: true
+  starting: 2500
+  gui: 'uses-gui'
+  lore-update-string: ' &7▏ &3Uses &8» &9&n{uses}'
+#
+blocks-mined:
+  enabled: true
+  lore-update-string: ' &7▏ &3Items Sold &8» &9&n{mined}'
+#
+omni:
+  enabled: false
+#
+cooldown:
+  enabled: true
+  duration: 10
+#
+item:
+  material: 'diamond_hoe'
+  data: 0
+  name: '&9&l⋉ &3&nSell Wand&r &7(&f1x1&7) &9&l⋊'
+  lore:
+    - ''
+    - '&3&m---&7&m(->&r &fInformation &7&m<-)&3&m---'
+    - ' &7▏ &3Tool &8» &7{tool-mode}'
+    - ' &7▏ &3Modifier &8» &7{modifier-upgrade}'
+    - ' &7▏ &3Radius &8» &9{radius-upgrade}'
+    - ' &7▏ &3Omni &8» &7False'
+    - ' &7▏ &3Mode &8» &7&n{sell-mode}'
+    - ''
+    - ' &7▏ &3Items Sold &8» &9&n{mined}'
+    - ' &7▏ &3Uses &8» &9&n{uses}'
+    - ' &7▏ &3Cooldown &8» &9&n10 Seconds'
+    - ''
+    - ' &7▏ &3Rarity &8» &3✪&7✪✪✪✪'
+    - '&3&m---&7&m(->&r &f&m+--------+&r &7&m<-)&3&m---'
+  enchantments:
+    - 'luck:10'
+  item-flags:
+    - 'hide_attributes'
+  unbreakable: true

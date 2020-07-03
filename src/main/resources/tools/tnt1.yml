@@ -1,0 +1,83 @@
+type: 'tnt'
+#
+players-get-drops: true
+#
+upgrades:
+  radius:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0:0.0:0.0:1x1'
+    lore-update-string: ' &7▏ &cRadius &8» &f{radius-upgrade}'
+  modifier:
+    allow-downgrade: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '1.0:0.0:0.0:1'
+    lore-update-string: ' &7▏ &cModifier &8» &7{modifier-upgrade}'
+#
+modes:
+  tool:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'tnt1:0.0:TNT'
+    lore-update-string: ' &7▏ &cTool &8» &7{tool-mode}'
+  sell:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'mine:0.0:Depositing'
+    lore-update-string: ' &7▏ &cMode &8» &7&n{sell-mode}'
+#
+uses:
+  enabled: true
+  starting: 15
+  gui: 'uses-gui'
+  lore-update-string: ' &7▏ &cUses &8» &f&n{uses}'
+#
+blocks-mined:
+  enabled: true
+  lore-update-string: ' &7▏ &cTNT Banked &8» &f&n{mined}'
+#
+omni:
+  enabled: false
+#
+cooldown:
+  enabled: true
+  duration: 10
+#
+item:
+  material: 'stick'
+  data: 0
+  name: '&f&l⋉ &c&nTNT Wand&r &7(&f1x1&7) &f&l⋊'
+  lore:
+    - ''
+    - '&c&m---&7&m(->&r &fInformation &7&m<-)&c&m---'
+    - ' &7▏ &cTool &8» &7{tool-mode}'
+    - ' &7▏ &cModifier &8» &7{modifier-upgrade}'
+    - ' &7▏ &cRadius &8» &f{radius-upgrade}'
+    - ' &7▏ &cOmni &8» &7False'
+    - ' &7▏ &cMode &8» &7&n{sell-mode}'
+    - ''
+    - ' &7▏ &cTNT Banked &8» &f&n{mined}'
+    - ' &7▏ &cUses &8» &f&n{uses}'
+    - ' &7▏ &cCooldown &8» &f&n10 Seconds'
+    - ''
+    - ' &7▏ &cRarity &8» &c✪&7✪✪✪✪'
+    - '&c&m---&7&m(->&r &f&m+--------+&r &7&m<-)&c&m---'
+  enchantments:
+    - 'arrow_knockback:10'
+  item-flags:
+    - 'hide_attributes'
+  unbreakable: true

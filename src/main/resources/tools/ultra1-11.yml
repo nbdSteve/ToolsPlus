@@ -1,0 +1,112 @@
+type: 'trench'
+#
+players-get-drops: true
+#
+upgrades:
+  radius:
+    allow-downgrade: true
+    currency: 'vault'
+    gui: 'upgrade-gui'
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0:0.0:0.0:1x1'
+      - '1:6250.0:0.0:3x3'
+      - '2:12500.0:0.0:5x5'
+      - '3:25000.0:0.0:7x7'
+      - '4:50000.0:0.0:9x9'
+      - '5:100000.0:0.0:11x11'
+    lore-update-string: ' &7▏ &dRadius &8» &5{radius-upgrade}'
+  modifier:
+    allow-downgrade: true
+    currency: 'vault'
+    gui: 'upgrade-gui'
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '1.0:0.0:0.0:1'
+      - '1.2:12500.0:0.0:1.2'
+      - '1.4:25000.0:0.0:1.4'
+      - '1.6:50000.0:0.0:1.6'
+      - '1.8:100000.0:0.0:1.8'
+    lore-update-string: ' &7▏ &dModifier &8» &7{modifier-upgrade}'
+#
+modes:
+  tool:
+    right-click-switch: false
+    sneak-switch: true
+    currency: 'vault'
+    gui: 'mode-switch-gui'
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'trench11:0.0:Trench'
+      - 'tray11:0.0:Tray'
+      - 'aqua5:0.0:Aqua'
+      - 'chunk5:0.0:Chunk'
+      - 'craft5:0.0:Craft'
+      - 'harvester7:0.0:Harvester'
+      - 'lightning1:0.0:Lightning'
+      - 'sand5:0.0:Sand'
+      - 'sell5:0.0:Sell'
+      - 'smelt5:0.0:Smelt'
+      - 'tnt5:0.0:TNT'
+    lore-update-string: '{tool-mode}'
+  sell:
+    right-click-switch: false
+    sneak-switch: false
+    currency: 'vault'
+    gui: 'mode-switch-gui'
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'mine:0.0:Mining'
+      - 'sell:0.0:Selling'
+      - 'drain:0.0:Draining'
+      - 'melt:0.0:Melting'
+    lore-update-string: ' &7▏ &dMode &8» &7&n{sell-mode}'
+#
+uses:
+  enabled: false
+  starting: 0
+  gui: ''
+  lore-update-string: ''
+#
+blocks-mined:
+  enabled: true
+  lore-update-string: ' &7▏ &dBlocks Mined &8» &5&n{mined}'
+#
+omni:
+  enabled: true
+#
+cooldown:
+  enabled: false
+  duration: 0
+#
+item:
+  material: 'wood_pickaxe'
+  data: 0
+  name: '&5&l⋉ &d&nUltra Tool&r &7[&f{tool-mode}&7] (&fUpgradeable&7) &5&l⋊'
+  lore:
+    - ''
+    - '&7This tool has 11 different modes to choose'
+    - '&7from, that includes all tools on the server.'
+    - ''
+    - '&7(Use &f/upgrade &7to upgrade the radius)'
+    - ''
+    - '&7(Right-click to switch your tools mode)'
+    - ''
+    - '&d&m---&7&m(->&r &fInformation &7&m<-)&d&m---'
+    - ' &7▏ &dTool &8» &7{tool-mode}'
+    - ' &7▏ &dModifier &8» &7{modifier-upgrade}'
+    - ' &7▏ &dRadius &8» &5{radius-upgrade}'
+    - ' &7▏ &dOmni &8» &7True'
+    - ' &7▏ &dMode &8» &7&n{sell-mode}'
+    - ''
+    - ' &7▏ &dBlocks Mined &8» &5&n{mined}'
+    - ' &7▏ &dUses &8» &5&nInfinite'
+    - ''
+    - ' &7▏ &dRarity &8» &d✪✪✪✪&7✪'
+    - '&d&m---&7&m(->&r &f&m+--------+&r &7&m<-)&d&m---'
+  enchantments:
+    - 'dig_speed:5'
+    - 'durability:3'
+  item-flags:
+    - 'hide_attributes'
+  unbreakable: true

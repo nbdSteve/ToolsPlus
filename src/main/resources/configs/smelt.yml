@@ -1,0 +1,19 @@
+containers:
+  - chest
+  - trapped_chest
+
+messages:
+  smelt:
+    action-bar: true
+    text:
+      - '&5&lTools&d+&7| You have smelted &6x{amount} Items.'
+
+  none-smelted:
+    action-bar: true
+    text:
+      - '&5&lTools&d+&7| The container(s) selected do not contain any items to smelt.'
+
+conversions:
+  # syntax: raw_type:data-smelted_type:data
+  - 'iron_ore:0-iron_ingot:0'
+  - 'gold_ore:0-gold_ingot:0'

@@ -1,0 +1,86 @@
+type: 'sand'
+#
+players-get-drops: true
+#
+upgrades:
+  radius:
+    allow-downgrade: true
+    currency: 'vault'
+    gui: 'upgrade-gui'
+    track:
+      # syntax: <radius>:<upgrade price>:<downgrade price>:<string for lore>
+      - '0:0.0:0.0:1x1'
+      - '1:12500.0:0.0:3x3'
+      - '2:25000.0:0.0:5x5'
+    lore-update-string: ' &7▏ &eRadius &8» &6{radius-upgrade}'
+  modifier:
+    allow-downgrade: false
+    currency: 'vault'
+    gui: 'upgrade-gui'
+    track:
+      # syntax: <modifier>:<upgrade price>:<downgrade price>:<string for lore>
+      - '1.0:0.0:0.0:1'
+    lore-update-string: ' &7▏ &eModifier &8» &7{modifier-upgrade}'
+#
+modes:
+  tool:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'sand1-5:0.0:Sand'
+    lore-update-string: ' &7▏ &eTool &8» &7{tool-mode}'
+  sell:
+    right-click-switch: false
+    sneak-switch: false
+    currency: ''
+    gui: ''
+    track:
+      # syntax: <mode type>:<price>:<string for lore>
+      - 'mine:0.0:Removing'
+    lore-update-string: ' &7▏ &eMode &8» &7&n{sell-mode}'
+#
+uses:
+  enabled: false
+  starting: 0
+  gui: ''
+  lore-update-string: ''
+#
+blocks-mined:
+  enabled: true
+  lore-update-string: ' &7▏ &eSand Removed &8» &6&n{mined}'
+#
+omni:
+  enabled: false
+#
+cooldown:
+  enabled: false
+  duration: 0
+#
+item:
+  material: 'diamond_hoe'
+  data: 0
+  name: '&6&l⋉ &e&nSand Wand&r &7(&fUpgradeable&7) &6&l⋊'
+  lore:
+    - ''
+    - '&7(Use &f/upgrade &7to upgrade the radius)'
+    - ''
+    - '&e&m---&7&m(->&r &fInformation &7&m<-)&e&m---'
+    - ' &7▏ &eTool &8» &7{tool-mode}'
+    - ' &7▏ &eModifier &8» &7{modifier-upgrade}'
+    - ' &7▏ &eRadius &8» &6{radius-upgrade}'
+    - ' &7▏ &eOmni &8» &7False'
+    - ' &7▏ &eMode &8» &7&n{sell-mode}'
+    - ''
+    - ' &7▏ &eSand Removed &8» &6&n{mined}'
+    - ' &7▏ &eUses &8» &6&nInfinite'
+    - ''
+    - ' &7▏ &eRarity &8» &e✪✪✪✪&7✪'
+    - '&e&m---&7&m(->&r &f&m+--------+&r &7&m<-)&e&m---'
+  enchantments:
+    - 'knockback:3'
+  item-flags:
+    - 'hide_attributes'
+  unbreakable: true
