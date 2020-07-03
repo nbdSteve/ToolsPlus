@@ -3,9 +3,9 @@ package gg.steve.mc.tp.currency.types;
 import gg.steve.mc.tp.ToolsPlus;
 import gg.steve.mc.tp.currency.AbstractCurrency;
 import gg.steve.mc.tp.currency.CurrencyType;
-import gg.steve.mc.tp.message.GeneralMessage;
+import gg.steve.mc.tp.framework.message.GeneralMessage;
 import gg.steve.mc.tp.tool.PlayerTool;
-import gg.steve.mc.tp.utils.XpUtil;
+import gg.steve.mc.tp.framework.utils.XpUtil;
 import org.bukkit.entity.Player;
 
 public class XpRawCurrencyType extends AbstractCurrency {

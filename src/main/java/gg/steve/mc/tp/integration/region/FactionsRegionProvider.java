@@ -1,7 +1,7 @@
 package gg.steve.mc.tp.integration.region;
 
 import gg.steve.mc.tp.integration.providers.FactionsProvider;
-import gg.steve.mc.tp.utils.LogUtil;
+import gg.steve.mc.tp.framework.utils.LogUtil;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;

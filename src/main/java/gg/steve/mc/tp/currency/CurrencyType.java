@@ -1,7 +1,7 @@
 package gg.steve.mc.tp.currency;
 
 import gg.steve.mc.tp.currency.types.*;
-import gg.steve.mc.tp.managers.Files;
+import gg.steve.mc.tp.framework.yml.Files;
 
 public enum CurrencyType {
     VAULT("vault"),

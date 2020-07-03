@@ -1,8 +1,8 @@
 package gg.steve.mc.tp.player.listener;
 
 import gg.steve.mc.tp.attribute.ToolAttributeType;
-import gg.steve.mc.tp.managers.Files;
-import gg.steve.mc.tp.message.DebugMessage;
+import gg.steve.mc.tp.framework.yml.Files;
+import gg.steve.mc.tp.framework.message.DebugMessage;
 import gg.steve.mc.tp.mode.ModeType;
 import gg.steve.mc.tp.player.PlayerToolManager;
 import gg.steve.mc.tp.tool.PlayerTool;

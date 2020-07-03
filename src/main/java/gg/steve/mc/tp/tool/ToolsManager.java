@@ -1,14 +1,14 @@
 package gg.steve.mc.tp.tool;
 
 import gg.steve.mc.tp.ToolsPlus;
-import gg.steve.mc.tp.managers.Files;
+import gg.steve.mc.tp.framework.yml.Files;
 import gg.steve.mc.tp.module.ModuleManager;
 import gg.steve.mc.tp.module.ToolsPlusModule;
-import gg.steve.mc.tp.nbt.NBTItem;
-import gg.steve.mc.tp.utils.LogUtil;
-import gg.steve.mc.tp.managers.PluginFile;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
+import gg.steve.mc.tp.framework.utils.LogUtil;
+import gg.steve.mc.tp.framework.yml.PluginFile;
 import gg.steve.mc.tp.tool.utils.ToolLoaderUtil;
-import gg.steve.mc.tp.utils.YamlFileUtil;
+import gg.steve.mc.tp.framework.yml.utils.YamlFileUtil;
 
 import java.io.File;
 import java.util.HashMap;

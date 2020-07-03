@@ -1,13 +1,13 @@
 package gg.steve.mc.tp.upgrade.utils;
 
 import gg.steve.mc.tp.ToolsPlus;
-import gg.steve.mc.tp.message.GeneralMessage;
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.message.GeneralMessage;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.tool.PlayerTool;
 import gg.steve.mc.tp.tool.utils.GetToolHoldingUtil;
 import gg.steve.mc.tp.tool.utils.LoreUpdaterUtil;
 import gg.steve.mc.tp.upgrade.AbstractUpgrade;
-import gg.steve.mc.tp.utils.LogUtil;
+import gg.steve.mc.tp.framework.utils.LogUtil;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 

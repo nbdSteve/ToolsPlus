@@ -2,12 +2,11 @@ package gg.steve.mc.tp.module;
 
 import gg.steve.mc.tp.ToolsPlus;
 import gg.steve.mc.tp.module.utils.ModuleLoaderUtil;
-import gg.steve.mc.tp.utils.LogUtil;
+import gg.steve.mc.tp.framework.utils.LogUtil;
 import org.apache.commons.lang.Validate;
 
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class ModuleManager {

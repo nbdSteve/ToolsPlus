@@ -3,7 +3,7 @@ package gg.steve.mc.tp.currency.types;
 import gg.steve.mc.tp.ToolsPlus;
 import gg.steve.mc.tp.currency.AbstractCurrency;
 import gg.steve.mc.tp.currency.CurrencyType;
-import gg.steve.mc.tp.message.GeneralMessage;
+import gg.steve.mc.tp.framework.message.GeneralMessage;
 import gg.steve.mc.tp.tool.PlayerTool;
 import org.bukkit.entity.Player;
 

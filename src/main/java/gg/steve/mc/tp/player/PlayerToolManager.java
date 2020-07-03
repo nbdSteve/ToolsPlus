@@ -1,6 +1,6 @@
 package gg.steve.mc.tp.player;
 
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.tool.PlayerTool;
 import gg.steve.mc.tp.tool.utils.GetToolHoldingUtil;
 import org.bukkit.Bukkit;

@@ -6,7 +6,7 @@
 
     <groupId>gg.steve.mc.tp</groupId>
     <artifactId>ToolsPlus</artifactId>
-    <version>2.0.0-PR1-DV14</version>
+    <version>2.0.0-FR1</version>
     <packaging>jar</packaging>
 
     <name>ToolsPlus</name>
@@ -18,7 +18,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>http://steve.gg</url>
+    <url>http://steve.gg/mc/toolsplus</url>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
@@ -28,6 +28,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.7.0</version>
                 <configuration>
+                    <encoding>UTF-8</encoding>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
@@ -83,30 +84,28 @@
             <url>https://repo.codemc.org/repository/maven-public</url>
         </repository>
 
+        <!--placeholder integration-->
+        <repository>
+            <id>placeholderapi</id>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+        </repository>
+
+        <!--essentials integration-->
+        <repository>
+            <id>ess-repo</id>
+            <url>https://ci.ender.zone/plugin/repository/everything/</url>
+        </repository>
+
         <!--region providers-->
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
-        <repository>
-            <id>placeholderapi</id>
-            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
-        </repository>
-        <repository>
-            <id>ess-repo</id>
-            <url>https://ci.ender.zone/plugin/repository/everything/</url>
-        </repository>
-        <repository>
-            <id>sk89q-repo</id>
-            <url>https://maven.enginehub.org/repo/</url>
-        </repository>
+
+        <!--guilds integration-->
         <repository>
             <id>glares-repo</id>
             <url>https://repo.glaremasters.me/repository/public/</url>
-        </repository>
-        <repository>
-            <id>savagelabs</id>
-            <url>https://nexus.savagelabs.net/repository/maven-public/</url>
         </repository>
     </repositories>
 
@@ -115,7 +114,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.15.2-R0.1-SNAPSHOT</version>
+            <version>1.16.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
@@ -184,16 +183,6 @@
             <version>4.5.9.9</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>net.prosavage.factionsx</groupId>
-            <artifactId>FactionsX</artifactId>
-            <version>0.4.2-PATREON</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!--WorldGuard region support is now handled with the libs folder-->
-
-        <!--local repositories because people don't like maven-->
     </dependencies>
 
     <!--used for deploying packages to the GitHub repository-->

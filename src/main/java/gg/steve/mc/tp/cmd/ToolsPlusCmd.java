@@ -1,6 +1,7 @@
 package gg.steve.mc.tp.cmd;
 
-import gg.steve.mc.tp.message.DebugMessage;
+import gg.steve.mc.tp.framework.cmd.SubCommandType;
+import gg.steve.mc.tp.framework.message.DebugMessage;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

@@ -5,8 +5,8 @@ import gg.steve.mc.tp.integration.libs.ToolsPlusLib;
 import gg.steve.mc.tp.integration.libs.ToolsPlusLibManager;
 import gg.steve.mc.tp.integration.libs.ToolsPlusLibType;
 import gg.steve.mc.tp.module.ToolsPlusModule;
-import gg.steve.mc.tp.utils.FileClassUtil;
-import gg.steve.mc.tp.utils.LogUtil;
+import gg.steve.mc.tp.framework.utils.FileClassUtil;
+import gg.steve.mc.tp.framework.utils.LogUtil;
 
 import java.io.File;
 import java.lang.reflect.Constructor;

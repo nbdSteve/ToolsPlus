@@ -1,7 +1,7 @@
 package gg.steve.mc.tp.papi;
 
 import gg.steve.mc.tp.ToolsPlus;
-import gg.steve.mc.tp.managers.Files;
+import gg.steve.mc.tp.framework.yml.Files;
 import gg.steve.mc.tp.mode.ModeType;
 import gg.steve.mc.tp.module.ModuleManager;
 import gg.steve.mc.tp.player.PlayerToolManager;
@@ -62,7 +62,6 @@ public class ToolsPlusExpansion extends PlaceholderExpansion {
                 return ToolsPlus.formatNumber(toolPlayer.getPlayerTool().getUpgradeLevel(UpgradeType.RADIUS) + 1);
             }
             if (identifier.equalsIgnoreCase("player_radius_next_price")) {
-//                return ToolsPlus.formatNumber(toolPlayer.getLoadedTool().getNextUpgradePrice(UpgradeType.RADIUS, toolPlayer.getLoadedTool().getUpgradeLevel(UpgradeType.RADIUS)));
                 return ToolsPlus.formatNumber(toolPlayer.getPlayerTool().getAbstractTool().getUpgrade(UpgradeType.RADIUS).getUpgradePriceForLevel(toolPlayer.getPlayerTool().getUpgradeLevel(UpgradeType.RADIUS)));
             }
             if (identifier.equalsIgnoreCase("player_radius_max")) {
@@ -112,6 +111,6 @@ public class ToolsPlusExpansion extends PlaceholderExpansion {
                 return ToolsManager.getPlayerToolCount();
             }
         }
-        return "debug";
+        return "Invalid Placeholder";
     }
 }

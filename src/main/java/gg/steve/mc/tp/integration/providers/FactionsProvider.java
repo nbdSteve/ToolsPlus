@@ -3,7 +3,7 @@ package gg.steve.mc.tp.integration.providers;
 import gg.steve.mc.tp.integration.libs.ToolsPlusLib;
 import gg.steve.mc.tp.integration.libs.ToolsPlusLibManager;
 import gg.steve.mc.tp.integration.libs.ToolsPlusLibType;
-import gg.steve.mc.tp.utils.LogUtil;
+import gg.steve.mc.tp.framework.utils.LogUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -14,6 +14,10 @@ public class FactionsProvider {
 
     public static void loadProvider() {
         factionsPlugin = null;
+        if (Bukkit.getPluginManager().getPlugin("FactionsX") != null) {
+            factionsPlugin = ToolsPlusLibType.FACTIONS_X;
+            return;
+        }
         if (Bukkit.getPluginManager().getPlugin("Factions") == null) return;
         Plugin factions = Bukkit.getPluginManager().getPlugin("Factions");
         if (factions.getDescription().getMain().contains("FactionsPlugin")) {

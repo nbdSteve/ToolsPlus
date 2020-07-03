@@ -1,10 +1,10 @@
 package gg.steve.mc.tp.cmd.give;
 
 import gg.steve.mc.tp.ToolsPlus;
-import gg.steve.mc.tp.cmd.SubCommand;
-import gg.steve.mc.tp.message.DebugMessage;
-import gg.steve.mc.tp.nbt.NBTItem;
-import gg.steve.mc.tp.permission.PermissionNode;
+import gg.steve.mc.tp.framework.cmd.SubCommand;
+import gg.steve.mc.tp.framework.message.DebugMessage;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
+import gg.steve.mc.tp.framework.permission.PermissionNode;
 import gg.steve.mc.tp.player.PlayerToolManager;
 import gg.steve.mc.tp.tool.AbstractTool;
 import gg.steve.mc.tp.tool.ToolsManager;

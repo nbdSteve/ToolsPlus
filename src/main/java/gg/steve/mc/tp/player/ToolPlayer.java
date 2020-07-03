@@ -1,6 +1,6 @@
 package gg.steve.mc.tp.player;
 
-import gg.steve.mc.tp.gui.AbstractGui;
+import gg.steve.mc.tp.framework.gui.AbstractGui;
 import gg.steve.mc.tp.tool.PlayerTool;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;

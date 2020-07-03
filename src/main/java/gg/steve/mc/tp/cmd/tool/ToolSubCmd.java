@@ -1,8 +1,8 @@
 package gg.steve.mc.tp.cmd.tool;
 
-import gg.steve.mc.tp.cmd.SubCommand;
-import gg.steve.mc.tp.message.DebugMessage;
-import gg.steve.mc.tp.permission.PermissionNode;
+import gg.steve.mc.tp.framework.cmd.SubCommand;
+import gg.steve.mc.tp.framework.message.DebugMessage;
+import gg.steve.mc.tp.framework.permission.PermissionNode;
 import gg.steve.mc.tp.tool.ToolsManager;
 import org.bukkit.command.CommandSender;
 

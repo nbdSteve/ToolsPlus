@@ -1,14 +1,13 @@
 package gg.steve.mc.tp.tool;
 
 import gg.steve.mc.tp.attribute.ToolAttributeManager;
-import gg.steve.mc.tp.gui.AbstractGui;
-import gg.steve.mc.tp.managers.PluginFile;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
+import gg.steve.mc.tp.framework.yml.PluginFile;
 import gg.steve.mc.tp.mode.AbstractModeChange;
 import gg.steve.mc.tp.mode.ModeType;
 import gg.steve.mc.tp.mode.ToolModeChangeManager;
 import gg.steve.mc.tp.module.ModuleManager;
 import gg.steve.mc.tp.module.ToolsPlusModule;
-import gg.steve.mc.tp.nbt.NBTItem;
 import gg.steve.mc.tp.upgrade.AbstractUpgrade;
 import gg.steve.mc.tp.upgrade.ToolUpgradeManager;
 import gg.steve.mc.tp.upgrade.UpgradeType;
@@ -18,14 +17,13 @@ import org.bukkit.inventory.ItemStack;
 import java.util.UUID;
 
 public abstract class AbstractTool {
-    private String moduleId;
+    private String moduleId, usesGuiName;
     private ToolData data;
     private NBTItem item;
     private PluginFile config;
     private ToolAttributeManager attributeManager;
     private ToolUpgradeManager upgradeManager;
     private ToolModeChangeManager modeChangeManager;
-    private AbstractGui usesGui;
     private boolean playersGetDrops;
 
     public AbstractTool(String moduleId, NBTItem item, PluginFile config) {
@@ -72,12 +70,12 @@ public abstract class AbstractTool {
         return item;
     }
 
-    public void setUsesGui(AbstractGui gui) {
-        this.usesGui = gui;
+    public void setUsesGuiName(String name) {
+        this.usesGuiName = name;
     }
 
-    public AbstractGui getUsesGui() {
-        return usesGui;
+    public String getUsesGuiName() {
+        return usesGuiName;
     }
 
     public ToolAttributeManager getAttributeManager() {

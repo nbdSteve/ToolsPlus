@@ -1,8 +1,8 @@
 package gg.steve.mc.tp.module;
 
 import gg.steve.mc.tp.ToolsPlus;
-import gg.steve.mc.tp.managers.PluginFile;
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.yml.PluginFile;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.tool.AbstractTool;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.event.Listener;

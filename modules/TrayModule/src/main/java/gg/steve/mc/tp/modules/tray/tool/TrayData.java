@@ -1,12 +1,12 @@
 package gg.steve.mc.tp.modules.tray.tool;
 
 import gg.steve.mc.tp.integration.sell.SellIntegrationManager;
-import gg.steve.mc.tp.message.GeneralMessage;
+import gg.steve.mc.tp.framework.message.GeneralMessage;
 import gg.steve.mc.tp.mode.ModeType;
 import gg.steve.mc.tp.modules.tray.TrayModule;
 import gg.steve.mc.tp.tool.PlayerTool;
 import gg.steve.mc.tp.tool.ToolData;
-import gg.steve.mc.tp.utils.CubeUtil;
+import gg.steve.mc.tp.framework.utils.CubeUtil;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.enchantments.Enchantment;

@@ -4,12 +4,12 @@ import gg.steve.mc.tp.attribute.types.BlocksMinedToolAttribute;
 import gg.steve.mc.tp.attribute.types.CooldownToolAttribute;
 import gg.steve.mc.tp.attribute.types.OmniToolAttribute;
 import gg.steve.mc.tp.attribute.types.UsesToolAttribute;
-import gg.steve.mc.tp.managers.FileManager;
-import gg.steve.mc.tp.managers.PluginFile;
+import gg.steve.mc.tp.framework.yml.PluginFile;
+import gg.steve.mc.tp.framework.yml.utils.FileManagerUtil;
 import gg.steve.mc.tp.mode.types.SellModeChange;
 import gg.steve.mc.tp.mode.types.ToolTypeModeChange;
 import gg.steve.mc.tp.modules.sell.SellModule;
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.tool.AbstractTool;
 import gg.steve.mc.tp.upgrade.types.ModifierUpgrade;
 import gg.steve.mc.tp.upgrade.types.RadiusUpgrade;
@@ -40,7 +40,7 @@ public class SellWand extends AbstractTool {
 
     @Override
     public YamlConfiguration getModuleConfig() {
-        return FileManager.get(SellModule.moduleConfigId);
+        return FileManagerUtil.get(SellModule.moduleConfigId);
     }
 
     @Override

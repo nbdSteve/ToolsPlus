@@ -1,11 +1,11 @@
 package gg.steve.mc.tp.modules.trench;
 
-import gg.steve.mc.tp.managers.FileManager;
-import gg.steve.mc.tp.managers.PluginFile;
+import gg.steve.mc.tp.framework.yml.PluginFile;
+import gg.steve.mc.tp.framework.yml.utils.FileManagerUtil;
 import gg.steve.mc.tp.managers.ToolConfigDataManager;
 import gg.steve.mc.tp.module.ToolsPlusModule;
 import gg.steve.mc.tp.modules.trench.tool.TrenchTool;
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.tool.AbstractTool;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.event.Listener;
@@ -32,7 +32,7 @@ public class TrenchModule extends ToolsPlusModule {
 
     @Override
     public String getAuthor() {
-        return "nbdSteve";
+        return "stevegoodhill";
     }
 
     @Override
@@ -59,7 +59,7 @@ public class TrenchModule extends ToolsPlusModule {
 
     @Override
     public void onLoad() {
-        ToolConfigDataManager.addMaterialList(moduleId, FileManager.get(moduleConfigId).getStringList("blacklist"));
+        ToolConfigDataManager.addMaterialList(moduleId, FileManagerUtil.get(moduleConfigId).getStringList("blacklist"));
     }
 
     @Override

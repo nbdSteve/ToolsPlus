@@ -1,6 +1,6 @@
 package gg.steve.mc.tp.managers;
 
-import gg.steve.mc.tp.utils.LogUtil;
+import gg.steve.mc.tp.framework.utils.LogUtil;
 import org.bukkit.Material;
 
 import java.util.ArrayList;

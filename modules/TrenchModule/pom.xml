@@ -88,7 +88,7 @@
         <dependency>
             <groupId>gg.steve.mc.tp</groupId>
             <artifactId>ToolsPlus</artifactId>
-            <version>2.0.0-PR1-DV11</version>
+            <version>2.0.0-PR1-DV15</version>
         </dependency>
     </dependencies>
 </project>

@@ -1,10 +1,10 @@
 package gg.steve.mc.tp.cmd.tool;
 
 import gg.steve.mc.tp.ToolsPlus;
-import gg.steve.mc.tp.cmd.SubCommand;
-import gg.steve.mc.tp.message.DebugMessage;
+import gg.steve.mc.tp.framework.cmd.SubCommand;
+import gg.steve.mc.tp.framework.message.DebugMessage;
 import gg.steve.mc.tp.mode.ModeType;
-import gg.steve.mc.tp.permission.PermissionNode;
+import gg.steve.mc.tp.framework.permission.PermissionNode;
 import gg.steve.mc.tp.player.PlayerToolManager;
 import gg.steve.mc.tp.tool.PlayerTool;
 import gg.steve.mc.tp.upgrade.UpgradeType;

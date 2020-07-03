@@ -2,12 +2,12 @@ package gg.steve.mc.tp.mode;
 
 import gg.steve.mc.tp.currency.AbstractCurrency;
 import gg.steve.mc.tp.currency.CurrencyType;
-import gg.steve.mc.tp.gui.AbstractGui;
-import gg.steve.mc.tp.gui.GuiManager;
-import gg.steve.mc.tp.managers.Files;
-import gg.steve.mc.tp.managers.PluginFile;
+import gg.steve.mc.tp.framework.gui.AbstractGui;
+import gg.steve.mc.tp.framework.gui.GuiManager;
+import gg.steve.mc.tp.framework.yml.Files;
+import gg.steve.mc.tp.framework.yml.PluginFile;
 import gg.steve.mc.tp.tool.PlayerTool;
-import gg.steve.mc.tp.utils.ColorUtil;
+import gg.steve.mc.tp.framework.utils.ColorUtil;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ public abstract class AbstractModeChange {
     private HashMap<Integer, List<Object>> track;
     private boolean sneakSwitch, rightClickSwitch;
     private String updateString;
-    private AbstractGui gui;
+    private String guiName;
 
     public AbstractModeChange(ModeType type, PluginFile file) {
         this.type = type;
@@ -39,7 +39,7 @@ public abstract class AbstractModeChange {
         this.rightClickSwitch = file.get().getBoolean("modes." + type.name().toLowerCase() + ".right-click-switch");
         this.currency = CurrencyType.getCurrencyFromString(file.get().getString("modes." + type.name().toLowerCase() + ".currency"));
         this.updateString = ColorUtil.colorize(file.get().getString("modes." + type.name().toLowerCase() + ".lore-update-string"));
-        this.gui = GuiManager.getGui(file.get().getString("modes." + type.name().toLowerCase() + ".gui"));
+        this.guiName = file.get().getString("modes." + type.name().toLowerCase() + ".gui");
     }
 
     public boolean isChangingEnabled() {
@@ -96,8 +96,8 @@ public abstract class AbstractModeChange {
         return updateString;
     }
 
-    public AbstractGui getGui() {
-        return gui;
+    public String getGuiName() {
+        return guiName;
     }
 
     public abstract boolean changeMode(Player player, PlayerTool tool);

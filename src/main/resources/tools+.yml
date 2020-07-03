@@ -3,19 +3,57 @@
 #
 # When you create a new tool add it here so it can be loaded by the plugin
 loaded-tools:
-  - ex-trench
-  - ex-trench-1
-  - ex-tray
-  - ex-sell
-  - ex-sand
-  - ex-harvester
-  - ex-lightning
-  - ex-tnt
-  - ex-craft
-  - ex-aqua
+  - 'tray3'
+  - 'tray5'
+  - 'tray7'
+  - 'tray9'
+  - 'tray11'
+  - 'trench3'
+  - 'trench5'
+  - 'trench7'
+  - 'trench9'
+  - 'trench11'
+  - 'multi3-11'
+  - 'chunk1'
+  - 'chunk3'
+  - 'chunk5'
+  - 'chunk1-5'
+  - 'sand1'
+  - 'sand3'
+  - 'sand5'
+  - 'sand1-5'
+  - 'sell1'
+  - 'sell3'
+  - 'sell5'
+  - 'sell1-5'
+  - 'lightning1'
+  - 'craft1'
+  - 'craft3'
+  - 'craft5'
+  - 'craft1-5'
+  - 'smelt1'
+  - 'smelt3'
+  - 'smelt5'
+  - 'smelt1-5'
+  - 'aqua1'
+  - 'aqua3'
+  - 'aqua5'
+  - 'aqua1-5'
+  - 'harvester1'
+  - 'harvester3'
+  - 'harvester5'
+  - 'harvester7'
+  - 'harvester1-7'
+  - 'tnt1'
+  - 'tnt3'
+  - 'tnt5'
+  - 'tnt1-5'
+  - 'ultra1-11'
 #
 loaded-guis:
-  - basic-gui
+  - 'mode-switch-gui'
+  - 'uses-gui'
+  - 'upgrade-gui'
 #
 # cooldowns will be done by module type rather than by per tool
 per-tool-cooldowns: false

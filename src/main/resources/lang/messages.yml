@@ -22,59 +22,59 @@ reload:
 out-of-uses:
   action-bar: true
   text:
-    - '&e&l<> &7Your &6&l{tool-type} &7has been destroyed &e&l<>'
+    - '&5&lTools&d+&7| Your &6&l{tool-type} &7has been destroyed.'
 
 insufficient-funds:
   action-bar: true
   text:
-    - '&e&l<> &7You do not have sufficient funds (&6{currency-prefix}&l{balance}&6{currency-suffix}&e/&6{currency-prefix}&l{cost}&6{currency-suffix}&7) &e&l<>'
+    - '&5&lTools&d+&7| You do not have sufficient funds (&6{currency-prefix}&l{balance}&6{currency-suffix}&e/&6{currency-prefix}&l{cost}&6{currency-suffix}&7).'
 
 inventory-full:
   action-bar: true
   text:
-    - '&e&l<> &7Your inventory is full, all blocks mined will be lost &e&l<>'
+    - '&5&lTools&d+&7| Your inventory is full, all blocks mined will be lost.'
 
 upgrade:
   action-bar: true
   text:
-    - '&e&l<> &7You upgraded your &6&l{tool-type} &7for &c-{currency-prefix}&l{cost}&c{currency-suffix} &7(&6{level}&e/&6{max}&7) &e&l<>'
+    - '&5&lTools&d+&7| You upgraded your &6&l{tool-type} &7for &c-{currency-prefix}&l{cost}&c{currency-suffix} &7(&6{level}&e/&6{max}&7).'
 
 downgrade:
   action-bar: true
   text:
-    - '&e&l<> &7You downgraded your &6&l{tool-type} &7for &c-{currency-prefix}&l{cost}&c{currency-suffix} &7(&6{level}&e/&6{max}&7) &e&l<>'
+    - '&5&lTools&d+&7| You downgraded your &6&l{tool-type} &7for &c-{currency-prefix}&l{cost}&c{currency-suffix} &7(&6{level}&e/&6{max}&7).'
 
 mode-change:
   action-bar: true
   text:
-    - '&e&l<> &7You changed your tools mode to &6{change} &7for &c-{currency-prefix}&l{cost}&c{currency-suffix} &e&l<>'
+    - '&5&lTools&d+&7| You changed your tools mode to &6{change} &7for &c-{currency-prefix}&l{cost}&c{currency-suffix}.'
 
 tool-max-level:
   action-bar: true
   text:
-    - '&e&l<> &7Unable to upgrade, your tool is already at the max level &e&l<>'
+    - '&5&lTools&d+&7| Unable to upgrade, your tool is already at the max level.'
 
 tool-min-level:
   action-bar: true
   text:
-    - '&e&l<> &7Unable to downgrade, your tool is already at the lowest level &e&l<>'
+    - '&5&lTools&d+&7| Unable to downgrade, your tool is already at the lowest level.'
 
 uses-purchase:
   action-bar: true
   text:
-    - '&e&l<> &7You purchased &6&l{amount} &7uses for &c-{currency-prefix}&l{cost}&c{currency-suffix} &e&l<>'
+    - '&5&lTools&d+&7| You purchased &6&l{amount} &7uses for &c-{currency-prefix}&l{cost}&c{currency-suffix}.'
 
 sale:
   action-bar: true
   text:
-    - '&e&l<> &7Your &6&l{tool-type} &7automatically sold &ex{amount} &7items for &a+$&l{deposit} &e&l<>'
+    - '&5&lTools&d+&7| Your &6&l{tool-type} &7automatically sold &ex{amount} &7items for &a+$&l{deposit}.'
 
 cooldown-query:
   action-bar: true
   text:
-    - '&e&l<> &7Your &6&l{tool-type} &7is on cooldown, &e{seconds} &7seconds remaining &e&l<>'
+    - '&5&lTools&d+&7| Your &6&l{tool-type} &7is on cooldown, &e{seconds} &7seconds remaining.'
 
 no-sale:
   action-bar: true
   text:
-    - '&e&l<> &7Your &6&l{tool-type} &7could not sell any items from those container(s) &e&l<>'
+    - '&5&lTools&d+&7| Your &6&l{tool-type} &7could not sell any items from those container(s).'

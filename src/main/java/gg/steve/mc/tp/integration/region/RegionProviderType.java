@@ -8,7 +8,7 @@ public enum RegionProviderType {
     WORLDGUARD(new WorldGuardRegionProvider()),
     FACTIONS(new FactionsRegionProvider()),
 //    GUILDS,
-    FACTIONS_X(new FactionsXRegionProvider()),
+    WORLD_BORDER(new WorldBorderRegionProvider()),
     LANDS(new LandsRegionProvider()),
     GRIEF_PREVENTION(new GriefPreventionRegionProvider());
 

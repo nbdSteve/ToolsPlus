@@ -1,15 +1,10 @@
 package gg.steve.mc.tp.integration.sell;
 
-import com.earth2me.essentials.Essentials;
 import gg.steve.mc.tp.ToolsPlus;
-import gg.steve.mc.tp.integration.sell.InternalPriceProvider;
-import gg.steve.mc.tp.integration.sell.PriceProviderType;
-import gg.steve.mc.tp.managers.Files;
-import gg.steve.mc.tp.message.GeneralMessage;
+import gg.steve.mc.tp.framework.message.GeneralMessage;
+import gg.steve.mc.tp.framework.utils.LogUtil;
+import gg.steve.mc.tp.framework.yml.Files;
 import gg.steve.mc.tp.tool.PlayerTool;
-import gg.steve.mc.tp.utils.LogUtil;
-import net.brcdev.shopgui.ShopGuiPlusApi;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -117,26 +112,17 @@ public class SellIntegrationManager {
         for (int i = 0; i <= providerHierarchy.size(); i++) {
             switch (providerHierarchy.get(i)) {
                 case SHOP_GUI_PLUS:
-                    if (Bukkit.getPluginManager().getPlugin("ShopGUIPlus") == null) continue;
-                    try {
-                        if (ShopGuiPlusApi.getItemStackPriceSell(player, item) <= 0) continue;
-                        return ShopGuiPlusApi.getItemStackPriceSell(player, item);
-                    } catch (Exception e) {
-                        LogUtil.warning("Error getting item price for item " + item.getType().toString() + " from shopgui+ economy.");
-                        continue;
-                    }
+                    if (!PriceProviderType.SHOP_GUI_PLUS.isEnabled()) continue;
+                    double price = PriceProviderType.SHOP_GUI_PLUS.getPriceProvider().getItemPrice(player, item);
+                    if (price > 0) return price;
+                    continue;
                 case ESSENTIALS:
-                    if (Bukkit.getPluginManager().getPlugin("Essentials") == null) continue;
-                    try {
-                        Essentials ess = Essentials.getPlugin(Essentials.class);
-                        if (ess.getWorth().getPrice(ess, item).doubleValue() <= 0) continue;
-                        return ess.getWorth().getPrice(ess, item).doubleValue();
-                    } catch (Exception e) {
-                        LogUtil.warning("Error getting item price for item " + item.getType().toString() + " from essentials economy.");
-                        continue;
-                    }
+                    if (!PriceProviderType.ESSENTIALS.isEnabled()) continue;
+                    price = PriceProviderType.ESSENTIALS.getPriceProvider().getItemPrice(player, item);
+                    if (price > 0) return price;
+                    continue;
                 case INTERNAL:
-                    return InternalPriceProvider.getPrice(item);
+                    return PriceProviderType.INTERNAL.getPriceProvider().getItemPrice(player, item);
             }
         }
         return 0;

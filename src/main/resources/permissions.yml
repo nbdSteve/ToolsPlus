@@ -2,8 +2,6 @@ command:
   help: tools+.cmd.help
   reload: tools+.cmd.reload
   give: tools+.cmd.give
-  module-list: tools+.cmd.module-list
-  tool-list: tools+.cmd.tool-list
 
 module:
   list: tools+.module.list
@@ -13,7 +11,7 @@ module:
   install: tools+.module.install
 
 tool:
-  list: tools+.tool.info
+  list: tools+.tool.list
   info: tools+.tool.info
 
 gui:

@@ -8,11 +8,11 @@ public class CooldownUtil {
     public CooldownUtil(String tool, int duration) {
         this.tool = tool;
         this.duration = duration;
-        this.end = System.currentTimeMillis() + (duration * 1000);
+        this.end = System.currentTimeMillis() + (this.duration * 1000);
     }
 
     public boolean isActive() {
-        return end > System.currentTimeMillis();
+        return ((end - System.currentTimeMillis()) / 1000) > 0;
     }
 
     public String getTool() {

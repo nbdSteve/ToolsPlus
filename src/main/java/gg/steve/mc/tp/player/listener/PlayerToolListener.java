@@ -7,7 +7,6 @@ import gg.steve.mc.tp.module.ModuleManager;
 import gg.steve.mc.tp.player.PlayerToolManager;
 import gg.steve.mc.tp.player.ToolPlayer;
 import gg.steve.mc.tp.tool.PlayerTool;
-import gg.steve.mc.tp.utils.LogUtil;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

@@ -4,11 +4,11 @@ import gg.steve.mc.tp.ToolsPlus;
 import gg.steve.mc.tp.attribute.AbstractToolAttribute;
 import gg.steve.mc.tp.attribute.ToolAttributeType;
 import gg.steve.mc.tp.currency.AbstractCurrency;
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.tool.PlayerTool;
 import gg.steve.mc.tp.tool.utils.GetToolHoldingUtil;
 import gg.steve.mc.tp.tool.utils.LoreUpdaterUtil;
-import gg.steve.mc.tp.utils.LogUtil;
+import gg.steve.mc.tp.framework.utils.LogUtil;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 

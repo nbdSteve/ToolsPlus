@@ -5,9 +5,9 @@ import gg.steve.mc.tp.attribute.AbstractToolAttribute;
 import gg.steve.mc.tp.attribute.ToolAttributeType;
 import gg.steve.mc.tp.attribute.utils.CooldownUtil;
 import gg.steve.mc.tp.currency.AbstractCurrency;
-import gg.steve.mc.tp.managers.Files;
-import gg.steve.mc.tp.message.GeneralMessage;
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.message.GeneralMessage;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
+import gg.steve.mc.tp.framework.yml.Files;
 import gg.steve.mc.tp.tool.PlayerTool;
 import org.bukkit.entity.Player;
 
@@ -84,6 +84,11 @@ public class CooldownToolAttribute extends AbstractToolAttribute {
                 playersOnCooldown.get(playerId).add(new CooldownUtil(tool.getName(), getDuration()));
                 return false;
             }
+        }
+        if (Files.CONFIG.get().getBoolean("per-tool-cooldowns")) {
+            playersOnCooldown.get(playerId).add(new CooldownUtil(tool.getName(), getDuration()));
+        } else {
+            playersOnCooldown.get(playerId).add(new CooldownUtil(tool.getAbstractTool().getModuleId(), getDuration()));
         }
         return false;
     }

@@ -1,10 +1,10 @@
 package gg.steve.mc.tp;
 
+import gg.steve.mc.tp.framework.SetupManager;
+import gg.steve.mc.tp.framework.utils.LogUtil;
+import gg.steve.mc.tp.framework.yml.utils.FileManagerUtil;
 import gg.steve.mc.tp.integration.libs.ToolsPlusLibManager;
-import gg.steve.mc.tp.managers.FileManager;
-import gg.steve.mc.tp.managers.SetupManager;
 import gg.steve.mc.tp.module.ModuleManager;
-import gg.steve.mc.tp.utils.LogUtil;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -26,13 +26,13 @@ public final class ToolsPlus extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        SetupManager.setupFiles(new FileManager(instance));
+        SetupManager.setupFiles(new FileManagerUtil(instance));
         SetupManager.registerCommands(instance);
         SetupManager.registerEvents(instance);
         // this method loads things like modules, tools, maps and data lists
         SetupManager.loadPluginCache();
         // setup the metrics for the plugin
-//        SetupManager.setupMetrics(instance, 7794);
+        SetupManager.setupMetrics(instance, 7794);
         // verify that the server is running vault so that eco features can be used
         if (Bukkit.getPluginManager().getPlugin("Vault") != null) {
             try {

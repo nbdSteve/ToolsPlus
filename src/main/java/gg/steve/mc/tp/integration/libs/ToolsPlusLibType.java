@@ -5,7 +5,7 @@ public enum ToolsPlusLibType {
     WORLDGUARD_LEGACY("WorldGuard-Legacy-Lib"),
     MASSIVE_FACTIONS("MassiveFactions-Lib"),
     FACTIONS_UUID("FactionsUUID-Lib"),
-//    FACTIONS_X("FactionsX-Lib"),
+    FACTIONS_X("FactionsX-Lib"),
     SABER_FACTIONS("SaberFactions-Lib"),
     SAVAGE_FACTIONS("SavageFactions-Lib");
 

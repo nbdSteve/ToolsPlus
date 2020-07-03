@@ -1,11 +1,11 @@
 package gg.steve.mc.tp.cmd.module;
 
-import gg.steve.mc.tp.cmd.SubCommand;
-import gg.steve.mc.tp.managers.FileManager;
-import gg.steve.mc.tp.message.DebugMessage;
+import gg.steve.mc.tp.framework.cmd.SubCommand;
+import gg.steve.mc.tp.framework.yml.utils.FileManagerUtil;
+import gg.steve.mc.tp.framework.message.DebugMessage;
 import gg.steve.mc.tp.module.ModuleManager;
 import gg.steve.mc.tp.module.ToolsPlusModule;
-import gg.steve.mc.tp.permission.PermissionNode;
+import gg.steve.mc.tp.framework.permission.PermissionNode;
 import org.bukkit.command.CommandSender;
 
 public class ModuleReloadSubCmd extends SubCommand {
@@ -21,7 +21,7 @@ public class ModuleReloadSubCmd extends SubCommand {
             // /t+ module reload
             for (ToolsPlusModule module : ModuleManager.getInstalledModules()) {
                 for (String file : module.getModuleFiles().keySet()) {
-                    FileManager.getFiles().get(file).reload();
+                    FileManagerUtil.getFiles().get(file).reload();
                 }
             }
             ModuleManager.uninstalledAllModules();
@@ -38,7 +38,7 @@ public class ModuleReloadSubCmd extends SubCommand {
                 return;
             }
             for (String file : module.getModuleFiles().keySet()) {
-                FileManager.getFiles().get(file).reload();
+                FileManagerUtil.getFiles().get(file).reload();
             }
             ModuleManager.uninstallModule(module);
             ModuleManager.installToolModule(module);

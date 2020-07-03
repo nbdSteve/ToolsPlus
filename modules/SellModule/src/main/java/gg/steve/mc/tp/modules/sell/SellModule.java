@@ -1,11 +1,11 @@
 package gg.steve.mc.tp.modules.sell;
 
-import gg.steve.mc.tp.managers.FileManager;
-import gg.steve.mc.tp.managers.PluginFile;
+import gg.steve.mc.tp.framework.yml.PluginFile;
+import gg.steve.mc.tp.framework.yml.utils.FileManagerUtil;
 import gg.steve.mc.tp.modules.sell.tool.SellWand;
 import gg.steve.mc.tp.managers.ToolConfigDataManager;
 import gg.steve.mc.tp.module.ToolsPlusModule;
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.tool.AbstractTool;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.event.Listener;
@@ -54,7 +54,7 @@ public class SellModule extends ToolsPlusModule {
 
     @Override
     public void onLoad() {
-        ToolConfigDataManager.addMaterialList(moduleId, FileManager.get(moduleConfigId).getStringList("sellable-containers"));
+        ToolConfigDataManager.addMaterialList(moduleId, FileManagerUtil.get(moduleConfigId).getStringList("sellable-containers"));
     }
 
     @Override

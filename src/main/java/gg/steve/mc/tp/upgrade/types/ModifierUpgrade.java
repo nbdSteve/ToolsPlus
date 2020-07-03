@@ -1,6 +1,6 @@
 package gg.steve.mc.tp.upgrade.types;
 
-import gg.steve.mc.tp.managers.PluginFile;
+import gg.steve.mc.tp.framework.yml.PluginFile;
 import gg.steve.mc.tp.tool.PlayerTool;
 import gg.steve.mc.tp.upgrade.AbstractUpgrade;
 import gg.steve.mc.tp.upgrade.UpgradeType;

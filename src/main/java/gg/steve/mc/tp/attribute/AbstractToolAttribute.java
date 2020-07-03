@@ -1,9 +1,9 @@
 package gg.steve.mc.tp.attribute;
 
 import gg.steve.mc.tp.currency.AbstractCurrency;
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.tool.PlayerTool;
-import gg.steve.mc.tp.utils.ColorUtil;
+import gg.steve.mc.tp.framework.utils.ColorUtil;
 import org.bukkit.entity.Player;
 
 import java.util.UUID;

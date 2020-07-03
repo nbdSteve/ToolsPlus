@@ -3,7 +3,7 @@ package gg.steve.mc.tp.attribute.types;
 import gg.steve.mc.tp.attribute.AbstractToolAttribute;
 import gg.steve.mc.tp.attribute.ToolAttributeType;
 import gg.steve.mc.tp.currency.AbstractCurrency;
-import gg.steve.mc.tp.nbt.NBTItem;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.tool.PlayerTool;
 import org.bukkit.entity.Player;
 

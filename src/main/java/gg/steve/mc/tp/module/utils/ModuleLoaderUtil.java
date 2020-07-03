@@ -1,11 +1,11 @@
 package gg.steve.mc.tp.module.utils;
 
 import gg.steve.mc.tp.ToolsPlus;
-import gg.steve.mc.tp.managers.SetupManager;
+import gg.steve.mc.tp.framework.SetupManager;
 import gg.steve.mc.tp.module.ModuleManager;
 import gg.steve.mc.tp.module.ToolsPlusModule;
-import gg.steve.mc.tp.utils.FileClassUtil;
-import gg.steve.mc.tp.utils.LogUtil;
+import gg.steve.mc.tp.framework.utils.FileClassUtil;
+import gg.steve.mc.tp.framework.utils.LogUtil;
 import org.bukkit.event.Listener;
 
 import java.io.File;
@@ -55,7 +55,7 @@ public class ModuleLoaderUtil {
     public void loadModule(ToolsPlusModule module) {
         // load files for the module
         for (String file : module.getModuleFiles().keySet()) {
-            SetupManager.getFileManager().add(file, module.getModuleFiles().get(file));
+            SetupManager.getFileManagerUtil().add(file, module.getModuleFiles().get(file));
         }
         for (Listener listener : module.getListeners()) {
             SetupManager.registerEvent(ToolsPlus.get(), listener);

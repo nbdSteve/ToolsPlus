@@ -1,12 +1,11 @@
 package gg.steve.mc.tp.tool.utils;
 
 import gg.steve.mc.tp.ToolsPlus;
-import gg.steve.mc.tp.gui.GuiManager;
-import gg.steve.mc.tp.managers.PluginFile;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
+import gg.steve.mc.tp.framework.utils.ItemBuilderUtil;
+import gg.steve.mc.tp.framework.yml.PluginFile;
 import gg.steve.mc.tp.module.ModuleManager;
-import gg.steve.mc.tp.nbt.NBTItem;
 import gg.steve.mc.tp.tool.AbstractTool;
-import gg.steve.mc.tp.utils.ItemBuilderUtil;
 import org.bukkit.configuration.ConfigurationSection;
 
 public class ToolLoaderUtil {
@@ -21,14 +20,16 @@ public class ToolLoaderUtil {
         String moduleId = file.get().getString("type").toUpperCase();
         loadItem(moduleId);
         tool = ModuleManager.getInstalledModule(moduleId).loadTool(this.item, file);
-        tool.setUsesGui(GuiManager.getGui(file.get().getString("uses.gui")));
+        tool.setUsesGuiName(file.get().getString("uses.gui"));
         loadToolData();
     }
 
     public void loadItem(String moduleId) {
         ConfigurationSection section = this.file.get().getConfigurationSection("item");
         ItemBuilderUtil builder = ItemBuilderUtil.getBuilderForMaterial(section.getString("material"), section.getString("data"));
-        builder.addName(section.getString("name").replace("{tool-mode}", file.get().getStringList("modes.tool.track").get(0).split(":")[2]));
+        builder.addName(section.getString("name")
+                .replace("{tool-mode}", file.get().getStringList("modes.tool.track").get(0).split(":")[2])
+                .replace("{sell-mode}", file.get().getStringList("modes.sell.track").get(0).split(":")[2]));
         builder.setLorePlaceholders("{radius-upgrade}", "{modifier-upgrade}", "{uses}", "{mined}", "{tool-mode}", "{sell-mode}", "{cane-mined}");
         builder.addLore(section.getStringList("lore"),
                 file.get().getStringList("upgrades.radius.track").get(0).split(":")[3],
