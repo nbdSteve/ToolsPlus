@@ -84,6 +84,7 @@ player-tool-info:
     - '&7 - Modifier Upgrade| &b{modifier-current}&7/&b{modifier-max}'
     - '&7 - Active Abstract| &b{active-abstract}'
     - '&7 - Dig Mode| &b{dig-mode}'
+    - '&7 - Sell Mode| &b{sell-mode}'
     - '&7 - Uses Remaining| &b{uses}'
     - '&7 - Blocks Mined| &b{blocks-mined}'
     - '&7 - Tool UUID| &f&o{tool-uuid}'

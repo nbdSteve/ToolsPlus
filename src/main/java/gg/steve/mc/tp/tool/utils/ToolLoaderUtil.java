@@ -3,10 +3,13 @@ package gg.steve.mc.tp.tool.utils;
 import gg.steve.mc.tp.ToolsPlus;
 import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.framework.utils.ItemBuilderUtil;
+import gg.steve.mc.tp.framework.utils.LogUtil;
 import gg.steve.mc.tp.framework.yml.PluginFile;
 import gg.steve.mc.tp.module.ModuleManager;
 import gg.steve.mc.tp.tool.AbstractTool;
+import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.inventory.ItemStack;
 
 public class ToolLoaderUtil {
     private PluginFile file;
@@ -26,7 +29,13 @@ public class ToolLoaderUtil {
 
     public void loadItem(String moduleId) {
         ConfigurationSection section = this.file.get().getConfigurationSection("item");
-        ItemBuilderUtil builder = ItemBuilderUtil.getBuilderForMaterial(section.getString("material"), section.getString("data"));
+        ItemBuilderUtil builder;
+        try {
+            builder = ItemBuilderUtil.getBuilderForMaterial(section.getString("material"), section.getString("data"));
+        } catch (Exception e) {
+            LogUtil.warning("There was an error loading the tool: " + this.name + ", please check the item section of your config file for that tool.");
+            builder = new ItemBuilderUtil(new ItemStack(Material.STONE_AXE, 1));
+        }
         builder.addName(section.getString("name")
                 .replace("{tool-mode}", file.get().getStringList("modes.tool.track").get(0).split(":")[2])
                 .replace("{sell-mode}", file.get().getStringList("modes.sell.track").get(0).split(":")[2]));

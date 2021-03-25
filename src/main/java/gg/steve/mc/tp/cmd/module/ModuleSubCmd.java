@@ -38,4 +38,8 @@ public class ModuleSubCmd extends SubCommand {
         }
         DebugMessage.INVALID_COMMAND.message(sender);
     }
+
+    public List<SubCommand> getModuleSubs() {
+        return moduleSubs;
+    }
 }

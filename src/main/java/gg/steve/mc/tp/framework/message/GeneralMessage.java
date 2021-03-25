@@ -1,8 +1,10 @@
 package gg.steve.mc.tp.framework.message;
 
-import gg.steve.mc.tp.framework.yml.Files;
 import gg.steve.mc.tp.framework.utils.ColorUtil;
 import gg.steve.mc.tp.framework.utils.actionbarapi.ActionBarAPI;
+import gg.steve.mc.tp.framework.yml.Files;
+import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
@@ -46,7 +48,9 @@ public enum GeneralMessage {
                 for (int i = 0; i < this.placeholders.size(); i++) {
                     line = line.replace(this.placeholders.get(i), data.get(i));
                 }
-                ActionBarAPI.sendActionBar(receiver, ColorUtil.colorize(line));
+                if (!ActionBarAPI.sendActionBar(receiver, ColorUtil.colorize(line))) {
+                    receiver.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(ColorUtil.colorize(line)));
+                }
             }
         } else {
             for (String line : Files.MESSAGES.get().getStringList(this.path + ".text")) {
@@ -65,7 +69,9 @@ public enum GeneralMessage {
                 for (int i = 0; i < this.placeholders.size(); i++) {
                     line = line.replace(this.placeholders.get(i), data.get(i));
                 }
-                ActionBarAPI.sendActionBar((Player) receiver, ColorUtil.colorize(line));
+                if (!ActionBarAPI.sendActionBar((Player) receiver, ColorUtil.colorize(line))) {
+                    ((Player) receiver).spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(ColorUtil.colorize(line)));
+                }
             }
         } else {
             for (String line : Files.MESSAGES.get().getStringList(this.path + ".text")) {

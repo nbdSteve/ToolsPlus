@@ -7,6 +7,7 @@ import gg.steve.mc.tp.mode.ModeType;
 import gg.steve.mc.tp.framework.permission.PermissionNode;
 import gg.steve.mc.tp.player.PlayerToolManager;
 import gg.steve.mc.tp.tool.PlayerTool;
+import gg.steve.mc.tp.tool.ToolsManager;
 import gg.steve.mc.tp.upgrade.UpgradeType;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
@@ -44,6 +45,7 @@ public class ToolInfoSubCmd extends SubCommand {
                 ToolsPlus.formatNumber(tool.getAbstractTool().getUpgrade(UpgradeType.RADIUS).getMaxLevel() + 1),
                 ToolsPlus.formatNumber(tool.getUpgradeLevel(UpgradeType.MODIFIER) + 1),
                 ToolsPlus.formatNumber(tool.getAbstractTool().getUpgrade(UpgradeType.MODIFIER).getMaxLevel() + 1),
+                ToolsManager.getAbstractName(tool.getAbstractTool()),
                 tool.getModeChange(ModeType.TOOL).getCurrentModeLore(tool.getCurrentMode(ModeType.TOOL)),
                 tool.getModeChange(ModeType.SELL).getCurrentModeLore(tool.getCurrentMode(ModeType.SELL)),
                 ToolsPlus.formatNumber(tool.getUses()),

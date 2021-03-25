@@ -17,7 +17,7 @@ public class ModuleReloadSubCmd extends SubCommand {
 
     @Override
     public void onCommand(CommandSender sender, String[] args) {
-        if (args.length == 2) {
+        if (args.length == 2 || args[2].equalsIgnoreCase("all")) {
             // /t+ module reload
             for (ToolsPlusModule module : ModuleManager.getInstalledModules()) {
                 for (String file : module.getModuleFiles().keySet()) {

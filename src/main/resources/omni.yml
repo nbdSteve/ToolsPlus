@@ -1,4 +1,3 @@
-shovel-material-name: spade # Change this to "shovel" if you are using versions after 1.8
 #
 shovel-blocks: # Tool will change to a shovel when these blocks are broken
   - dirt

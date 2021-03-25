@@ -29,6 +29,7 @@ public class ToolsManager {
         for (String tool : Files.CONFIG.get().getStringList("loaded-tools")) {
             PluginFile file = new YamlFileUtil().load("tools" + File.separator + tool + ".yml", ToolsPlus.get());
             if (!ModuleManager.isInstalled(file.get().getString("type").toUpperCase())) {
+                ((YamlFileUtil) file).delete();
                 LogUtil.info("Error while loading tool: " + tool + ", the required module (" + file.get().getString("type").toUpperCase() + ") is not installed.");
                 continue;
             }
@@ -96,6 +97,13 @@ public class ToolsManager {
             if (tool.getModuleId().equalsIgnoreCase(module.getIdentifier())) amount++;
         }
         return ToolsPlus.formatNumber(amount);
+    }
+
+    public static String getAbstractName(AbstractTool tool) {
+        for (Map.Entry entry : tools.entrySet()) {
+            if (entry.getValue().equals(tool)) return (String) entry.getKey();
+        }
+        return "Error";
     }
 
     public static Map<String, AbstractTool> getTools() {

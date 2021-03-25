@@ -18,18 +18,18 @@ public class ActionBarAPI {
             Bukkit.getServer().getClass().getPackage().getName().lastIndexOf(".") + 1);
     private static boolean useOldMethods = false;
 
-    public static void sendActionBar(Player player, String message) {
+    public static boolean sendActionBar(Player player, String message) {
         if (nmsver.equalsIgnoreCase("v1_8_R1") || nmsver.startsWith("v1_7_")) { // Not sure if 1_7 works for the protocol hack?
             useOldMethods = true;
         }
         if (!player.isOnline()) {
-            return; // Player may have logged out
+            return false; // Player may have logged out
         }
         // Call the event, if cancelled don't send Action Bar
         ActionBarMessageEvent actionBarMessageEvent = new ActionBarMessageEvent(player, message);
         Bukkit.getPluginManager().callEvent(actionBarMessageEvent);
         if (actionBarMessageEvent.isCancelled()) {
-            return;
+            return false;
         }
         try {
             Class<?> craftPlayerClass = Class.forName("org.bukkit.craftbukkit." + nmsver + ".entity.CraftPlayer");
@@ -69,8 +69,10 @@ public class ActionBarAPI {
             Method sendPacketMethod = playerConnection.getClass().getDeclaredMethod("sendPacket", packetClass);
             sendPacketMethod.invoke(playerConnection, packet);
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            return false;
         }
+        return true;
     }
 
     public static void sendActionBar(final Player player, final String message, int duration) {

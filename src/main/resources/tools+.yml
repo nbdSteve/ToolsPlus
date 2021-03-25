@@ -49,6 +49,7 @@ loaded-tools:
   - 'tnt5'
   - 'tnt1-5'
   - 'ultra1-11'
+  - 'crowbar1'
 #
 loaded-guis:
   - 'mode-switch-gui'

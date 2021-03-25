@@ -17,6 +17,7 @@ public class ToolSubCmd extends SubCommand {
         addAlias("t");
         addAlias("tools");
         toolSubs.add(new ToolInfoSubCmd());
+        toolSubs.add(new ToolListSubCmd());
     }
 
     @Override
@@ -32,5 +33,9 @@ public class ToolSubCmd extends SubCommand {
             return;
         }
         DebugMessage.INVALID_COMMAND.message(sender);
+    }
+
+    public List<SubCommand> getToolSubs() {
+        return toolSubs;
     }
 }

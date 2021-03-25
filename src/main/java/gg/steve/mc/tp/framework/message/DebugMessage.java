@@ -23,7 +23,7 @@ public enum DebugMessage {
     // tools
     LIST_TOOLS("list-tools", "{tools-number}", "{tools-list}", "{player-tools-number}"),
     PLAYER_TOOL_INFO("player-tool-info", "{target}", "{tool-uuid}", "{radius-current}",
-            "{radius-max}", "{modifier-current}", "{modifier-max}", "{active-abstract}", "{dig-mode}",
+            "{radius-max}", "{modifier-current}", "{modifier-max}", "{active-abstract}", "{dig-mode}", "{sell-mode}",
             "{uses}", "{blocks-mined}"),
     NOT_HOLDING_TOOL("not-holding-tool"),
     // give

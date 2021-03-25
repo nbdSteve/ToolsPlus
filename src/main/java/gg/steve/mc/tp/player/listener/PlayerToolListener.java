@@ -2,11 +2,14 @@ package gg.steve.mc.tp.player.listener;
 
 import gg.steve.mc.tp.attribute.ToolAttributeType;
 import gg.steve.mc.tp.attribute.types.OmniToolAttribute;
+import gg.steve.mc.tp.framework.nbt.NBTItem;
 import gg.steve.mc.tp.mode.ModeType;
 import gg.steve.mc.tp.module.ModuleManager;
 import gg.steve.mc.tp.player.PlayerToolManager;
 import gg.steve.mc.tp.player.ToolPlayer;
 import gg.steve.mc.tp.tool.PlayerTool;
+import gg.steve.mc.tp.tool.utils.GetToolHoldingUtil;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -22,6 +25,17 @@ public class PlayerToolListener implements Listener {
     public void blockBreak(BlockBreakEvent event) {
         if (event.isCancelled()) return;
         if (!PlayerToolManager.isHoldingTool(event.getPlayer().getUniqueId())) return;
+        // temp code -->
+        if (event.getPlayer().getItemInHand().getType() == Material.AIR) {
+            PlayerToolManager.removeToolPlayer(event.getPlayer().getUniqueId());
+            return;
+        }
+        NBTItem item = new NBTItem(event.getPlayer().getItemInHand());
+        if (!GetToolHoldingUtil.isHoldingTool(item)) {
+            PlayerToolManager.removeToolPlayer(event.getPlayer().getUniqueId());
+            return;
+        }
+        // <--
         ToolPlayer player = PlayerToolManager.getToolPlayer(event.getPlayer().getUniqueId());
         if (player == null) return;
         if (!ModuleManager.isInstalled(player.getToolType())) return;
@@ -35,6 +49,17 @@ public class PlayerToolListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void omniProc(BlockDamageEvent event) {
         if (!PlayerToolManager.isHoldingTool(event.getPlayer().getUniqueId())) return;
+        // temp code -->
+        if (event.getPlayer().getItemInHand().getType() == Material.AIR) {
+            PlayerToolManager.removeToolPlayer(event.getPlayer().getUniqueId());
+            return;
+        }
+        NBTItem item = new NBTItem(event.getPlayer().getItemInHand());
+        if (!GetToolHoldingUtil.isHoldingTool(item)) {
+            PlayerToolManager.removeToolPlayer(event.getPlayer().getUniqueId());
+            return;
+        }
+        // <--
         ToolPlayer player = PlayerToolManager.getToolPlayer(event.getPlayer().getUniqueId());
         if (player == null) return;
         if (!ModuleManager.isInstalled(player.getToolType())) return;
@@ -43,9 +68,20 @@ public class PlayerToolListener implements Listener {
         OmniToolAttribute.changeToolType(event.getBlock(), event.getPlayer());
     }
 
-    @EventHandler(priority = EventPriority.MONITOR)
+    @EventHandler(priority = EventPriority.HIGHEST)
     public void interact(PlayerInteractEvent event) {
         if (!PlayerToolManager.isHoldingTool(event.getPlayer().getUniqueId())) return;
+        // temp code -->
+        if (event.getPlayer().getItemInHand().getType() == Material.AIR) {
+            PlayerToolManager.removeToolPlayer(event.getPlayer().getUniqueId());
+            return;
+        }
+        NBTItem item = new NBTItem(event.getPlayer().getItemInHand());
+        if (!GetToolHoldingUtil.isHoldingTool(item)) {
+            PlayerToolManager.removeToolPlayer(event.getPlayer().getUniqueId());
+            return;
+        }
+        // <--
         ToolPlayer player = PlayerToolManager.getToolPlayer(event.getPlayer().getUniqueId());
         if (player == null) return;
         if (!ModuleManager.isInstalled(player.getToolType())) return;
@@ -62,6 +98,17 @@ public class PlayerToolListener implements Listener {
             return;
         Player player = event.getPlayer();
         if (!PlayerToolManager.isHoldingTool(player.getUniqueId())) return;
+        // temp code -->
+        if (event.getPlayer().getItemInHand().getType() == Material.AIR) {
+            PlayerToolManager.removeToolPlayer(event.getPlayer().getUniqueId());
+            return;
+        }
+        NBTItem item = new NBTItem(event.getPlayer().getItemInHand());
+        if (!GetToolHoldingUtil.isHoldingTool(item)) {
+            PlayerToolManager.removeToolPlayer(event.getPlayer().getUniqueId());
+            return;
+        }
+        // <--
         PlayerTool tool = PlayerToolManager.getToolPlayer(player.getUniqueId()).getPlayerTool();
         if (player.isSneaking()) {
             if (tool.getModeChange(ModeType.TOOL).isSneakSwitch()) {

@@ -28,7 +28,7 @@ public class CubeUtil {
                     for (RegionProviderType regionProvider : RegionProviderType.values()) {
                         try {
                             if (!regionProvider.isBreakAllowed(player, block)) breakAllowed = false;
-                        } catch (NoClassDefFoundError e) {
+                        } catch (NoClassDefFoundError ignored) {
                             continue;
                         }
                     }

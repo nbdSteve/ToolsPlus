@@ -57,6 +57,7 @@ public class SetupManager {
 
     public static void registerCommands(JavaPlugin instance) {
         instance.getCommand("t+").setExecutor(new ToolsPlusCmd());
+        instance.getCommand("t+").setTabCompleter(new ToolsPlusCmd());
     }
 
     /**

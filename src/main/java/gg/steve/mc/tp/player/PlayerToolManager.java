@@ -18,9 +18,6 @@ import java.util.UUID;
 public class PlayerToolManager implements Listener {
     private static Map<UUID, ToolPlayer> playerToolMap;
 
-    public PlayerToolManager() {
-    }
-
     public static void initialise() {
         playerToolMap = new HashMap<>();
         for (Player player : Bukkit.getOnlinePlayers()) {

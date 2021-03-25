@@ -61,5 +61,9 @@ public abstract class SubCommand {
         return this.name.equalsIgnoreCase(arg) || this.aliases.contains(arg.toLowerCase());
     }
 
+    public String getName() {
+        return name;
+    }
+
     public abstract void onCommand(CommandSender sender, String[] args);
 }

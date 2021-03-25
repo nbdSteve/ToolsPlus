@@ -99,7 +99,7 @@ public class SellIntegrationManager {
             LogUtil.warning("Tried to auto sell an item for " + player.getName() + ", but there is no economy loaded.");
             return 0;
         }
-        double price = getItemPrice(player, item) * item.getAmount() * tool.getModifier();
+        double price = getItemPrice(player, item.getType(), (byte) item.getDurability()) * item.getAmount() * tool.getModifier();
         ToolsPlus.eco().depositPlayer(player, price);
         return price;
     }

@@ -4,14 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>gg.steve.mc.tp.modules.sell</groupId>
-    <artifactId>SellModule</artifactId>
+    <groupId>gg.steve.mc.tp.libs.supremefactions</groupId>
+    <artifactId>SupremeFactionsLib</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>SellModule</name>
 
-    <description>SellWands module for ToolsPlus. Developed by Steve Goodhill.</description>
+    <name>SupremeFactionsLib</name>
+
+    <description>SupremeFactions lib for ToolsPlus. Developed by Steve Goodhill.</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -47,14 +48,6 @@
                 </executions>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>trench.yml</include>
-                </includes>
-            </resource>
-        </resources>
     </build>
 
     <repositories>
@@ -66,9 +59,11 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+
+        <!--factionsX integration-->
         <repository>
-            <id>placeholderapi</id>
-            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+            <id>savagelabs</id>
+            <url>https://nexus.savagelabs.net/repository/maven-public/</url>
         </repository>
     </repositories>
 
@@ -76,13 +71,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.15.2-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>me.clip</groupId>
-            <artifactId>placeholderapi</artifactId>
-            <version>2.10.3</version>
+            <version>1.16.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -91,11 +80,11 @@
             <version>2.0.0-FR1</version>
         </dependency>
         <dependency>
-            <groupId>com.cloth</groupId>
-            <artifactId>ChunkCollectors</artifactId>
-            <version>2.9.3</version>
+            <groupId>com.massivecraft</groupId>
+            <artifactId>Factions</artifactId>
+            <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/lib/ChunkCollectors.jar</systemPath>
+            <systemPath>${project.basedir}/src/lib/Factions.jar</systemPath>
         </dependency>
     </dependencies>
 </project>

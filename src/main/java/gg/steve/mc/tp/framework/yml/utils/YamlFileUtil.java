@@ -94,4 +94,8 @@ public class YamlFileUtil extends PluginFile {
     public YamlConfiguration get() {
         return yamlFile;
     }
+
+    public void delete() {
+        file.delete();
+    }
 }

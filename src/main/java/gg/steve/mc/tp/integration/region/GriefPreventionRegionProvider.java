@@ -1,5 +1,6 @@
 package gg.steve.mc.tp.integration.region;
 
+import gg.steve.mc.tp.framework.utils.LogUtil;
 import me.ryanhamshire.GriefPrevention.Claim;
 import me.ryanhamshire.GriefPrevention.GriefPrevention;
 import org.bukkit.Location;
@@ -17,9 +18,9 @@ public class GriefPreventionRegionProvider extends AbstractRegionProvider {
         if (!isEnabled()) return true;
         Claim claim = GriefPrevention.instance.dataStore.getClaimAt(block.getLocation(), false, null);
         if (claim != null) {
-            return claim.allowBreak(player, block.getType()) != null;
+            return claim.allowBreak(player, block.getType()) == null;
         }
-        return false;
+        return true;
     }
 
     @Override
@@ -27,8 +28,8 @@ public class GriefPreventionRegionProvider extends AbstractRegionProvider {
         if (!isEnabled()) return true;
         Claim claim = GriefPrevention.instance.dataStore.getClaimAt(location, false, null);
         if (claim != null) {
-            return claim.allowBreak(player, location.getBlock().getType()) != null;
+            return claim.allowBreak(player, location.getBlock().getType()) == null;
         }
-        return false;
+        return true;
     }
 }

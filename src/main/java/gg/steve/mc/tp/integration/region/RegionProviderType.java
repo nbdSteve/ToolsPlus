@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 public enum RegionProviderType {
     WORLDGUARD(new WorldGuardRegionProvider()),
     FACTIONS(new FactionsRegionProvider()),
-//    GUILDS,
+    GUILDS(new GuildsRegionProvider()),
     WORLD_BORDER(new WorldBorderRegionProvider()),
     LANDS(new LandsRegionProvider()),
     GRIEF_PREVENTION(new GriefPreventionRegionProvider());

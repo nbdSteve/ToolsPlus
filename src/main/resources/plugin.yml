@@ -1,7 +1,7 @@
 name: ToolsPlus
 version: ${project.version}
 main: gg.steve.mc.tp.ToolsPlus
-api-version: 1.15
+api-version: 1.13
 prefix: Tools+
 depend: [Vault]
 softdepend: [PlaceholderAPI, HeadDatabase, Factions, ShopGUIPlus, Essentials, Guilds, Lands, WorldEdit, WorldGuard, GriefPrevention, FactionsX]
